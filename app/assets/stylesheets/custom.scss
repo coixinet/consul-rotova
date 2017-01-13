@@ -3,3 +3,92 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
+$dival-brand: #036dad;
+$dival-brand-light: #c6deef;
+$dival-text: #767168;
+$dival-grey: #f0f0f0;
+
+/* Top header */
+header {
+  background: #fff;
+}
+header .locale {
+  float: right;
+  margin-right: 0.75rem;
+}
+.top-links {
+  background: $dival-grey;
+  color: $dival-text;
+}
+.top-links a,
+.top-links form.locale-form label,
+.top-links form.locale-form select.locale-switcher {
+  color: $dival-text;
+}
+.top-links form.locale-form select.locale-switcher {
+  background-position: 3.5rem;
+  width: 80px;
+  height: 34px;
+  padding: 0;
+}
+.top-bar {
+  color: $text;
+  background: #fff !important;
+}
+.top-bar .logo {
+  color: $text;
+}
+.top-bar .menu-icon.dark {
+  background: $dival-brand;
+}
+.top-bar .top-bar-title a {
+  color: $text;
+}
+.top-bar ul.menu > li a {
+  background: $dival-brand;
+}
+.top-bar .top-bar-title a img {
+  height: auto;
+}
+.top-bar .top-bar-title a .main-logo {
+  margin-left: 1rem;
+  
+  @include breakpoint(medium) {
+    width: 100px;
+  }
+}
+.top-bar .top-bar-title a .small-logo {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+
+.custom-links {
+  float: left;
+  padding: 0.375rem 0 0.375rem 0.9rem;
+  text-align: center;
+}
+
+/* Home */
+.highlight {
+  background: lighten($dival-brand-light, 10%);
+}
+.button {
+  background: $dival-brand;
+}
+
+/* Login */
+.auth-image h1 a {
+  line-height: 4rem;
+}
+.auth-image h1 img {
+  width: 8rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.footer {
+  border-top-color: $dival-brand;
+  background: #fff;
+}

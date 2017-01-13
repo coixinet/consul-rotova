@@ -1,0 +1,32 @@
+<div class="top-links hide-for-small-only">
+  <div class="row">
+    <ul class="no-bullet custom-links">
+      <li class="inline-block"><a accesskey="i" href="/more_information">Enlace custom 1</a>&nbsp;|</li>
+      <li class="inline-block"><a accesskey="i" href="/more_information">Enlace custom 2</a></li>
+    </ul>
+    <ul class="no-bullet external-links">
+      <li class="inline-block">
+        <%= link_to t("layouts.header.more_information"),
+                    page_path('more_information'),
+                    class: ("selected" if current_page?("/more_information")),
+                    accesskey: "i"  %>
+                    &nbsp;|
+      </li>
+      <li class="inline-block">
+        <%= link_to t("layouts.header.external_link_transparency"),
+                    t("layouts.header.external_link_transparency_url"),
+                    target: "_blank",
+                    title: t('shared.target_blank_html') %>
+                    &nbsp;|
+      </li>
+      <% if setting['blog_url'] %>
+        <li class="inline-block">
+          <%= link_to setting['blog_url'], title: t('shared.target_blank_html'), target: "_blank" do %>
+            <%= t("layouts.header.external_link_blog") %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+    <%= render "shared/locale_switcher" %>
+  </div>
+</div>
