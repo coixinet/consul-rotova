@@ -2,24 +2,12 @@
 	<div class="row">
 		<div class="footer-sections small-12 large-8 column">
 			<div class="small-12 medium-4 column">
-				<h2>
-					<%= link_to t("layouts.footer.participation_title"), root_path %>
-				</h2>
-				<p><%= t("layouts.footer.participation_text") %></p>
+				<%= image_tag('logo_header.png', class: 'hide-for-small-only', size: '100x100', alt: t("layouts.header.logo")) %>
 			</div>
 
-			<div class="small-12 medium-4 column">
-				<h2>
-					<%= link_to t("layouts.footer.transparency_title"), t("layouts.footer.transparency_url") %>
-				</h2>
-				<p><%= t("layouts.footer.transparency_text") %></p>
-			</div>
-
-			<div class="small-12 medium-4 column">
-				<h2>
-					<%= link_to t("layouts.footer.open_data_title"), "/opendata" %>
-				</h2>
-				<p><%= t("layouts.footer.open_data_text") %></p>
+			<div class="small-12 medium-4 column end">
+				<a href="http://dival.es"><%= image_tag('logo_dival.png', class: 'shide-for-small-only', size: '100x50') %></a>
+				<p>Ofrecido por la <a href="http://dival.es">Diputació de València</a>.</p>
 			</div>
 		</div>
 		

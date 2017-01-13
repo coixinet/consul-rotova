@@ -7,6 +7,7 @@ $dival-brand: #036dad;
 $dival-brand-light: #c6deef;
 $dival-text: #767168;
 $dival-grey: #f0f0f0;
+$dival-light-grey: rgb(251,251,251);
 
 /* Top header */
 header {
@@ -69,8 +70,11 @@ header .locale {
 }
 
 /* Home */
+.expanded.highlight.padding.no-margin-top {
+  padding: 3.5rem 0;
+}
 .highlight {
-  background: lighten($dival-brand-light, 10%);
+  background: $dival-light-grey;
 }
 .button {
   background: $dival-brand;
@@ -91,4 +95,8 @@ header .locale {
 .footer {
   border-top-color: $dival-brand;
   background: #fff;
+}
+.footer-sections p {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
 }
