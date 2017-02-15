@@ -1,21 +1,43 @@
 /* Home */
-.expanded.highlight.padding.no-margin-top {
-  padding: 3.5rem 0;
-}
-.button {
-  background: $brand;
-}
-.subnavigation.expanded {
-  background: $brand;
+.cover {
+  position: relative;
+  height: 70vh;
+  margin-bottom: 5rem;
   text-align: center;
+  background-size: cover;
+  overflow: hidden;
 }
-.subnavigation ul li a,
-.subnavigation ul li a:hover,
-.subnavigation ul li a:focus,
-.subnavigation ul li a:active {
+.cover .teaser {
+  margin-top: 20vh;
   color: $white;
 }
-.subnavigation ul li a.active {
-  color: $white;
-  border-bottom: 2px solid $white;
+.cover .button {
+  background: $white;
+  color: $text;
+}
+
+.cover.one {
+  background-image: url(image-path('custom/cover_1.jpg'));
+  background-color: rgba($brand, 0.5);
+  background-blend-mode: multiply;
+}
+.cover.one h1 {
+  font-size: 4rem;
+}
+.cover.one p {
+  max-width: 600px;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.teaser-headline {
+  display: table;
+  position: relative;
+  margin: 0 auto;
+}
+.underline-stroke {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

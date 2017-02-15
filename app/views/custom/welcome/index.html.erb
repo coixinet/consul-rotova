@@ -1,0 +1,44 @@
+<div class="expanded padding no-margin-top cover one">
+  <div class="row teaser">
+    <div class="teaser-headline">
+      <h1>Propón, debate, decide.</h1>
+      
+      <svg class="underline-stroke" xmlns="http://www.w3.org/2000/svg" width="163" height="18" viewBox="0 0 163 18">
+        <path fill="none" stroke="#fff" stroke-width="4" d="M550.243244,86.6963103 C550.243244,86.6963103 616.025479,68.8760103 711.34777,73.9851746" transform="translate(-549 -71)"/>
+      </svg>
+    </div>
+
+    <p>Bienvenido a la plataforma de participación ciudadana del Ayuntamiento de Burjassot.</p>
+    
+    <%= link_to t("layouts.header.see_all"), proposals_path, class: "button see-more" %>
+  </div>
+</div>
+
+<% cache [locale_and_user_status, @featured_debates, @featured_proposals, 'featured'] do %>
+  <main>
+    <div class="row text-center margin">
+      <div class="small-12 medium-3 column">
+        <%= image_tag("icon_home_debate.png", size: "168x168", alt: "", title: t("welcome.debates.title")) %>
+        <h2><%= t("welcome.debates.title") %></h2>
+        <p><%= t("welcome.debates.description") %></p>
+
+      </div>
+      <div class="small-12 medium-3 column">
+        <%= image_tag("icon_home_proposal.png", size: "168x168", alt: "", title: t("welcome.proposal.title"))  %>
+        <h2><%= t("welcome.proposal.title") %></h2>
+        <p><%= t("welcome.proposal.description") %></p>
+      </div>
+
+      <div class="small-12 medium-3 column">
+        <%= image_tag("icon_home_decide.png", size: "168x168", alt: "", title: t("welcome.decide.title")) %>
+        <h2><%= t("welcome.decide.title") %></h2>
+        <p><%= t("welcome.decide.description") %></p>
+      </div>
+      <div class="small-12 medium-3 column">
+        <%= image_tag("icon_home_do.png", size: "168x168", alt: "", title: t("welcome.do.title")) %>
+        <h2><%= t("welcome.do.title") %></h2>
+        <p><%= t("welcome.do.description") %></p>
+      </div>
+    </div>
+  </main>
+<% end %>

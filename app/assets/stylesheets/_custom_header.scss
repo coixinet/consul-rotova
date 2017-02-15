@@ -4,6 +4,7 @@ a:focus {
 }
 header {
   background: #fff;
+  border-bottom: none;
 }
 header .locale {
   float: right;
@@ -41,7 +42,8 @@ header .locale {
   color: $text;
 }
 .top-bar ul.menu > li a {
-  color: $text;
+  background: $brand;
+  color: $white;
 }
 .top-bar ul.menu > li a.button {
   color: $brand;
@@ -63,9 +65,16 @@ header .locale {
   width: 40px;
   margin-right: 0.5rem;
 }
-.subnavigation ul li a {
-  color: $white;
+.custom-links {
+  float: left;
+  padding: 0.375rem 0 0.375rem 0.9rem;
+  text-align: center;
 }
+.subnavigation.expanded {
+  background: $brand;
+  text-align: center;
+}
+.subnavigation ul li a,
 .subnavigation ul li a:hover,
 .subnavigation ul li a:focus,
 .subnavigation ul li a:active {
@@ -73,10 +82,5 @@ header .locale {
 }
 .subnavigation ul li a.active {
   color: $white;
-  border-bottom: 2px solid lighten($white, 10%);
-}
-.custom-links {
-  float: left;
-  padding: 0.375rem 0 0.375rem 0.9rem;
-  text-align: center;
+  border-bottom: 2px solid $white;
 }
