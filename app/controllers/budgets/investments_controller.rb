@@ -46,6 +46,7 @@ module Budgets
       @investment.author = current_user
 
       if @investment.save
+        Mailer.budget_investment_created(@investment).deliver_later
         redirect_to budget_investment_path(@budget, @investment),
                     notice: t('flash.actions.create.budget_investment')
       else
@@ -61,6 +62,10 @@ module Budgets
     def vote
       @investment.register_selection(current_user)
       load_investment_votes(@investment)
+      respond_to do |format|
+        format.html { redirect_to budget_investments_path(heading_id: @investment.heading.id) }
+        format.js
+      end
     end
 
     private
@@ -72,7 +77,8 @@ module Budgets
       def set_random_seed
         if params[:order] == 'random' || params[:order].blank?
           params[:random_seed] ||= rand(99)/100.0
-          Budget::Investment.connection.execute "select setseed(#{params[:random_seed]})"
+          seed = Float(params[:random_seed]) rescue 0
+          Budget::Investment.connection.execute("select setseed(#{seed})")
         else
           params[:random_seed] = nil
         end
