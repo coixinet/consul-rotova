@@ -1,0 +1,21 @@
+/* Home */
+.expanded.highlight.padding.no-margin-top {
+  padding: 3.5rem 0;
+}
+.button {
+  background: $brand;
+}
+.subnavigation.expanded {
+  background: $brand;
+  text-align: center;
+}
+.subnavigation ul li a,
+.subnavigation ul li a:hover,
+.subnavigation ul li a:focus,
+.subnavigation ul li a:active {
+  color: $white;
+}
+.subnavigation ul li a.active {
+  color: $white;
+  border-bottom: 2px solid $white;
+}

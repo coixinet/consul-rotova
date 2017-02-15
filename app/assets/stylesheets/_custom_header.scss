@@ -1,0 +1,82 @@
+/* Top header */
+a:focus {
+  outline: none;
+}
+header {
+  background: #fff;
+}
+header .locale {
+  float: right;
+  margin-right: 0.75rem;
+}
+.masthead-links {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.top-links {
+  background: $light-gray;
+  color: $text;
+}
+.top-links a,
+.top-links form.locale-form label,
+.top-links form.locale-form select.locale-switcher {
+  color: $text-medium;
+}
+.top-links form.locale-form select.locale-switcher {
+  background-position: 3.5rem;
+  width: 80px;
+  height: 34px;
+  padding: 0;
+}
+.top-bar {
+  background: #fff !important;
+}
+.top-bar .logo {
+  color: $text;
+}
+.top-bar .menu-icon.dark {
+  background: $brand;
+}
+.top-bar .top-bar-title a {
+  color: $text;
+}
+.top-bar ul.menu > li a {
+  color: $text;
+}
+.top-bar ul.menu > li a.button {
+  color: $brand;
+}
+.top-bar .top-bar-title a span {
+  font-weight: 600;
+}
+.top-bar .top-bar-title a img {
+  height: auto;
+}
+.top-bar .top-bar-title a .main-logo {
+  margin-left: 1rem;
+  
+  @include breakpoint(medium) {
+    width: 80px;
+  }
+}
+.top-bar .top-bar-title a .small-logo {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+.subnavigation ul li a {
+  color: $white;
+}
+.subnavigation ul li a:hover,
+.subnavigation ul li a:focus,
+.subnavigation ul li a:active {
+  color: $white;
+}
+.subnavigation ul li a.active {
+  color: $white;
+  border-bottom: 2px solid lighten($white, 10%);
+}
+.custom-links {
+  float: left;
+  padding: 0.375rem 0 0.375rem 0.9rem;
+  text-align: center;
+}
