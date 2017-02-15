@@ -2,7 +2,7 @@
 
   <%= render "shared/top_links" %>
 
-  <div class="row">
+  <div class="row masthead-links">
     <div class="top-bar">
 
       <%= link_to setting['org_name'], root_path, class: "logo show-for-small-only" %>
@@ -17,7 +17,7 @@
           <%= link_to root_path, class: "hide-for-small-only", accesskey: "/" do %>
             <%= image_tag('logo_header.png', class: 'main-logo hide-for-small-only', size: '100x100', alt: t("layouts.header.logo")) %>
             <%= image_tag('go_dival.jpg', class: 'small-logo hide-for-small-only', size: '50x50') %>
-            <span><%= setting['org_name'] %></span>
+            <span>Decide València</span>
           <% end %>
         </div>
 

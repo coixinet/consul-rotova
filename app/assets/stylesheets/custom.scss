@@ -2,12 +2,16 @@
 // Read more on documentation:
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
-//
-$dival-brand: #036dad;
+
 $dival-brand-light: #c6deef;
-$dival-text: #767168;
+$text: #767168;
 $dival-grey: #f0f0f0;
 $dival-light-grey: rgb(251,251,251);
+
+/* General */
+a:focus {
+  outline: none;
+}
 
 /* Top header */
 header {
@@ -17,14 +21,18 @@ header .locale {
   float: right;
   margin-right: 0.75rem;
 }
+.masthead-links {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .top-links {
   background: $dival-grey;
-  color: $dival-text;
+  color: $text;
 }
 .top-links a,
 .top-links form.locale-form label,
 .top-links form.locale-form select.locale-switcher {
-  color: $dival-text;
+  color: $text;
 }
 .top-links form.locale-form select.locale-switcher {
   background-position: 3.5rem;
@@ -40,13 +48,16 @@ header .locale {
   color: $text;
 }
 .top-bar .menu-icon.dark {
-  background: $dival-brand;
+  background: $brand;
 }
 .top-bar .top-bar-title a {
   color: $text;
 }
 .top-bar ul.menu > li a {
-  background: $dival-brand;
+  background: $brand;
+}
+.top-bar ul.menu > li a.button {
+  color: $brand;
 }
 .top-bar .top-bar-title a img {
   height: auto;
@@ -61,6 +72,18 @@ header .locale {
 .top-bar .top-bar-title a .small-logo {
   width: 40px;
   margin-right: 0.5rem;
+}
+.subnavigation ul li a {
+  color: $text;
+}
+.subnavigation ul li a:hover,
+.subnavigation ul li a:focus,
+.subnavigation ul li a:active {
+  color: $text;
+}
+.subnavigation ul li a.active {
+  color: $text;
+  border-bottom: 2px solid lighten($text, 10%);
 }
 
 .custom-links {
@@ -77,7 +100,7 @@ header .locale {
   background: $dival-light-grey;
 }
 .button {
-  background: $dival-brand;
+  background: $brand;
 }
 
 /* Login */
@@ -93,7 +116,7 @@ header .locale {
 
 /* Footer */
 .footer {
-  border-top-color: $dival-brand;
+  border-top-color: $brand;
   background: #fff;
 }
 .footer-sections p {
