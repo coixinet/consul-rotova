@@ -1,15 +1,15 @@
 /* Home */
 .cover {
   position: relative;
-  height: 70vh;
+  height: 85vh;
   margin-bottom: 5rem;
   text-align: center;
   background-size: cover;
   overflow: hidden;
-}
-.cover .teaser {
-  margin-top: 20vh;
-  color: $white;
+  
+  @include breakpoint(medium) {
+    height: 70vh;
+  }
 }
 .cover .button {
   background: $white;
@@ -20,16 +20,35 @@
   background-image: url(image-path('custom/cover_1.jpg'));
   background-color: rgba($brand, 0.5);
   background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cover.one .teaser {
+  max-width: 95%;
+  color: $white;
+  
+  @include breakpoint(medium) {
+    max-width: 75%;
+  }
 }
 .cover.one h1 {
-  font-size: 4rem;
+  font-size: 1.75rem;
+  
+  @include breakpoint(medium) {
+    font-size: 4rem;
+  }
 }
 .cover.one p {
   max-width: 600px;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   line-height: 1.1;
   margin: 0 auto;
   margin-bottom: 2rem;
+  
+  @include breakpoint(medium) {
+    font-size: 1.75rem;
+  }
 }
 .teaser-headline {
   display: table;
@@ -37,7 +56,12 @@
   margin: 0 auto;
 }
 .underline-stroke {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  display: none;
+  
+  @include breakpoint(large) {
+    display: block;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0;
+  }
 }
