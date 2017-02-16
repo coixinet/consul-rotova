@@ -38,9 +38,6 @@ header .locale {
 .top-bar .menu-icon.dark {
   background: $brand;
 }
-.top-bar .top-bar-title a {
-  color: $text;
-}
 .top-bar ul.menu > li a {
   background: $brand;
   color: $white;
@@ -48,7 +45,19 @@ header .locale {
 .top-bar ul.menu > li a.button {
   color: $brand;
 }
+.top-bar #responsive-menu {
+  text-align: center;
+}
+.top-bar .top-bar-title {
+  display: inline-block;
+  float: none;
+}
+.top-bar .top-bar-title a {
+  margin-right: -10rem;
+  color: $text;
+}
 .top-bar .top-bar-title a span {
+  font-size: 2rem;
   font-weight: 600;
 }
 .top-bar .top-bar-title a img {
@@ -58,7 +67,7 @@ header .locale {
   margin-left: 1rem;
   
   @include breakpoint(medium) {
-    width: 80px;
+    width: 50px;
   }
 }
 .top-bar .top-bar-title a .small-logo {
