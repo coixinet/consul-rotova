@@ -3,6 +3,17 @@
 // * English: https://github.com/consul/consul/blob/master/CUSTOMIZE_EN.md#css
 // * Spanish: https://github.com/consul/consul/blob/master/CUSTOMIZE_ES.md#css
 //
+
+/* Colors */
 $brand: #BC3E43;
 $highlight: rgb(251,251,251);
 $light-gray: #f0f0f0;
+
+/* Grid */
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xxlarge: 1440px
+);
+$breakpoint-classes: (small medium large xxlarge);

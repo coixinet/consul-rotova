@@ -2,20 +2,48 @@
 .cover {
   position: relative;
   height: 85vh;
-  margin-bottom: 5rem;
   text-align: center;
   background-size: cover;
   overflow: hidden;
   
   @include breakpoint(medium) {
-    height: 70vh;
+    height: 95vh;
   }
+}
+.cover h1,
+.cover p {
+  color: $white;
+}
+.cover h1 {
+  font-size: 1.75rem;
+  
+  @include breakpoint(medium) {
+    font-size: 4rem;
+  }
+}
+.cover p {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  
+  @include breakpoint(medium) {
+    font-size: 1.5rem;
+  }
+}
+.teaser-headline {
+  display: table;
+  position: relative;
+  margin: 0 auto;
 }
 .cover .button {
   background: $white;
   color: $text;
 }
+.cover.gray {
+  background-color: rgba(100,100,100, 0.4);
+  background-blend-mode: multiply;
+}
 
+/* First cover */
 .cover.one {
   background-image: url(image-path('custom/cover_1.jpg'));
   background-color: rgba($brand, 0.5);
@@ -26,34 +54,15 @@
 }
 .cover.one .teaser {
   max-width: 95%;
-  color: $white;
   
   @include breakpoint(medium) {
     max-width: 75%;
   }
 }
-.cover.one h1 {
-  font-size: 1.75rem;
-  
-  @include breakpoint(medium) {
-    font-size: 4rem;
-  }
-}
 .cover.one p {
   max-width: 600px;
-  font-size: 1.25rem;
-  line-height: 1.1;
   margin: 0 auto;
   margin-bottom: 2rem;
-  
-  @include breakpoint(medium) {
-    font-size: 1.75rem;
-  }
-}
-.teaser-headline {
-  display: table;
-  position: relative;
-  margin: 0 auto;
 }
 .underline-stroke {
   display: none;
@@ -63,5 +72,33 @@
     position: absolute;
     bottom: 0.5rem;
     right: 0;
+  }
+}
+
+/* Second cover */
+.cover.second {
+  background-image: url(image-path('custom/cover_2.jpg'));
+}
+.cover.second {
+  padding: 20vh;
+  
+  @include breakpoint(xxlarge) {
+    padding: 30vh;
+  }
+}
+.cover.second .teaser-headline svg {
+  display: none;
+  position: absolute;
+  right: -13rem;
+  top: 3rem;
+  
+  @include breakpoint(large) {
+    display: block;
+  }
+}
+.cover.second p {
+  @include breakpoint(large) {
+    text-align: left;
+    margin-top: 10rem;
   }
 }
