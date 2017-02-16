@@ -35,7 +35,7 @@
   position: relative;
   margin: 0 auto;
 }
-.cover .button {
+.button.negative {
   background: $white;
   color: $text;
 }
@@ -113,7 +113,7 @@
 }
 .cover.third {
   padding: 10vh;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   
   @include breakpoint(xxlarge) {
     padding: 30vh 30vh 5vh 30vh;
@@ -192,19 +192,68 @@
   display: inline-block;
   margin-right: 0.5rem;
   margin-bottom: 2rem;
+  margin-top: 1.5rem;
 }
 .section-link {
   text-decoration: underline;
   color: $text-medium;
   font-size: $small-font-size;
 }
+.dashed-sep {
+  margin: 0 auto;
+  max-width: 73.125rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #C3C3C3;
+  border-bottom-style: dashed;
+}
 
+/* Banner */
+.banner-bg {
+  height: 17rem;
+  background-size: cover;
+  overflow: hidden;
+  background-color: rgba(100,100,100, 0.8);
+  background-blend-mode: multiply;
+  background-image: url(image-path('custom/banner.jpg'));
+}
+.banner-section {
+  margin-top: 3rem;
+}
+.banner {
+  color: $white;
+  background: $brand;
+  padding: 3rem;
+  height: 18rem;
+  
+  @include breakpoint(medium) {
+    position: relative;
+    height: 17rem;
+  }
+}
+.banner-content {
+  @include breakpoint(xxlarge) {
+    position: absolute;
+    right: 3rem;
+    max-width: 33.5rem;
+  }
+}
+.banner h3,
+.banner p {
+  text-shadow: 0 0 10px rgba(0,0,0,0.50);
+}
+
+/* Cards */
 .link-card {
   text-align: center;
   padding: 1rem 0;
   border: 1px solid #C3C3C3;
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.05);
   border-radius: 2px;
+  margin-bottom: 1.75rem;
+  
+  @include breakpoint(medium) {
+    margin-bottom: 0.75rem;    
+  }
 }
 .link-card .deadline {
   color: #9B9B9B;
