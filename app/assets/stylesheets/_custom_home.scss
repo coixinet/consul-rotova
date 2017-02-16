@@ -113,6 +113,7 @@
 }
 .cover.third {
   padding: 10vh;
+  margin-bottom: 5rem;
   
   @include breakpoint(xxlarge) {
     padding: 30vh 30vh 5vh 30vh;
@@ -184,4 +185,50 @@
 }
 .card.gray {
   background: #4A4A4A;
+}
+
+/* Home links and proposals */
+.section-headline h3 {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 2rem;
+}
+.section-link {
+  text-decoration: underline;
+  color: $text-medium;
+  font-size: $small-font-size;
+}
+
+.link-card {
+  text-align: center;
+  padding: 1rem 0;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+.link-card .deadline {
+  color: #9B9B9B;
+  text-align: left;
+  font-size: $small-font-size;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  margin-bottom: 0.5rem;
+}
+.link-card .deadline .icon-calendar {
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+.link-card h4 {
+  text-align: left;
+  padding: 0 0.9375rem 0.5rem 0.9375rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #E6E6E6;
+}
+.link-card p {
+  text-align: left; 
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+.link-card .button {
+  width: 10rem;
 }

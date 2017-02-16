@@ -82,31 +82,37 @@
   </div>
 </div>
 
-<% cache [locale_and_user_status, @featured_debates, @featured_proposals, 'featured'] do %>
-  <main>
-    <div class="row text-center margin">
-      <div class="small-12 medium-3 column">
-        <%= image_tag("icon_home_debate.png", size: "168x168", alt: "", title: t("welcome.debates.title")) %>
-        <h2><%= t("welcome.debates.title") %></h2>
-        <p><%= t("welcome.debates.description") %></p>
-
-      </div>
-      <div class="small-12 medium-3 column">
-        <%= image_tag("icon_home_proposal.png", size: "168x168", alt: "", title: t("welcome.proposal.title"))  %>
-        <h2><%= t("welcome.proposal.title") %></h2>
-        <p><%= t("welcome.proposal.description") %></p>
-      </div>
-
-      <div class="small-12 medium-3 column">
-        <%= image_tag("icon_home_decide.png", size: "168x168", alt: "", title: t("welcome.decide.title")) %>
-        <h2><%= t("welcome.decide.title") %></h2>
-        <p><%= t("welcome.decide.description") %></p>
-      </div>
-      <div class="small-12 medium-3 column">
-        <%= image_tag("icon_home_do.png", size: "168x168", alt: "", title: t("welcome.do.title")) %>
-        <h2><%= t("welcome.do.title") %></h2>
-        <p><%= t("welcome.do.description") %></p>
+<main>
+  <section class="row last-proposals margin">
+    <div class="small-12 column section-headline">
+      <h3>Últimas propuestas</h3>
+      <a class="section-link" href="/proposals">ver todas</a>
+    </div>
+    
+    <div class="small-12 medium-4 column">
+      <div class="link-card">
+        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
+        <h4>¿Debe el ayuntamiento ampliar los horarios de metro?</h4>
+        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
+        <button class="button" type="button" name="button">Vota</button>
       </div>
     </div>
-  </main>
-<% end %>
+    
+    <div class="small-12 medium-4 column">
+      <div class="link-card">
+        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
+        <h4>Ampliación de los carriles bici en el centro de la ciudad</h4>
+        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
+        <button class="button" type="button" name="button">Vota</button>
+      </div>
+    </div>
+
+    <div class="small-12 medium-4 column">
+      <div class="link-card">
+        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
+        <h4>Nueva tarifa para los billetes de metro, autobús y tranvía</h4>
+        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
+        <button class="button" type="button" name="button">Vota</button>
+      </div>
+    </div>
+</main>
