@@ -92,3 +92,12 @@ h2.sidebar-title::after,
   color: $white;
   font-weight: 600;
 }
+.debate-show .supports .button-support, .proposal-show .supports .button-support, .investment-project-show .supports .button-support, .budget-investment-show .supports .button-support {
+  color: $white;
+}
+
+/* Budgets */
+.expanded.budget .info {
+  border-top-color: $budget;
+  background: lighten($budget, 10%);
+}
