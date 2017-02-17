@@ -93,3 +93,27 @@ header .locale {
   color: $white;
   border-bottom: 2px solid $white;
 }
+
+/* Header banner */
+.header-banner-bg {
+  text-align: center;
+  min-height: 25vh;
+  background-size: cover;
+  color: $white;
+  background-image: url(image-path('custom/banner_header.jpg'));
+  background-color: $brand;
+  background-blend-mode: multiply;
+}
+.header-banner-bg .banner-text {
+  text-shadow: 0 0 4px rgba(0,0,0,0.50);
+}
+.header-banner-bg p {
+  font-size: 1.25rem;
+  max-width: 550px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.header-banner-bg .button {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-radius: 2px;
+}
