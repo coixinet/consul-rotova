@@ -1,0 +1,51 @@
+.debate, .proposal, .investment-project, .budget-investment {
+  margin: 2rem 0;
+}
+.debate .panel .label-debate, .proposal .panel .label-debate, .investment-project .panel .label-debate, .budget-investment .panel .label-debate,
+.debate .panel .icon-debates, .proposal .panel .icon-debates, .investment-project .panel .icon-debates, .budget-investment .panel .icon-debates,
+.debate .panel .label-debate, .debate .panel .label-proposal, .debate .panel .label-investment-project, .debate .panel .label-budget-investment, .proposal .panel .label-debate, .proposal .panel .label-proposal, .proposal .panel .label-investment-project, .proposal .panel .label-budget-investment, .investment-project .panel .label-debate, .investment-project .panel .label-proposal, .investment-project .panel .label-investment-project, .investment-project .panel .label-budget-investment, .budget-investment .panel .label-debate, .budget-investment .panel .label-proposal, .budget-investment .panel .label-investment-project, .budget-investment .panel .label-budget-investment,
+.debate .panel .icon-debates, .debate .panel .icon-proposals, .debate .panel .icon-budget, .proposal .panel .icon-debates, .proposal .panel .icon-proposals, .proposal .panel .icon-budget, .investment-project .panel .icon-debates, .investment-project .panel .icon-proposals, .investment-project .panel .icon-budget, .budget-investment .panel .icon-debates, .budget-investment .panel .icon-proposals, .budget-investment .panel .icon-budget {
+  display: none;
+}
+.debate .panel .debate-info, .debate .panel .proposal-info, .debate .panel .investment-project-info, .debate .panel .budget-investment-info, .proposal .panel .debate-info, .proposal .panel .proposal-info, .proposal .panel .investment-project-info, .proposal .panel .budget-investment-info, .investment-project .panel .debate-info, .investment-project .panel .proposal-info, .investment-project .panel .investment-project-info, .investment-project .panel .budget-investment-info, .budget-investment .panel .debate-info, .budget-investment .panel .proposal-info, .budget-investment .panel .investment-project-info, .budget-investment .panel .budget-investment-info,
+.debate .panel .debate-info a, .debate .panel .proposal-info a, .debate .panel .investment-project-info a, .debate .panel .budget-investment-info a, .proposal .panel .debate-info a, .proposal .panel .proposal-info a, .proposal .panel .investment-project-info a, .proposal .panel .budget-investment-info a, .investment-project .panel .debate-info a, .investment-project .panel .proposal-info a, .investment-project .panel .investment-project-info a, .investment-project .panel .budget-investment-info a, .budget-investment .panel .debate-info a, .budget-investment .panel .proposal-info a, .budget-investment .panel .investment-project-info a, .budget-investment .panel .budget-investment-info a {
+  color: #9B9B9B;
+}
+.debate .panel, .proposal .panel, .investment-project .panel, .budget-investment .panel {
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+main .small-12.medium-3 aside.margin-bottom a.button.expanded {
+  display: none;
+}
+.sidebar-divider {
+  display: none;
+}
+#tag-cloud .sidebar-title {
+  padding-top: 0;
+}
+h2.sidebar-title {
+  padding-top: 2rem;
+  letter-spacing: 0.15rem;
+  border-top: none;
+}
+h2.sidebar-title::after {
+  content: "";
+  width: 270px;
+  display: block;
+  height: 2px;
+  margin-top: 0.25rem;
+  background: $brand;
+}
+.submenu a.active {
+  color: $text;
+}
+.advanced-search {
+  margin-top: 0.25rem;
+  color: $text;
+}
+.advanced-search-form  {
+  margin-top: 0;
+}
+.featured-debates, .featured-proposals {
+  display: none;
+}

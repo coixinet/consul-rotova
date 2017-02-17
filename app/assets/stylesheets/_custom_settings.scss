@@ -6,6 +6,8 @@
 
 /* Colors */
 $brand: #BC3E43;
+$link: $brand;
+$link-hover: darken($link, 20%);
 $button-background-hover: scale-color($brand, $lightness: -15%);
 $highlight: rgb(251,251,251);
 $light-gray: #f0f0f0;
@@ -17,4 +19,5 @@ $breakpoints: (
   large: 1024px,
   xxlarge: 1440px
 );
+
 $breakpoint-classes: (small medium large xxlarge);
