@@ -6,13 +6,14 @@
 
 /* Colors */
 $brand: #BC3E43;
+$dark: darken($brand, 10%);
 $link: $brand;
 $link-hover: darken($link, 20%);
 $button-background-hover: scale-color($brand, $lightness: -15%);
 
 /* Sections */
 $proposals: $brand;
-$proposals-dark: darken($brand, 20%);
+$budget: #4a4a4a;
 
 /* Utils */
 $highlight: rgb(251,251,251);
