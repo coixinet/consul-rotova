@@ -1,3 +1,12 @@
+/* Login */
+.auth-image {
+  background: none;
+}
+.auth-image h1 a {
+  color: $text;
+}
+
+/* Debate, proposals, etc */
 .debate, .proposal, .investment-project, .budget-investment {
   margin: 2rem 0;
 }
@@ -23,12 +32,16 @@ main .small-12.medium-3 aside.margin-bottom a.button.expanded {
 #tag-cloud .sidebar-title {
   padding-top: 0;
 }
-h2.sidebar-title {
-  padding-top: 2rem;
+h2.sidebar-title,
+.debate-show aside h2, .proposal-show aside h2, .investment-project-show aside h2, .budget-investment-show aside h2 {
   letter-spacing: 0.15rem;
   border-top: none;
 }
-h2.sidebar-title::after {
+h2.sidebar-title {
+  padding-top: 2rem;
+}
+h2.sidebar-title::after,
+.debate-show aside h2::after, .proposal-show aside h2::after, .investment-project-show aside h2::after, .budget-investment-show aside h2::after {
   content: "";
   width: 270px;
   display: block;
@@ -47,5 +60,35 @@ h2.sidebar-title::after {
   margin-top: 0;
 }
 .featured-debates, .featured-proposals {
-  display: none;
+  margin-bottom: 1rem;
+}
+
+/* Comments */
+#comments > h3 {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+#comments .wide-order-selector {
+  margin-top: 0;
+}
+#comments .callout.primary {
+  margin-top: 2rem;
+}
+
+/* Proposals */
+.featured-proposals {
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 4px;
+  background: $white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+.featured-proposals .supports .button-support {
+  background: $brand;
+  color: $white;
+  font-weight: 600;
+}
+.proposal .supports .button-support {
+  color: $white;
+  font-weight: 600;
 }

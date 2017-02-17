@@ -41,19 +41,19 @@
       <div class="hide-for-small-only">
         <%= render "shared/subnavigation" %>
       </div>
-      <!-- <div class="small-12 medium-3 column">
+      <div class="small-12 medium-3 column">
         <%= yield :header_addon %>
-      </div> -->
+      </div>
     </div>
   </div>
-  
-  <% if params[:controller] == 'debates' %>
+
+  <% if params[:controller] == 'proposals' %>
     <div class="row expanded">
       <div class="header-banner-bg">
         <div class="small-12 medium-6 small-centered column padding">
           <div class="banner-text">
-            <h1>Crea tu debate</h1>
-            <p>Los debates son iniciativas para mejorar la ciudad. Cuando consiguen apoyos son estudiados por el ayuntamiento.</p>
+            <h1>Crea tu propuesta</h1>
+            <p>Las propuestas son iniciativas para mejorar la ciudad. Cuando consiguen apoyos son estudiadas por el ayuntamiento.</p>
           </div>
           <a class="button negative" href="/debates/new">Propón</a>
         </div>
