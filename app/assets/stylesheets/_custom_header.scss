@@ -53,7 +53,7 @@ header .locale {
   float: none;
 }
 .top-bar .top-bar-title a {
-  margin-right: -10rem;
+  margin-right: -8rem;
   color: $text;
 }
 .top-bar .top-bar-title a span {
@@ -97,7 +97,7 @@ header .locale {
 /* Header banner */
 .header-banner-bg {
   text-align: center;
-  min-height: 25vh;
+  min-height: 18vh;
   background-size: cover;
   color: $white;
   background-image: url(image-path('custom/banner_header.jpg'));
