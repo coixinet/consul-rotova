@@ -1,0 +1,14 @@
+body.admin .top-bar {
+  background: $white !important;
+}
+body.admin header .top-links {
+  background: $brand;
+}
+body.admin .top-links a,
+body.admin .top-links form.locale-form label,
+body.admin .top-links form.locale-form select.locale-switcher {
+  color: $white;
+}
+body.admin .top-bar {
+  margin: 1rem 0;
+}
