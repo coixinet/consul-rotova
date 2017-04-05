@@ -1,16 +1,16 @@
 <footer>
-	<div class="row">
-		<div class="footer-sections small-12 large-8 column">
-			<div class="small-12 medium-2 column">
-				<%= image_tag('logo_header.png', class: 'hide-for-small-only', size: '100x100', alt: t("layouts.header.logo")) %>
-			</div>
+  <div class="row">
+    <div class="footer-sections small-12 large-8 column">
+      <div class="small-12 medium-2 column">
+        <%= image_tag('logo_header.png', class: 'hide-for-small-only', size: '100x100', alt: t("layouts.header.logo")) %>
+      </div>
 
-			<div class="small-12 medium-4 column end">
-				<a href="http://dival.es"><%= image_tag('logo_dival.png', class: 'shide-for-small-only', size: '100x50') %></a>
-				<p>Ofrecido por la <a href="http://dival.es">Diputació de València</a>.</p>
-			</div>
-		</div>
-		
+      <div class="small-12 medium-4 column end">
+        <a href="http://dival.es"><%= image_tag('logo_dival.png', class: 'shide-for-small-only', size: '100x50') %></a>
+        <p><%= t("layouts.footer.offered_by") %> <a href="http://dival.es">Diputació de València</a>.</p>
+      </div>
+    </div>
+
     <div class="small-12 large-4 column">
       <h1 class="logo">
         <%= link_to t("layouts.header.open_gov", open: "#{t('layouts.header.open')}").html_safe %>

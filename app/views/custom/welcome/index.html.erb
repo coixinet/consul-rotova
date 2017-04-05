@@ -1,15 +1,15 @@
 <div class="expanded padding no-margin-top cover one">
   <div class="row teaser">
     <div class="teaser-headline">
-      <h1>Propón, debate, decide.</h1>
-      
+      <h1><%= t("welcome.teaser_headline") %></h1>
+
       <svg class="underline-stroke" xmlns="http://www.w3.org/2000/svg" width="163" height="18" viewBox="0 0 163 18">
         <path fill="none" stroke="#fff" stroke-width="4" d="M550.243244,86.6963103 C550.243244,86.6963103 616.025479,68.8760103 711.34777,73.9851746" transform="translate(-549 -71)"/>
       </svg>
     </div>
 
-    <p class="teaser-desc">Bienvenido a la plataforma de participación ciudadana del Ayuntamiento de Burjassot</p>
-    
+    <p class="teaser-desc"><%= t("welcome.teaser_description", org_name: Setting["org_name"]) %></p>
+
     <%= link_to t("layouts.header.see_all"), proposals_path, class: "button negative see-more" %>
   </div>
 </div>
@@ -18,7 +18,7 @@
   <div class="row">
     <div class="small-12 large-8 xxlarge-6 column">
       <div class="teaser-headline">
-        <h1>Haz tu propuesta</h1>
+        <h1><%= t("welcome.proposal_teaser_headline") %></h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" width="188" height="181" viewBox="0 0 188 181">
           <g fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" transform="translate(-485 -49)">
@@ -29,10 +29,10 @@
       </div>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="small-12 large-5 large-offset-7 column">
-      <p class="teaser-desc">En esta plataforma puedes proponer acciones concretas para mejorar tu municipio</p>
+      <p class="teaser-desc"><%= t("welcome.proposal_teaser_description") %></p>
     </div>
   </div>
 </div>
@@ -41,9 +41,9 @@
   <div class="row">
     <div class="small-12 large-8 large-offset-4 xxlarge-6 xxlarge-offset-10 column">
       <div class="teaser-headline">
-        <h1>Vota</h1>
-        <p>Involúcrate y debate</p>
-        <p>Participa en los procesos municipales</p>
+        <h1><%= t("welcome.vote_teaser_headline") %></h1>
+        <p><%= t("welcome.vote_teaser_line_1") %></p>
+        <p><%= t("welcome.vote_teaser_line_2") %></p>
 
         <svg xmlns="http://www.w3.org/2000/svg" width="440" height="298" viewBox="0 0 440 298">
           <g fill="none" fill-rule="evenodd" stroke="#FFFFFF" stroke-width="2" transform="translate(-646 -2296)">
@@ -53,79 +53,65 @@
       </div>
     </div>
   </div>
-  
+
   <div class="row cards hide-for-small-only">
     <div class="small-12 large-3 column">
       <div class="card red">
-        <h3 class="card-headline">Debates</h3>
-        <p class="card-copy">Lorem ipsum augue ad tempor diam belit eget metus, eu erat efficitur, Cras quis, leo, ut. </p>
+        <h3 class="card-headline"><%= t("welcome.debates.title") %></h3>
+        <p class="card-copy"><%= t("welcome.debates.description") %></p>
       </div>
     </div>
     <div class="small-12 large-3 column">
       <div class="card blue">
-        <h3 class="card-headline">Propuestas</h3>
-        <p class="card-copy">Lorem ipsum augue ad tempor diam belit eget metus, eu erat efficitur, Cras quis, leo, ut. </p>
+        <h3 class="card-headline"><%= t("welcome.proposal.title") %></h3>
+        <p class="card-copy"><%= t("welcome.proposal.description") %></p>
       </div>
     </div>
     <div class="small-12 large-3 column">
       <div class="card green">
-        <h3 class="card-headline">Votaciones</h3>
-        <p class="card-copy">Lorem ipsum augue ad tempor diam belit eget metus, eu erat efficitur, Cras quis, leo, ut. </p>
+        <h3 class="card-headline"><%= t("welcome.decide.title") %></h3>
+        <p class="card-copy"><%= t("welcome.decide.description") %></p>
       </div>
     </div>
     <div class="small-12 large-3 column">
       <div class="card gray">
-        <h3 class="card-headline">Presupuestos</h3>
-        <p class="card-copy">Lorem ipsum augue ad tempor diam belit eget metus, eu erat efficitur, Cras quis, leo, ut. </p>
+        <h3 class="card-headline"><%= t("welcome.do.title") %></h3>
+        <p class="card-copy"><%= t("welcome.do.description") %></p>
       </div>
     </div>
   </div>
 </div>
 
 <main>
+  <% latest_proposals = Proposal.sort_by_created_at.limit(3) %>
+  <% if feature?(:proposals) && latest_proposals.any? %>
   <section class="row last-proposals margin">
     <div class="small-12 column section-headline">
-      <h3>Últimas propuestas</h3>
-      <a class="section-link" href="/proposals">ver todas</a>
-    </div>
-    
-    <div class="small-12 medium-4 column">
-      <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>¿Debe el ayuntamiento ampliar los horarios de metro?</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Decide</a>
-      </div>
-    </div>
-    
-    <div class="small-12 medium-4 column">
-      <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Ampliación de los carriles bici en el centro de la ciudad</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Decide</a>
-      </div>
+      <h3><%= t("welcome.proposals.title") %></h3>
+      <%= link_to t("welcome.proposals.see_all"), proposals_path, class: "section-link" %>
     </div>
 
-    <div class="small-12 medium-4 column">
+    <% latest_proposals.each do |proposal| %>
+        <div class="small-12 medium-4 column">
       <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Nueva tarifa para los billetes de metro, autobús y tranvía</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Decide</a>
+        <h4><%= proposal.title %></h4>
+        <p><%= proposal.summary %></p>
+        <%= link_to t("welcome.proposals.button"), proposal, class: "button" %>
       </div>
     </div>
-    
+    <% end %>
+
     <hr class="dashed-sep">
   </section>
-  
+  <% end %>
+
   <section class="row expanded small-collapse banner-section">
     <div class="small-12 medium-6 column">
       <div class="banner">
         <div class="banner-content">
-          <h3>¿En qué consiste Decide Burjassot?</h3>
-          <p>Decide Burjassot es una plataforma abierta a los ciudadanos donde se debaten y se toman decisiones importantes para el municipio.</p>
-          <a a href="/more_information" class="button negative">Más información</a>
+          <h3><%= t("welcome.more_info_banner_headline", place_name: Setting['place_name']) %></h3>
+          <p><%= t("welcome.more_info_banner_text") %></p>
+          <%= link_to t("welcome.more_info_banner_link"), "/more-information", class: "button negative"%>
         </div>
       </div>
     </div>
@@ -133,77 +119,49 @@
       <div class="banner-bg"></div>
     </div>
 
-    <hr class="dashed-sep">
   </section>
-  
-  <section class="row last-debates margin">    
+
+  <% latest_debates = Debate.sort_by_created_at.limit(3) %>
+  <% if feature?(:debates) && latest_debates.any? %>
+  <section class="row last-proposals margin">
     <div class="small-12 column section-headline">
-      <h3>Últimos debates</h3>
-      <a class="section-link" href="/debates">ver todos</a>
-    </div>
-    
-    <div class="small-12 medium-4 column">
-      <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Aumentar el número de guarderías municipales en la ciudad</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Comenta</a>
-      </div>
-    </div>
-    
-    <div class="small-12 medium-4 column">
-      <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Más áreas verdes cerca de los colegios y universidades</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Comenta</a>
-      </div>
+      <h3><%= t("welcome.debates.title") %></h3>
+      <%= link_to t("welcome.debates.see_all"), proposals_path, class: "section-link" %>
     </div>
 
-    <div class="small-12 medium-4 column">
+    <% latest_debates.each do |debate| %>
+        <div class="small-12 medium-4 column">
       <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Mejora de las infraestructuras de transporte, 2017-2020</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Comenta</a>
+        <h4><%= debate.title %></h4>
+        <p><%= truncate strip_tags(debate.description), length: 150 %></p>
+        <%= link_to t("welcome.debates.button"), debate, class: "button" %>
       </div>
     </div>
-    
+    <% end %>
+
     <hr class="dashed-sep">
   </section>
-  
-  <section class="row last-proposal-ballots margin">
+  <% end %>
+
+  <% latest_proposal_ballots = Proposal.successfull.sort_by_created_at.limit(3) %>
+  <% if feature?(:proposals) && latest_proposal_ballots.any? %>
+  <section class="row last-proposals margin">
     <div class="small-12 column section-headline">
-      <h3>Últimas votaciones</h3>
-      <a class="section-link" href="/proposal_ballots">ver todas</a>
-    </div>
-    
-    <div class="small-12 medium-4 column">
-      <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>¿Debe el ayuntamiento ampliar los horarios de metro?</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Vota</a>
-      </div>
-    </div>
-    
-    <div class="small-12 medium-4 column">
-      <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Ampliación de los carriles bici en el centro de la ciudad</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Vota</a>
-      </div>
+      <h3><%= t("welcome.proposal_ballots.title") %></h3>
+      <%= link_to t("welcome.proposal_ballots.see_all"), proposal_ballots_path, class: "section-link" %>
     </div>
 
-    <div class="small-12 medium-4 column">
+    <% latest_proposal_ballots.each do |proposal_ballot| %>
+        <div class="small-12 medium-4 column">
       <div class="link-card">
-        <div class="deadline"><span class="icon-calendar" aria-hidden="true"></span> Vota hasta el 23 de enero</div>
-        <h4>Nueva tarifa para los billetes de metro, autobús y tranvía</h4>
-        <p>L’Àrea de Projectes Europeus de la Diputació de València ultima un pla per a la creació d’una planta de biomassa en la zona de la Font de la Figuera. El responsable de l’Àrea, Bartolomé Nofuentes…</p>
-        <a href="#" class="button">Vota</a>
+        <h4><%= proposal_ballot.title %></h4>
+        <p><%= proposal_ballot.summary %></p>
+        <%= link_to t("welcome.proposal_ballots.button"), proposal, class: "button" %>
       </div>
     </div>
+    <% end %>
+
   </section>
-  
+  <% end %>
+
 </main>

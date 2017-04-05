@@ -16,7 +16,7 @@
         <div class="top-bar-title">
           <%= link_to root_path, class: "hide-for-small-only", accesskey: "/" do %>
             <%= image_tag('logo_header.png', class: 'main-logo hide-for-small-only', size: '100x100', alt: t("layouts.header.logo")) %>
-            <span>Decide Burjassot</span>
+            <span><%= t("layouts.header.title", place_name: Setting['place_name']) %></span>
           <% end %>
         </div>
 
@@ -52,10 +52,10 @@
       <div class="header-banner-bg">
         <div class="small-12 medium-6 small-centered column padding">
           <div class="banner-text">
-            <h1>Crea tu propuesta</h1>
-            <p>Las propuestas son iniciativas para mejorar la ciudad. Cuando consiguen apoyos son estudiadas por el ayuntamiento.</p>
+            <h1><%= t("layouts.header.proposals_banner.title") %></h1>
+            <p><%= t("layouts.header.proposals_banner.text") %></p>
           </div>
-          <a class="button negative" href="/debates/new">Propón</a>
+          <%= link_to t("layouts.header.proposals_banner.button"), new_proposal_path, class: "button negative" %>
         </div>
       </div>
     </div>

@@ -1,0 +1,36 @@
+---
+es:
+  layouts:
+    header:
+      title: Decide %{place_name}
+      proposals_banner:
+        title: Crea tu propuesta
+        text: Las propuestas son iniciativas para mejorar la ciudad. Cuando consiguen apoyos son estudiadas por el ayuntamiento.
+        button: Propón
+    footer:
+      offered_by: Ofrecido por la
+      open_source_url: https://github.com/GO-DIVAL/consul-dival
+
+  welcome:
+    teaser_headline: Propón, debate, decide.
+    teaser_description: Bienvenido/a a la plataforma de participación ciudadana del %{org_name}
+    proposal_teaser_headline: Haz tu propuesta
+    proposal_teaser_description: En esta plataforma puedes proponer acciones concretas para mejorar tu municipio
+    vote_teaser_headline: Vota
+    vote_teaser_line_1: Involúcrate y debate
+    vote_teaser_line_2: Participa en los procesos municipales
+    more_info_banner_headline: ¿En qué consiste Decide %{place_name}?
+    more_info_banner_text: Decide Burjassot es una plataforma abierta a los ciudadanos donde se debaten y se toman decisiones importantes para el municipio.
+    more_info_banner_link: Más información
+    proposals:
+      button: Decide
+      see_all: ver todas
+      title: Últimas propuestas
+    debates:
+      button: Comenta
+      see_all: ver todos
+      title: Últimos debates
+    proposal_ballots:
+      button: Vota
+      see_all: ver todas
+      title: Últimas votaciones
