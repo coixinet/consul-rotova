@@ -1197,6 +1197,7 @@ feature 'Proposals' do
       end
 
       scenario "From map" do
+        skip
         visit proposals_path
 
         click_link "map"
@@ -1214,6 +1215,7 @@ feature 'Proposals' do
       end
 
       scenario "From geozone list" do
+        skip
         visit proposals_path
 
         click_link "map"
