@@ -173,7 +173,6 @@ va:
       copyright: Ajuntament de Castelló de la Plana, %{year}
       description: "Aquest portal és una adaptació de la plataforma de %{open_source} %{consul} desenvolupada per l'Ajuntament de Madrid i adaptada per l'Ajuntament de Castelló de la Plana."
       faq: açí
-      more_info: Més informació
       open_data_text: "Totes les dades de l'Ajuntament són teues."
       open_data_title: Dades Obertes.
       open_source: programari lliure
@@ -184,8 +183,6 @@ va:
       transparency_text: Obtén qualsevol informació sobre la ciutat.
       transparency_title: Transparència
       transparency_url: https://www.castello.es/archivos/802/TRP/trp30/pages/index.php?src=DCD
-      pla_de_govern_title: Pla de Govern
-      pla_de_govern_text: Pla de Govern Obert
     header:
       administration: Administrar
       available_locales: Idiomes disponibles
@@ -200,7 +197,6 @@ va:
       management: Gestió
       moderation: Moderar
       valuation: Avaluació
-      more_information: Més informació
       my_account_link: El meu compte
       my_activity_link: La meua activitat
       notifications: Notificacions
@@ -211,7 +207,6 @@ va:
       open: obert
       open_city_slogan_html: "Existeixen ciutats governades directament pels seus habitants, que <strong>debaten</strong> sobre temes que els preocupen, <strong>proposen</strong> idees per a millorar les seues vides i <strong>decideixen </strong> entre totes i tots les que es duen a terme."
       open_city_title: "Participa i decideix sobre la teua ciutat!"
-      open_date: A partir del 15 de febrer
       open_gov: Govern %{open}
       proposals: Propostes
       proposal_ballot: Votacions
@@ -628,8 +623,6 @@ va:
       question: "Tens ja un compte en %{org_name}?"
       title: Verificació de compte
     welcome:
-      terms_censed: Per a poder participar en el proces de pressupostos participatius ha de ser major de 16 anys i ha d'estar empadronat en la ciutat de Castelló de la Plana
-      verify_account: Per favor, fes click sobre el botó "Verificar el meu compte" per a realitzar aquesta comprovació.
       go_to_index: "Ara no, veure propostes"
       title: "Comença a participar"
       user_permission_debates: Participar en debats

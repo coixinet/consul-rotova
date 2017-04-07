@@ -48,7 +48,6 @@ va:
       flagged_debates: Debats
       proposals: Propostes
       users: Bloquejar usuaris
-      budget_investments: Propostes d'Inversió
     proposals:
       index:
         block_authors: Bloquejar autors
@@ -68,30 +67,6 @@ va:
           created_at: Més recents
           flags: Més denunciades
         title: Propostes
-    investments:
-      index:
-        unfeasible: Marcar com inviable
-        moderation_text_label: Motiu
-        title: Moderació de Propostes d'Inversió
-        block_authors: Bloquejar autors
-        confirm: "¿Estàs segur?"
-        filter: Filtre
-        filters:
-          all: Totes
-          unfeasible: Inviables
-          pending_flag_review: Pendents de revisió
-          with_ignored_flag: Marcades com revisades
-          hidden: Ocultes
-        headers:
-          moderate: Moderar
-          proposal: Proposta d'Inversió
-        hide_investments: Ocultar Propostes d'Inversió
-        ignore_flags: Marcar como revisades
-        order: Ordenar per
-        orders:
-          created_at: Més recents
-          flags: Més denunciades
-        title: Propostes d'Inversió
     users:
       index:
         hidden: Bloquejat
