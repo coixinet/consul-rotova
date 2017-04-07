@@ -1,9 +1,9 @@
 # i18n-tasks finds and manages missing and unused translations: https://github.com/glebm/i18n-tasks
 
 # The "main" locale.
-base_locale: en
+base_locale: es
 ## All available locales are inferred from the data by default. Alternatively, specify them explicitly:
-locales: [en, es]
+locales: [en, es, va]
 ## Reporting locale, default: en. Available: en, ru.
 # internal_locale: en
 
@@ -33,6 +33,7 @@ data:
     - config/locales/responders.%{locale}.yml
     - config/locales/kaminari.%{locale}.yml
     - config/locales/budgets.%{locale}.yml
+    - config/locales/custom/custom.%{locale}.yml
 
   # Locale files to write new keys to, based on a list of key pattern => file rules. Matched from top to bottom:
   # `i18n-tasks normalize -p` will force move the keys according to these rules
