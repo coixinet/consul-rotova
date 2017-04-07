@@ -67,9 +67,9 @@ Setting["meta_keywords"] = nil
 # Feature flags
 Setting['feature.debates'] = true
 Setting['feature.spending_proposals'] = nil
-Setting['feature.twitter_login'] = true
-Setting['feature.facebook_login'] = true
-Setting['feature.google_login'] = true
+Setting['feature.twitter_login'] = false
+Setting['feature.facebook_login'] = false
+Setting['feature.google_login'] = false
 Setting['feature.public_stats'] = true
 Setting['feature.budgets'] = true
 Setting['feature.signature_sheets'] = true
