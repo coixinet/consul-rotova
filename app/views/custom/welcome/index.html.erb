@@ -110,7 +110,7 @@
       <div class="banner">
         <div class="banner-content">
           <h3><%= t("welcome.more_info_banner_headline", place_name: Setting['place_name']) %></h3>
-          <p><%= t("welcome.more_info_banner_text") %></p>
+          <p><%= t("welcome.more_info_banner_text", place_name: Setting['place_name']) %></p>
           <%= link_to t("welcome.more_info_banner_link"), "/more-information", class: "button negative"%>
         </div>
       </div>
