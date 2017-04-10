@@ -49,6 +49,7 @@ Setting["twitter_handle"] = nil
 Setting["twitter_hashtag"] = nil
 Setting["facebook_handle"] = nil
 Setting["youtube_handle"] = nil
+Setting["telegram_handle"] = nil
 Setting["blog_url"] = nil
 
 # Public-facing URL of the app.
@@ -67,6 +68,7 @@ Setting["meta_keywords"] = nil
 # Feature flags
 Setting['feature.debates'] = true
 Setting['feature.spending_proposals'] = nil
+Setting['feature.polls'] = true
 Setting['feature.twitter_login'] = false
 Setting['feature.facebook_login'] = false
 Setting['feature.google_login'] = false

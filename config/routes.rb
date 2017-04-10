@@ -61,8 +61,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :proposal_ballots, only: [:index]
-
   resources :comments, only: [:create, :show], shallow: true do
     member do
       post :vote
@@ -93,6 +91,12 @@ Rails.application.routes.draw do
 
   resources :annotations do
     get :search, on: :collection
+  end
+
+  resources :polls, only: [:show, :index] do
+    resources :questions, only: [:show], controller: 'polls/questions', shallow: true do
+      post :answer, on: :member
+    end
   end
 
   resources :users, only: [:show] do
@@ -202,6 +206,33 @@ Rails.application.routes.draw do
       get :search, on: :collection
     end
 
+    scope module: :poll do
+      resources :polls do
+        get :search_questions, on: :member
+        patch :add_question, on: :member
+        patch :remove_question, on: :member
+
+        resources :booth_assignments, only: [:index, :show, :create, :destroy] do
+          get :search_booths, on: :collection
+        end
+
+        resources :officer_assignments, only: [:index, :create, :destroy] do
+          get :search_officers, on: :collection
+          get :by_officer, on: :collection
+        end
+
+        resources :recounts, only: :index
+        resources :results, only: :index
+      end
+
+      resources :officers do
+        get :search, on: :collection
+      end
+
+      resources :booths
+      resources :questions
+    end
+
     resources :verifications, controller: :verifications, only: :index do
       get :search, on: :collection
     end
@@ -305,6 +336,19 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :officing do
+    resources :polls, only: [:index] do
+      get :final, on: :collection
+
+      resources :recounts, only: [:new, :create]
+      resources :final_recounts, only: [:new, :create]
+      resources :results, only: [:new, :create, :index]
+    end
+    resource :residence, controller: "residence", only: [:new, :create]
+    resources :voters, only: [:new, :create]
+    root to: "dashboard#index"
+  end
+
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
@@ -315,8 +359,6 @@ Rails.application.routes.draw do
   get 'more-information',                     to: 'pages#show', id: 'more_info/index',                as: 'more_info'
   get 'more-information/how-to-use',          to: 'pages#show', id: 'more_info/how_to_use/index',     as: 'how_to_use'
   get 'more-information/faq',                 to: 'pages#show', id: 'more_info/faq/index',            as: 'faq'
-  get 'more-information/proposals',           to: 'pages#show', id: 'more_info/proposals/index',      as: 'more_info_proposals'
-  get 'more-information/budgets',             to: 'pages#show', id: 'more_info/budgets/index',        as: 'more_info_budgets'
   get 'more-information/participation/facts', to: 'pages#show', id: 'more_info/participation/facts',  as: 'participation_facts'
   get 'more-information/participation/world', to: 'pages#show', id: 'more_info/participation/world',  as: 'participation_world'
 
