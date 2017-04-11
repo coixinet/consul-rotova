@@ -143,7 +143,7 @@
   </section>
   <% end %>
 
-  <% latest_proposal_ballots = Proposal.successfull.sort_by_created_at.limit(3) %>
+  <% latest_proposal_ballots = Proposal.successful.sort_by_created_at.limit(3) %>
   <% if feature?(:proposals) && latest_proposal_ballots.any? %>
   <section class="row last-proposals margin">
     <div class="small-12 column section-headline">
