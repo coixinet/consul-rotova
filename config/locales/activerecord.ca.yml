@@ -53,6 +53,23 @@ ca:
         document_numbers: Nombres de documents
         signable_id: ID Proposta ciutadana/Proposada inversió
         signable_type: Tipus de fulla de signatures
+      site_customization/content_block:
+        body: contingut
+        locale: idioma
+        name: nom
+      site_customization/image:
+        image: imatge
+        name: nom
+      site_customization/page:
+        content: contingut
+        created_at: creada
+        more_info_flag: Mostra a la pàgina de més informació
+        print_content_flag: Botó d'imprimir contingut
+        slug: slug
+        status: estat
+        subtitle: Subtítol
+        title: Títol
+        updated_at: última actualització
       spending_proposal:
         administrator_id: Administrador
         association_name: Nom de l'associació
@@ -102,6 +119,15 @@ ca:
             document_number:
               already_voted: Ja ha votat aquesta proposta
               not_in_census: No verificat per Padró
+        site_customization/image:
+          attributes:
+            image:
+              image_height: Ha de tenir %{required_height}px d'alt
+              image_width: Ha de tenir %{required_width}px d'ample
+        site_customization/page:
+          attributes:
+            slug:
+              slug_format: ha de ser lletres, números, _ i -
         user:
           attributes:
             email:
@@ -140,6 +166,15 @@ ca:
       proposal:
         one: Proposta ciutadana
         other: Propostes ciutadanes
+      site_customization/content_block:
+        one: bloc
+        other: blocs
+      site_customization/image:
+        one: imatge
+        other: imatges
+      site_customization/page:
+        one: pàgina
+        other: pàgines
       spending_proposal:
         one: Proposta d'inversió
         other: Propostes d'inversió

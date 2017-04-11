@@ -137,7 +137,7 @@ ca:
         undefined: sense definir
     budgets:
       create:
-        notice: "Nova campanya de pressupostos participatius creada amb èxit!"
+        notice: Nova campanya de pressupostos participatius creada amb èxit!
       edit:
         title: Edita campanya de pressupostos participatius
       form:
@@ -256,6 +256,10 @@ ca:
       proposals_topics: Temes de propostes
       settings: Configuració global
       signature_sheets: Fulls de signatures
+      site_customization:
+        content_blocks: personalitzar blocs
+        images: personalitzar imatges
+        pages: personalitzar pàgines
       spending_proposals: Propostes d'inversió
       stats: Estadístiques
       title_banners: Banners
@@ -264,6 +268,7 @@ ca:
       title_moderated_content: Contingut moderat
       title_polls: Votacions
       title_profiles: Perfils
+      title_site_customization: personalitzar lloc
       valuators: Valuadors
     moderators:
       index:
@@ -521,6 +526,80 @@ ca:
         verified:
           one: Hi ha %{count} signatura vàlida
           other: Hi ha %{count} signatures vàlides
+    site_customization:
+      content_blocks:
+        content_block:
+          body: contingut
+          name: nom
+        create:
+          error: No s'ha pogut crear el bloc
+          notice: Bloc creat correctament
+        destroy:
+          notice: Bloc esborrat correctament
+        edit:
+          back: tornar
+          title: Edita bloc
+        errors:
+          form:
+            error: error
+        form:
+          content_block_about: Pots crear blocs d'HTML que s'incrustaran a la capçalera o el peu de la teva Cònsol.
+          content_block_footer_html: Els <strong>blocs del peu (footer)</strong> poden tenir qualsevol format i es poden utilitzar per guardar empremtes Javascript, contingut CSS o contingut HTML personalitzat.
+          content_block_top_links_html: 'Els <strong>blocs de la capçalera (top_links)</strong> són blocs d''enllaços que s''han de crear amb aquest format:'
+          content_blocks_information: Informació sobre els blocs de text
+        index:
+          create: Crear nou bloc
+          delete: esborrar
+          title: blocs
+        new:
+          back: tornar
+          title: Crear nou bloc
+        update:
+          error: No s'ha pogut actualitzar el bloc
+          notice: Bloc actualitzat correctament
+      images:
+        destroy:
+          error: No s'ha pogut esborrar la imatge
+          notice: Imatge esborrada correctament
+        index:
+          delete: esborrar
+          title: personalitzar imatges
+          update: actualitzar
+        update:
+          error: No s'ha pogut actualitzar la imatge
+          notice: Imatge actualitzada correctament
+      pages:
+        create:
+          error: No s'ha pogut crear la pàgina
+          notice: Pàgina creada correctament
+        destroy:
+          notice: Pàgina eliminada correctament
+        edit:
+          back: tornar
+          title: Edita %{page_title}
+        errors:
+          form:
+            error: error
+        form:
+          options: opcions
+        index:
+          create: Crear nova pàgina
+          delete: esborrar
+          see_page: veure pàgina
+          title: pàgines
+        new:
+          back: back
+          title: pàgina nova
+        page:
+          created_at: creada
+          status: estat
+          status_draft: Esborrany
+          status_published: publicada
+          title: Títol
+          updated_at: darrera actualització
+        update:
+          error: No s'ha pogut actualitzar la pàgina
+          notice: Pàgina actualitzada correctament
     spending_proposals:
       edit:
         assigned_valuators: Avaluadors
