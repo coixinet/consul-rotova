@@ -257,9 +257,9 @@ ca:
       settings: Configuració global
       signature_sheets: Fulls de signatures
       site_customization:
-        content_blocks: personalitzar blocs
-        images: personalitzar imatges
-        pages: personalitzar pàgines
+        content_blocks: Personalitzar blocs
+        images: Personalitzar imatges
+        pages: Personalitzar pàgines
       spending_proposals: Propostes d'inversió
       stats: Estadístiques
       title_banners: Banners
@@ -268,7 +268,7 @@ ca:
       title_moderated_content: Contingut moderat
       title_polls: Votacions
       title_profiles: Perfils
-      title_site_customization: personalitzar lloc
+      title_site_customization: Personalitzar lloc
       valuators: Valuadors
     moderators:
       index:
@@ -502,22 +502,22 @@ ca:
         button: Cercar
         placeholder: Cercar usuari per nom o e-mail
     signature_sheets:
-      author: autor
+      author: Autor
       created_at: Data de creació
       index:
         new: Nou full de signatures
         title: Fulls de signatures
-      name: nom
+      name: Nom
       new:
         document_numbers_note: Introdueix els números separats per comes (,)
         submit: Crear full de signatures
         title: Nou full de signatures
       no_signature_sheets: No existeixen fulls de signatures
       show:
-        author: autor
-        created_at: creat
+        author: Autor
+        created_at: Creat
         document_count: 'Nombre de documents:'
-        documents: documents
+        documents: Documents
         loading: Encara hi ha firmes que s'estan verificant pel Padró, si us plau refresca la pàgina en uns instants
         unverified:
           one: Hi ha %{count} signatura invàlida
@@ -529,8 +529,8 @@ ca:
     site_customization:
       content_blocks:
         content_block:
-          body: contingut
-          name: nom
+          body: Contingut
+          name: Nom
         create:
           error: No s'ha pogut crear el bloc
           notice: Bloc creat correctament
@@ -541,7 +541,7 @@ ca:
           title: Edita bloc
         errors:
           form:
-            error: error
+            error: Error
         form:
           content_block_about: Pots crear blocs d'HTML que s'incrustaran a la capçalera o el peu de la teva Cònsol.
           content_block_footer_html: Els <strong>blocs del peu (footer)</strong> poden tenir qualsevol format i es poden utilitzar per guardar empremtes Javascript, contingut CSS o contingut HTML personalitzat.
@@ -549,10 +549,10 @@ ca:
           content_blocks_information: Informació sobre els blocs de text
         index:
           create: Crear nou bloc
-          delete: esborrar
-          title: blocs
+          delete: Esborrar
+          title: Blocs
         new:
-          back: tornar
+          back: Tornar
           title: Crear nou bloc
         update:
           error: No s'ha pogut actualitzar el bloc
@@ -562,9 +562,9 @@ ca:
           error: No s'ha pogut esborrar la imatge
           notice: Imatge esborrada correctament
         index:
-          delete: esborrar
-          title: personalitzar imatges
-          update: actualitzar
+          delete: Esborrar
+          title: Personalitzar imatges
+          update: Actualitzar
         update:
           error: No s'ha pogut actualitzar la imatge
           notice: Imatge actualitzada correctament
@@ -579,42 +579,42 @@ ca:
           title: Edita %{page_title}
         errors:
           form:
-            error: error
+            error: Error
         form:
-          options: opcions
+          options: Opcions
         index:
           create: Crear nova pàgina
-          delete: esborrar
-          see_page: veure pàgina
-          title: pàgines
+          delete: Esborrar
+          see_page: Veure pàgina
+          title: Pàgines
         new:
           back: back
-          title: pàgina nova
+          title: Nova pàgina
         page:
-          created_at: creada
-          status: estat
+          created_at: Creada
+          status: Estat
           status_draft: Esborrany
-          status_published: publicada
+          status_published: Publicada
           title: Títol
-          updated_at: darrera actualització
+          updated_at: Última actualització
         update:
           error: No s'ha pogut actualitzar la pàgina
           notice: Pàgina actualitzada correctament
     spending_proposals:
       edit:
         assigned_valuators: Avaluadors
-        classification: classificació
-        submit_button: actualitzar
-        tags: etiquetes
+        classification: Classificació
+        submit_button: Actualitzar
+        tags: Etiquetes
         tags_placeholder: Escriu les etiquetes que vulguis separades per comes (,)
-        undefined: sense definir
+        undefined: Sense definir
       index:
         administrator_filter_all: Tots els administradors
         assigned_admin: Administrador assignat
         feasibility:
           feasible: Viable (%{price})
-          not_feasible: inviable
-          undefined: sense definir
+          not_feasible: Inviable
+          undefined: Sense definir
         filters:
           all: Totes
           managed: Gestionant

@@ -61,12 +61,12 @@ ca:
         image: imatge
         name: nom
       site_customization/page:
-        content: contingut
-        created_at: creada
+        content: Contingut
+        created_at: Creada
         more_info_flag: Mostra a la pàgina de més informació
         print_content_flag: Botó d'imprimir contingut
-        slug: slug
-        status: estat
+        slug: URL
+        status: Estat
         subtitle: Subtítol
         title: Títol
         updated_at: última actualització
