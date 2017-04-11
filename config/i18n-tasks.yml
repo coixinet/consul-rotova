@@ -3,7 +3,7 @@
 # The "main" locale.
 base_locale: es
 ## All available locales are inferred from the data by default. Alternatively, specify them explicitly:
-locales: [en, es, va]
+locales: [en, es, ca]
 ## Reporting locale, default: en. Available: en, ru.
 # internal_locale: en
 
@@ -90,9 +90,9 @@ search:
   # scanner: I18n::Tasks::Scanners::PatternWithScopeScanner
 
 ## Google Translate
-# translation:
-#   # Get an API key and set billing info at https://code.google.com/apis/console to use Google Translate
-#   api_key: "AbC-dEf5"
+translation:
+  # Get an API key and set billing info at https://code.google.com/apis/console to use Google Translate
+  api_key: "AIzaSyAy5J5xLaFVke76589iwdpcvTw6431uwds"
 
 ## Do not consider these keys missing:
 # ignore_missing:

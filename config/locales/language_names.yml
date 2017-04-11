@@ -1,5 +1,5 @@
 ---
-va:
+ca:
   i18n:
     language:
       name: Valencià
@@ -7,3 +7,8 @@ es:
   i18n:
     language:
       name: Español
+en:
+  i18n:
+    language:
+      name: English
+

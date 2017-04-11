@@ -445,6 +445,9 @@ es:
     banner:
       featured_title: "#PróximaVotación"
       info: "Nuevas propuestas ciudadanas han llegado a la fase de votación."
+  proposal_ballots:
+    button: Quiero decidir
+    title: Votaciones
   proposal_notifications:
     new:
       title: "Enviar mensaje"

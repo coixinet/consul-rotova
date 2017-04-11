@@ -1,6 +1,5 @@
 ---
-# Translations to :va locale based on the work done in the Castelló fork https://github.com/AjuntamentdeCastello/consul
-va:
+ca:
   helpers:
     page_entries_info:
       entry:
@@ -16,9 +15,9 @@ va:
           zero: No s'han trobat %{entry_name}
   views:
     pagination:
+      current: Estàs en la pàgina
       first: Primera
       last: Última
       next: Seguent
       previous: Anterior
       truncate: "&hellip;"
-      current: Estàs en la pàgina

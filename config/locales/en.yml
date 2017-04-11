@@ -445,6 +445,9 @@ en:
     banner:
       featured_title: "#NextVoting"
       info: "New proposals that have reached the voting phase."
+  proposal_ballots:
+    button: I want to decide
+    title: Voting
   proposal_notifications:
     new:
       title: "Send message"

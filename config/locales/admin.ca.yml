@@ -1,9 +1,12 @@
 ---
-va:
+ca:
   admin:
     actions:
+      actions: Accions
+      configure: Configurar
       confirm: Estàs segur?
       confirm_hide: confirmar
+      edit: Editar
       hide: Amaga
       hide_author: Bloquejar l'autor
       mark_featured: Destacar
@@ -45,7 +48,7 @@ va:
         form:
           error:
             one: error va impedir guardar el banner
-            other: errors van impedir guardar el pancarta.
+            other: errors van impedir guardar el banner.
       index:
         create: Crear un banner
         delete: eliminar banner
@@ -58,6 +61,23 @@ va:
       new:
         back: Tornar
         creating: crear banner
+    booths:
+      edit:
+        submit_button: Actualitzar bústia
+        title: Editar bústia
+      index:
+        add_booth: Afegir bústia
+        location: Ubicació
+        name: Nombre
+        no_booths: No hi ha bústies
+        title: Llista de bústies
+      new:
+        location: Ubicació
+        name: Nom
+        submit_button: Crear bústia
+        title: Nova bústia
+      show:
+        location: Ubicació
     budget_investments:
       edit:
         assigned_valuators: avaluadors
@@ -117,7 +137,7 @@ va:
         undefined: sense definir
     budgets:
       create:
-        notice: "'Nova campanya de pressupostos participatius creada amb èxit!"
+        notice: "Nova campanya de pressupostos participatius creada amb èxit!"
       edit:
         title: Edita campanya de pressupostos participatius
       form:
@@ -203,6 +223,8 @@ va:
       new:
         back: Tornar
         creating: crear districte
+    header:
+      title: Administración
     managers:
       index:
         title: Gestors
@@ -218,21 +240,30 @@ va:
       admin: Menú d'administració
       banner: Gestionar banners
       budgets: Pressupostos participatius
-      debate_topics: Temes de debat
       geozones: Gestionar districtes
       hidden_comments: Comentaris ocults
       hidden_debates: Debats ocults
       hidden_proposals: Propostes ocultes
       hidden_users: Usuaris bloquejats
-      incomplete_verifications: Verificacions incompletes
       managers: Gestors
       moderators: Moderadors
       officials: Càrrecs públics
       organizations: Organitzacions
+      poll_booths: Ubicació de bústia
+      poll_officers: Presidents de taula
+      poll_questions: Preguntes ciutadanas
+      polls: Votacions
+      proposals_topics: Temes de propostes
       settings: Configuració global
       signature_sheets: Fulls de signatures
       spending_proposals: Propostes d'inversió
       stats: Estadístiques
+      title_banners: Banners
+      title_budgets: Pressupostos
+      title_categories: Categories
+      title_moderated_content: Contingut moderat
+      title_polls: Votacions
+      title_profiles: Perfils
       valuators: Valuadors
     moderators:
       index:
@@ -283,6 +314,104 @@ va:
         verify: verificar
       search:
         title: Cercar Organitzacions
+    poll_booth_assignments:
+      flash:
+        create: Bústia assignada
+        destroy: Bústia desasignada
+        error_create: Se ha produit un error al intentar assignar la bústia
+        error_destroy: Se ha produit un error al desasignar la bústia
+      index:
+        add_booth: Assignar bústia
+        booths_title: Llistat de bústies asignades
+        no_booths: No hi ha bústies asignades a esta votació.
+        remove_booth: Dessasignar bústia
+        table_assignment: Asignació
+        table_location: Ubicació
+        table_name: Nome
+      show:
+        count_by_officer: Recont diari (president de taula)
+        count_by_system: Vots (automático)
+        count_final: Recont final (president de taula)
+        date: Fecha
+        location: Ubicació
+        no_officers: No hi ha presidents de taula para esta bústia
+        no_recounts: No hi ha recomptes diaris d'aquesta bústia
+        officers: Presidents de taula
+        officers_list: Lista de presidents de taula asignats a esta bústia
+        recounts: Recomptes
+        recounts_list: Llista de recomptes d'aquesta bústia
+    poll_officer_assignments:
+      by_officer:
+        add_assignment: Afegir torn
+        assignment: Asignació
+        assignments: Torns com president de taula en aquesta votació
+        booth: bústia
+        date: Data
+        final_recount: Recompte final (president de taula)
+        final_recounts: Recomptes finales
+        new_assignment: Nou torn
+        no_assignments: No tiene torns como president de taula en esta votación.
+        recount: Recompte diari (president de taula)
+        recounts: Recomptes diaris
+        remove_assignment: Eliminar torn
+        select_booth: Seleccionar bústia
+        select_date: Seleccionar día
+      flash:
+        create: Afegit torn de president de taula
+        destroy: Eliminado torn de president de taula
+        error_create: Se ha producido un error al intentar crear el torn
+        error_destroy: Se ha producido un error al eliminar el torn
+      index:
+        add_officer_assignments: Afegit torns como president de taula
+        edit_officer_assignments: Editar torns
+        no_officers: No hi ha presidents de taula asignados a esta votación.
+        officers_title: Listado de presidents de taula asignados
+        table_email: Email
+        table_name: Nombre
+    poll_officers:
+      index:
+        title: Presidents de taula
+      officer:
+        add: Añadir como President de taula
+        delete: Eliminar cargo
+        email: Email
+        entry_name: president de taula
+        name: Nombre
+      search:
+        email_placeholder: Buscar usuario por email
+        search: Buscar
+        user_not_found: Usuario no encontrado
+    polls:
+      edit:
+        submit_button: Actualizar votación
+        title: Editar votación
+      flash:
+        error_on_question_added: No se pudo asignar la pregunta
+        error_on_question_removed: No se pudo quitar la pregunta
+        question_added: Pregunta añadida a esta votación
+        question_removed: Pregunta eliminada de esta votación
+      index:
+        create: Crear votación
+        dates: Fechas
+        name: Nombre
+        no_polls: No hi ha ninguna votación.
+        title: Listado de votaciones
+      new:
+        submit_button: Crear votación
+        title: Nueva votación
+      show:
+        add_question: Incluir pregunta
+        booths_tab: bústies
+        no_questions: No hi ha preguntes asignadas a esta votación.
+        officers_tab: Presidents de taula
+        questions_tab: Preguntes
+        questions_title: Listat de preguntes assignades
+        recounts_tab: Recomptes
+        remove_question: Desasignar pregunta
+        results_tab: Resultats
+        table_assignment: Asignació
+        table_name: Nom
+        table_title: Títol
     proposals:
       index:
         filter: Filtre
@@ -291,6 +420,47 @@ va:
           with_confirmed_hide: Confirmades
           without_confirmed_hide: Pendents
         title: Propostes ocultes
+    questions:
+      edit:
+        title: Editar pregunta ciutadana
+      index:
+        create: Crear pregunta ciutadana
+        create_question: Crear pregunta en votació
+        filter_poll: Filtrar per votació
+        no_questions: No hi ha ninguna pregunta ciutadana.
+        questions_tab: Preguntes ciutadanes
+        select_poll: Seleccionar votació
+        successful_proposals_tab: Propostes que han superat el umbral
+        table_proposal: Proposta
+        table_question: Pregunta
+        title: Preguntes ciutadanes
+      new:
+        poll_label: Votació
+        title: Crear pregunta ciutadana
+        valid_answers_note: Escriu les respostes separades por comes (,)
+      show:
+        author: Autor
+        description: Descripció
+        preview: Veure en la web
+        proposal: Proposta ciutadana original
+        title: Títol
+        valid_answers: Respostes válidas
+    recounts:
+      index:
+        no_recounts: No hi ha res de lo que fer recompte
+        table_booth_name: bústia
+        table_final_recount: Recompte final (president de taula)
+        table_recounts: Recomptes diaris acumulats (president de taula)
+        table_system_count: Vots (automático)
+        title: Recomptes
+    results:
+      index:
+        no_results: No hi ha resultados
+        table_answer: Resposta
+        table_nulls: Papeletas nulas
+        table_votes: Votos
+        table_whites: Papeletas en blanco
+        title: Resultados
     settings:
       flash:
         updated: Valor actualitzat
@@ -306,9 +476,20 @@ va:
         title: Configuració global
         update_setting: Actualitzar
     shared:
+      booths_search:
+        button: Cercar
+        placeholder: Cercar bústia per nom
+      no_search_results: No s'an trobat resultats.
+      poll_officers_search:
+        button: Cercar
+        placeholder: Cercar presidents de taula
+      poll_questions_search:
+        button: Cercar
+        placeholder: Cercar preguntes
       proposal_search:
         button: Cercar
         placeholder: Cercar propostes per títol, codi, descripció o pregunta
+      search_results: Resultats de la cerca
       spending_proposal_search:
         button: Cercar
         placeholder: Cercar propostes per títol o descripció
@@ -407,6 +588,7 @@ va:
         total: total
       show:
         direct_messages: missatges directes
+        incomplete_verifications: Verificaciones incompletas
         proposal_notifications: Notificacions de propostes
         spending_proposals_title: Propostes d'inversió
         stats_title: Estadístiques

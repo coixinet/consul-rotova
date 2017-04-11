@@ -1,6 +1,6 @@
 ---
 # Translations to :va locale based on the work done in the Castelló fork https://github.com/AjuntamentdeCastello/consul
-va:
+ca:
   date:
     abbr_day_names:
     - Dg

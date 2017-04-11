@@ -1,0 +1,29 @@
+---
+ca:
+  flash:
+    actions:
+      create:
+        budget_investment: Proposta d'inversió creada correctament.
+        debate: Debat creat correctament.
+        direct_message: El teu missatge ha sigut enviat correctament.
+        notice: "%{resource_name} creat correctament."
+        poll: Votación creada correctamente.
+        poll_booth: Urna creada correctamente.
+        proposal: Proposta creada correctament.
+        proposal_notification: El teu message ha sigut enviat correctament.
+        signature_sheet: Fulla de signatures creada correctament
+        spending_proposal: Proposta d'inversió creada correctament. Pots accedir a ella des de %{activity}
+      destroy:
+        budget_investment: Proposta d'inversió eliminada.
+        error: No se pudo borrar
+        spending_proposal: Proposta d'inversió eliminada.
+      save_changes:
+        notice: Canvis guardats
+      update:
+        budget_investment: Proposta d'inversió actualitzada correctament
+        debate: Debat actualitzat correctament.
+        notice: "%{resource_name} actualitzat correctament."
+        poll: Votación actualizada correctamente.
+        poll_booth: Urna actualizada correctamente.
+        proposal: Proposta actualitzada correctament.
+        spending_proposal: Proposta d'inversió actualitzada correctament.

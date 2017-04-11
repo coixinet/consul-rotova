@@ -1,6 +1,5 @@
 ---
-# Translations to :va locale based on the work done in the Castelló fork https://github.com/AjuntamentdeCastello/consul
-va:
+ca:
   moderation:
     comments:
       index:
@@ -43,6 +42,8 @@ va:
           created_at: Més nous
           flags: Més denunciats
         title: Debats
+    header:
+      title: Moderación
     menu:
       flagged_comments: Comentaris
       flagged_debates: Debats
