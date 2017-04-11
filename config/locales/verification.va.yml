@@ -62,7 +62,7 @@ va:
         document_type_label: Tipus de document
         error_not_allowed_age: "No tens l'edat mínima per a participar"
         error_not_allowed_postal_code: "Per a verificar-te has d'estar empadronat"
-        error_verifying_census: "Segons les dades que consten en el Padró Municipal, vostè no consta com empadronat/da a Castelló de la Plana. Per a qualsevol incidència en la verificació del seu compte, pot contactar amb la Unitat d'Estadística-Gestió de Padró (Telèfon: 964 355 185; E-mail: padronhabitantes@castello.es)"
+        error_verifying_census: "Segons les dades que consten en el Padró Municipal, vostè no consta com empadronat/da. Per a qualsevol incidència en la verificació del seu compte, pot contactar amb la Unitat d'Estadística-Gestió de Padró"
         error_verifying_census_offices: "oficina d'Atenció al ciutadà"
         form_errors: 'van evitar verificar la teua residència'
         postal_code: Codi postal

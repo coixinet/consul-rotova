@@ -168,7 +168,7 @@ es:
     footer:
       accessibility: Accesibilidad
       conditions: Condiciones de uso
-      consul: aplicación Consul
+      consul: Consul
       consul_url: https://github.com/consul/consul
       contact_us: Para asistencia técnica entra en
       copyright: Consul, %{year}
@@ -571,6 +571,9 @@ es:
         budget_investments:
           one: 1 Proyecto de presupuestos participativos
           other: "%{count} Proyectos de presupuestos participativos"
+        votes:
+          one: "1 Aval"
+          other: "%{count} Avales"
       no_activity: Usuario sin actividad pública
       no_private_messages: "Este usuario no acepta mensajes privados."
       private_activity: Este usuario ha decidido mantener en privado su lista de actividades
@@ -604,6 +607,7 @@ es:
       unfeasible: No se pueden votar propuestas inviables.
       not_voting_allowed: El periodo de votación está cerrado.
       different_heading_assigned: Sólo puedes apoyar propuestas en un distrito
+      quota_exeeded: Has llegado al límite de avales
   welcome:
     debates:
       description: Encontrarnos, debatir y compartir lo que nos parece importante en nuestra ciudad.

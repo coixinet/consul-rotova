@@ -125,7 +125,7 @@ va:
       new:
         email_label: Email
         password_label: Contrasenya
-        remember_em: Recordar-me
+        remember_em: "Recordar-me"
         submit: Entrar
         title: Entrar
     shared:
