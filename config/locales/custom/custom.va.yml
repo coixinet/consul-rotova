@@ -1,0 +1,37 @@
+---
+va:
+  layouts:
+    footer:
+      more_info: Més informació
+      offered_by: Ofert per la
+      open_source_url: https://github.com/GO-DIVAL/consul-dival
+    header:
+      more_info: Més informació
+      proposals_banner:
+        button: proposa
+        text: Les propostes són iniciatives per millorar la ciutat. Quan aconsegueixen suports són estudiades per l'ajuntament.
+        title: Crea proposta
+      title: Decideix %{place_name}
+  welcome:
+    debates:
+      button: comenta
+      see_all: veure tots
+      title: Últims debats
+    more_info_banner_headline: En què consisteix Decideix %{place_name}?
+    more_info_banner_link: Més informació
+    more_info_banner_text: Decideix %{place_name} és una plataforma oberta als ciutadans on es debaten i es prenen decisions importants per al municipi.
+    proposal_ballots:
+      button: Vota
+      see_all: veure totes
+      title: últimes votacions
+    proposal_teaser_description: En aquesta plataforma pots proposar accions concretes per millorar el teu municipi
+    proposal_teaser_headline: Fes la teva proposta
+    proposals:
+      button: Decideix
+      see_all: veure totes
+      title: últimes propostes
+    teaser_description: Benvingut / da a la plataforma de participació ciutadana del %{org_name}
+    teaser_headline: Proposa, debat, decideix.
+    vote_teaser_headline: Vota
+    vote_teaser_line_1: Involucra't i debat
+    vote_teaser_line_2: Participa en els processos municipals

@@ -625,6 +625,9 @@ en:
         budget_investments:
           one: 1 Investment
           other: "%{count} Investments"
+        votes:
+          one: "1 Vote"
+          other: "%{count} Votes"
       no_activity: User has no public activity
       no_private_messages: "This user doesn't accept private messages."
       private_activity: This user decided to keep the activity list private
@@ -658,6 +661,7 @@ en:
       unfeasible: Unfeasible investment projects can not be supported
       not_voting_allowed: Voting phase is closed
       different_heading_assigned: You can only support proposals in one district
+      quota_exeeded: You have reached the limit of the quota
   welcome:
     debates:
       description: For meeting, discussing and sharing the things that matter to us in our city.
