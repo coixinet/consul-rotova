@@ -46,7 +46,8 @@ class Budget
     scope :not_unfeasible,              -> { where.not(feasibility: "unfeasible") }
     scope :undecided,                   -> { where(feasibility: "undecided") }
     scope :with_supports,               -> { where('cached_votes_up > 0') }
-    scope :selected,                    -> { where(selected: true) }
+    scope :selected,                    -> { feasible.where(selected: true) }
+    scope :unselected,                  -> { not_unfeasible.where(selected: false) }
     scope :last_week,                   -> { where("created_at >= ?", 7.days.ago)}
 
     scope :by_group,    -> (group_id)    { where(group_id: group_id) }
@@ -60,6 +61,7 @@ class Budget
     before_save :calculate_confidence_score
     before_validation :set_responsible_name
     before_validation :set_denormalized_ids
+    after_save :check_for_reclassification
 
     def self.filter_params(params)
       params.select{|x,_| %w{heading_id group_id administrator_id tag_name valuator_id}.include? x.to_s }
@@ -74,34 +76,6 @@ class Budget
       results = results.by_valuator(params[:valuator_id])           if params[:valuator_id].present?
       results = results.send(current_filter)                        if current_filter.present?
       results.includes(:heading, :group, :budget, administrator: :user, valuators: :user)
-    end
-
-    def self.limit_results(results, budget, max_per_heading, max_for_no_heading)
-      return results if max_per_heading <= 0 && max_for_no_heading <= 0
-
-      ids = []
-      if max_per_heading > 0
-        budget.headings.pluck(:id).each do |hid|
-          ids += Investment.where(heading_id: hid).order(confidence_score: :desc).limit(max_per_heading).pluck(:id)
-        end
-      end
-
-      if max_for_no_heading > 0
-        ids += Investment.no_heading.order(confidence_score: :desc).limit(max_for_no_heading).pluck(:id)
-      end
-
-      conditions = ["investments.id IN (?)"]
-      values = [ids]
-
-      if max_per_heading == 0
-        conditions << "investments.heading_id IS NOT ?"
-        values << nil
-      elsif max_for_no_heading == 0
-        conditions << "investments.heading_id IS ?"
-        values << nil
-      end
-
-      results.where(conditions.join(' OR '), *values)
     end
 
     def searchable_values
@@ -242,23 +216,50 @@ class Budget
     end
 
     def should_show_ballots?
-      budget.balloting?
+      budget.balloting? && selected?
+    end
+
+    def should_show_price?
+      feasible? &&
+      selected? &&
+      (budget.reviewing_ballots? || budget.finished?)
+    end
+
+    def should_show_price_info?
+      feasible? &&
+      price_explanation.present? &&
+      (budget.balloting? || budget.reviewing_ballots? || budget.finished?)
     end
 
     def formatted_price
       budget.formatted_amount(price)
     end
 
-    def self.apply_filters_and_search(budget, params)
+    def self.apply_filters_and_search(budget, params, current_filter=nil)
       investments = all
-      if budget.balloting?
-        investments = investments.selected
-      else
-        investments = params[:unfeasible].present? ? investments.unfeasible : investments.not_unfeasible
-      end
+      investments = investments.send(current_filter)            if current_filter.present?
       investments = investments.by_heading(params[:heading_id]) if params[:heading_id].present?
       investments = investments.search(params[:search])         if params[:search].present?
       investments
+    end
+
+    def check_for_reclassification
+      if reclassified?
+        log_reclassification
+        remove_reclassified_votes
+      end
+    end
+
+    def reclassified?
+      budget.balloting? && heading_id_changed?
+    end
+
+    def log_reclassification
+      update_column(:previous_heading_id, heading_id_was)
+    end
+
+    def remove_reclassified_votes
+      Budget::Ballot::Line.where(investment: self).destroy_all
     end
 
     private
@@ -267,5 +268,6 @@ class Budget
         self.group_id = self.heading.try(:group_id) if self.heading_id_changed?
         self.budget_id ||= self.heading.try(:group).try(:budget_id)
       end
+
   end
 end
