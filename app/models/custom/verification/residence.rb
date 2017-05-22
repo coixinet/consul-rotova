@@ -1,29 +1,26 @@
-
 require_dependency Rails.root.join('app', 'models', 'verification', 'residence').to_s
 
 class Verification::Residence
 
-  validate :postal_code_in_madrid
-  validate :residence_in_madrid
-
-  def postal_code_in_madrid
-    errors.add(:postal_code, I18n.t('verification.residence.new.error_not_allowed_postal_code')) unless valid_postal_code?
+  def geozone
   end
 
-  def residence_in_madrid
-    return if errors.any?
-
-    unless residency_valid?
-      errors.add(:residence_in_madrid, false)
-      store_failed_attempt
-      Lock.increase_tries(user)
-    end
+  def gender
+    user.gender
   end
 
   private
 
-    def valid_postal_code?
-      postal_code =~ /^280/
+    def call_census_api
+      @census_api_response = CensusApi.new.call(document_type, document_number, date_of_birth)
+      unless residency_valid?
+        errors.add(:residence, false)
+        store_failed_attempt
+        Lock.increase_tries(user)
+      end
     end
 
+    def residency_valid?
+      @census_api_response && @census_api_response.valid?
+    end
 end

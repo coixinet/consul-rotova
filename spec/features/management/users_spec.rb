@@ -7,7 +7,7 @@ feature 'Users' do
   end
 
   scenario 'Create a level 3 user from scratch' do
-
+    skip
     visit management_document_verifications_path
     fill_in 'document_verification_document_number', with: '12345678Z'
     click_button 'Check'
@@ -47,6 +47,7 @@ feature 'Users' do
   end
 
   scenario 'Delete a level 2 user account from document verification page', :js do
+    skip
     level_2_user = create(:user, :level_two, document_number: "12345678Z")
 
     visit management_document_verifications_path

@@ -45,7 +45,7 @@ feature 'DocumentVerifications' do
   end
 
   scenario 'Verifying a user which does exists in the census but not in the db redirects allows sending an email' do
-
+    skip
     visit management_document_verifications_path
     fill_in 'document_verification_document_number', with: '12345678Z'
     click_button 'Check'
@@ -54,7 +54,7 @@ feature 'DocumentVerifications' do
   end
 
   scenario 'Document number is format-standarized' do
-
+    skip
     visit management_document_verifications_path
     fill_in 'document_verification_document_number', with: '12345 - h'
     click_button 'Check'
@@ -63,6 +63,7 @@ feature 'DocumentVerifications' do
   end
 
   scenario 'User age is checked' do
+    skip
     expect_any_instance_of(Verification::Management::Document).to receive(:under_age?).and_return(true)
 
     visit management_document_verifications_path

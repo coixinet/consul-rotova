@@ -28,25 +28,26 @@ describe CensusApi do
   end
 
   describe '#call' do
-    let(:invalid_body) { {get_habita_datos_response: {get_habita_datos_return: {datos_habitante: {}}}} }
-    let(:valid_body){ {get_habita_datos_response: {get_habita_datos_return: {datos_habitante: {item: {fecha_nacimiento_string: "1-1-1980"}}}}} }
+    let(:invalid_body) { "False" }
+    let(:valid_body){ "True" }
+    let(:date_of_birth) { Date.new(1980,1,1).to_s(:db) }
 
     it "returns the response for the first valid variant" do
-      allow(api).to receive(:get_response_body).with(1, "00123456").and_return(invalid_body)
-      allow(api).to receive(:get_response_body).with(1, "123456").and_return(invalid_body)
-      expect(api).to receive(:get_response_body).with(1, "0123456").and_return(valid_body)
+      allow(api).to receive(:get_response_body).with(1, "00123456", date_of_birth).and_return(invalid_body)
+      allow(api).to receive(:get_response_body).with(1, "0123456", date_of_birth).and_return(invalid_body)
+      expect(api).to receive(:get_response_body).with(1, "123456", date_of_birth).and_return(valid_body)
 
-      response = api.call(1, "123456")
+      response = api.call(1, "123456", Date.new(1980,1,1))
 
       expect(response).to be_valid
       expect(response.date_of_birth).to eq(Date.new(1980,1,1))
     end
 
     it "returns the last failed response" do
-      expect(api).to receive(:get_response_body).with(1, "00123456").and_return(invalid_body)
-      expect(api).to receive(:get_response_body).with(1, "123456").and_return(invalid_body)
-      expect(api).to receive(:get_response_body).with(1, "0123456").and_return(invalid_body)
-      response = api.call(1, "123456")
+      expect(api).to receive(:get_response_body).with(1, "00123456", date_of_birth).and_return(invalid_body)
+      expect(api).to receive(:get_response_body).with(1, "0123456", date_of_birth).and_return(invalid_body)
+      expect(api).to receive(:get_response_body).with(1, "123456", date_of_birth).and_return(invalid_body)
+      response = api.call(1, "123456", Date.new(1980,1,1))
 
       expect(response).to_not be_valid
     end

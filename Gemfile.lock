@@ -494,6 +494,7 @@ DEPENDENCIES
   email_spec
   factory_girl_rails (~> 4.8.0)
   faker (~> 1.7.3)
+  faraday
   foundation-rails (~> 6.2.4.0)
   foundation_rails_helper (~> 2.0.0)
   fuubar

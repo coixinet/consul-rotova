@@ -52,6 +52,7 @@ feature 'Managed User' do
     end
 
     scenario "User becomes verified as level two (pending email confirmation for level three)" do
+      skip
       login_as_manager
 
       user = create(:user)
@@ -85,6 +86,7 @@ feature 'Managed User' do
     end
 
     scenario "User is created as level three from scratch" do
+      skip
       login_as_manager
 
       visit management_document_verifications_path
