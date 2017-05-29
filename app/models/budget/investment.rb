@@ -33,6 +33,7 @@ class Budget
     validates :terms_of_service, acceptance: { allow_nil: false }, on: :create
 
     scope :sort_by_confidence_score, -> { reorder(confidence_score: :desc, id: :desc) }
+    scope :sort_by_ballots,          -> { reorder(ballot_lines_count: :desc, id: :desc) }
     scope :sort_by_price,            -> { reorder(price: :desc, confidence_score: :desc, id: :desc) }
     scope :sort_by_random,           -> { reorder("RANDOM()") }
 
@@ -144,7 +145,7 @@ class Budget
       return :not_selected               unless selected?
       return :no_ballots_allowed         unless budget.balloting?
       return :different_heading_assigned unless ballot.valid_heading?(heading)
-      return :not_enough_money           if ballot.present? && !enough_money?(ballot)
+      return :not_enough_money_html      if ballot.present? && !enough_money?(ballot)
     end
 
     def permission_problem(user)
