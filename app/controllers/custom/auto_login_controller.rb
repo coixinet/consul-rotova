@@ -3,10 +3,11 @@ class AutoLoginController < ApplicationController
 
   def index
     base_64_nif = params[:NIF]
-    nif = Base64.decode64(base_64_nif)
 
-    if user = User.find_by_document_number(nif)
-      sign_in(user, scope: :user)
+    if nif = Base64.strict_decode64(base_64_nif) rescue nil
+      if user = User.find_by_document_number(nif)
+        sign_in(user, scope: :user)
+      end
     end
 
     redirect_to root_url

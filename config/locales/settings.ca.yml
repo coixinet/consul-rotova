@@ -33,9 +33,12 @@ ca:
       spending_proposals: Propostes d'inversió
       spending_proposal_features:
         voting_allowed: Votacions sobre propostes d'inversió
+      auto_login: Login automàtic
+      auto_verify_users: Verificació automàtica d'usuaris
     mailer_from_name: Nome email remitent
     mailer_from_address: Direcció email remitent
     meta_description: "Descripció de la web (SEO)"
     meta_keywords: "Paraules clau (SEO)"
     verification_offices_url: URL oficines verificació
     min_age_to_participate: Edat mínima per participar
+
