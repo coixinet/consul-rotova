@@ -38,9 +38,12 @@ en:
       spending_proposals: Investment projects
       spending_proposal_features:
         voting_allowed: Voting on investment projects
+      auto_login: Automatic login
+      auto_verify_users: Automatic user verification
     mailer_from_name: Origin email name
     mailer_from_address: Origin email address
     meta_description: "Site description (SEO)"
     meta_keywords: "Keywords (SEO)"
     verification_offices_url: Verification offices URL
     min_age_to_participate: Minimum age needed to participate
+

@@ -57,6 +57,7 @@ ca:
           all: Tots
           with_active: Actius
           with_inactive: Inactius
+        preview: vista prèvia
         title: Banners
       new:
         back: Tornar
@@ -113,6 +114,7 @@ ca:
         table_geozone: Àmbit d'actuació
         table_id: ID
         table_selection: selecció
+        table_supports: suports
         table_title: Títol
         table_valuation_finished: Ev. Fi.
         table_valuator: avaluador
@@ -247,6 +249,7 @@ ca:
       hidden_users: Usuaris bloquejats
       managers: Gestors
       moderators: Moderadors
+      newsletter: Enviament de Newsletters
       officials: Càrrecs públics
       organizations: Organitzacions
       poll_booths: Ubicació de bústia
@@ -280,6 +283,10 @@ ca:
         email_placeholder: Cercar usuari per email
         search: Cercar
         user_not_found: Usuari no trobat
+    newsletters:
+      index:
+        button: Descarregar zip amb llista d'usuaris
+        title: Enviament de newsletters
     officials:
       edit:
         destroy: Eliminar condició de 'Càrrec Público'
@@ -563,6 +570,7 @@ ca:
           notice: Imatge esborrada correctament
         index:
           delete: Esborrar
+          image: imatge
           title: Personalitzar imatges
           update: Actualitzar
         update:
@@ -666,12 +674,15 @@ ca:
         title: Notificacions de propostes
         total: total
       show:
+        budgets_title: Pressupostos participatius
         direct_messages: missatges directes
         incomplete_verifications: Verificaciones incompletas
         proposal_notifications: Notificacions de propostes
         spending_proposals_title: Propostes d'inversió
         stats_title: Estadístiques
         summary:
+          budget_investments: Propostes d'inversió
+          budgets: Pressupostos oberts
           comment_votes: Vots en comentaris
           comments: comentaris
           debate_votes: Vots en debats
