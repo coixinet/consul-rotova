@@ -38,6 +38,7 @@ es:
       spending_proposals: Propuestas de inversión
       spending_proposal_features:
         voting_allowed: Votaciones sobre propuestas de inversión
+      legislation: Legislación
       auto_login: Login automático
       auto_verify_users: Verificación automática de usuarios
     mailer_from_name: Nombre email remitente
@@ -46,4 +47,4 @@ es:
     meta_keywords: "Palabras clave (SEO)"
     verification_offices_url: URL oficinas verificación
     min_age_to_participate: Edad mínima para participar
-
+    proposal_improvement_path: Link a información para mejorar propuestas
