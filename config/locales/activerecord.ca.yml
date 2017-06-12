@@ -29,6 +29,31 @@ ca:
         description: Opinió
         terms_of_service: Termes de servei
         title: Títol
+      legislation/annotation:
+        text: comentari
+      legislation/draft_version:
+        body: text
+        changelog: canvis
+        final_version: versió final
+        status: estat
+        title: Títol de la versió
+      legislation/process:
+        additional_info: informació addicional
+        allegations_end_date: Data de fi d'al·legacions
+        allegations_start_date: Data d'inici d'al·legacions
+        debate_end_date: Data de fi del debat
+        debate_start_date: Data d'inici del debat
+        description: En què consisteix
+        draft_publication_date: Data de publicació de l'esborrany
+        end_date: Data de fi del procés
+        final_publication_date: Data de publicació del resultat final
+        start_date: Data d'inici del procés
+        title: Títol del procés
+      legislation/question:
+        question_options: respostes
+        title: Títol
+      legislation/question_option:
+        value: valor
       organization:
         name: Nom de l'associació
         responsible_name: Persona responsable de l'associació
@@ -101,6 +126,14 @@ ca:
           attributes:
             max_per_day:
               invalid: Has arribat al nombre màxim de missatges privats per dia
+        legislation/process:
+          attributes:
+            allegations_end_date:
+              invalid_date_range: ha de ser igual o posterior a la data d'inici de les al·legacions
+            debate_end_date:
+              invalid_date_range: ha de ser igual o posterior a la data d'inici del debat
+            end_date:
+              invalid_date_range: ha de ser igual o posterior a la data d'inici
         poll/voter:
           attributes:
             document_number:
@@ -151,6 +184,24 @@ ca:
       debate:
         one: Debat
         other: Debats
+      legislation/answers:
+        one: Resposta
+        other: respostes
+      legislation/draft_texts:
+        one: Esborrany
+        other: esborranys
+      legislation/draft_versions:
+        one: versió esborrany
+        other: versions esborrany
+      legislation/process:
+        one: procés
+        other: processos
+      legislation/question_options:
+        one: Opció de resposta tancada
+        other: Opcions de resposta tancada
+      legislation/questions:
+        one: pregunta
+        other: Preguntes
       moderator:
         one: Moderador
         other: Moderadors

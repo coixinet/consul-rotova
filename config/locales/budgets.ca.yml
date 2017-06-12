@@ -6,7 +6,6 @@ ca:
         change_ballot: canviar els teus vots
         different_heading_assigned: Ja vas votar en una secció diferent del pressupost.
         no_ballots_allowed: El període de votació està tancat.
-        not_enough_money: No hi ha fons suficients.
         not_enough_money_html: Ja has assignat el pressupost disponible. <br> <small>Recorda que pots %{change_ballot} en qualsevol moment</small>
         not_logged_in: Necessites %{signin} o %{signup} per a continuar.
         not_selected: No es poden votar propostes inviables.
@@ -53,9 +52,9 @@ ca:
           button: Cercar
           placeholder: Cercar propostes d'inversió...
           title: Cercar
-        search_results:
-          one: " que conté '%{search_term}'"
-          other: " que contenen '%{search_term}'"
+        search_results_html:
+          one: que conté <strong>'%{search_term}'</strong>
+          other: que contenen <strong>'%{search_term}'</strong>
         sidebar:
           by_feasibility: Per viabilitat
           change_ballot: Si canvies d'opinió pots esborrar els teus vots en %{check_ballot} i tornar a començar.
@@ -91,7 +90,6 @@ ca:
           one: 1 aval
           other: "%{count} avals"
           zero: Sense avals
-        title: Proposta d'inversió
       show:
         author_deleted: Usuari eliminat
         code_html: 'Codi proposta d''inversió: <strong>%{code}</strong>'

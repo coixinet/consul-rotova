@@ -48,6 +48,7 @@ ca:
         one: 1 vot
         other: "%{count} vots"
         zero: Sense vots
+    comments_closed: Els comentaris estan tancats
     form:
       comment_as_admin: Comentar com a administrador
       comment_as_moderator: Comentar com a moderador
@@ -59,9 +60,12 @@ ca:
     select_order: Ordenar per
     show:
       return_to_commentable: 'Tornar a '
+    verified_only: Per participar %{verify_account}
+    verify_account: verifica el teu compte
   comments_helper:
     comment_button: Publicar comentari
     comment_link: Comentar
+    comments_title: comentaris
     reply_button: Publicar resposta
     reply_link: Respondre
   debates:
@@ -73,7 +77,6 @@ ca:
         one: 1 Comentari
         other: "%{count} Comentaris"
         zero: Sense comentaris
-      debate: Debat
       votes:
         one: 1 vot
         other: "%{count} vots"
@@ -104,9 +107,9 @@ ca:
         button: Cercar
         placeholder: Cercar debats...
         title: Cercar
-      search_results:
-        one: " que conté '%{search_term}'"
-        other: " que contenen '%{search_term}'"
+      search_results_html:
+        one: que conté <strong>'%{search_term}'</strong>
+        other: que contenen <strong>'%{search_term}'</strong>
       select_order: Ordenar per
       start_debate: Comença un debat
       title: Debats
@@ -164,6 +167,8 @@ ca:
     sentence_for_humans: Si eres humà, per favor ignora aquest camp
     timestamp_error_message: Açò ha sigut massa ràpid. Per favor, reenvía el formulari.
   layouts:
+    admin:
+      watch_form_message: Has fet canvis que no han estat guardats. ¿Segur que vols abandonar la pàgina?
     application:
       chrome: Google Chrome
       firefox: Firefox
@@ -191,6 +196,7 @@ ca:
       administration: Administrar
       available_locales: Idiomes disponibles
       budgets: Pressupostos ciutadans
+      collaborative_legislation: processos legislatius
       debates: Debats
       external_link_blog: Blog
       external_link_opendata: Dades obertes
@@ -218,12 +224,12 @@ ca:
       see_all: Veure propostes
       spending_proposals: Propostes d'inversió
       valuation: Avaluació
-  legislation:
+  legacy_legislation:
     help:
-      alt: Selecciona el text que vols comentar i prem en el botó amb el llapis.
-      text: Per a comentar aquest document has de %{sign_in} o %{sign_up}. Després selecciona el text que vols comentar i prem en el botó amb el llapis.
+      alt: Selecciona el text que vols comentar i prem el botó amb el llapis.
+      text: Per comentar aquest document has %{sign_in} o %{sign_up}. Després selecciona el text que vols comentar i prem el botó amb el llapis.
       text_sign_in: iniciar sessió
-      text_sign_up: registrar-te
+      text_sign_up: registrar-
       title: Com puc comentar aquest document?
   locale: Valencià
   map:
@@ -265,9 +271,6 @@ ca:
       sign_in: Entra amb Twitter
       sign_up: Registra't amb Twitter
   poll_questions:
-    banner:
-      featured_title: "#PróximaVotación"
-      info: Nuevas propuestas ciudadanas han llegado a la fase de votación.
     create_question: Crear pregunta para votación
     default_valid_answers: Sí, No
     show:
@@ -382,9 +385,9 @@ ca:
         button: Cercar
         placeholder: Cercar propostes...
         title: Cercar
-      search_results:
-        one: " que conté '%{search_term}'"
-        other: " que contenen  '%{search_term}'"
+      search_results_html:
+        one: que conté <strong>'%{search_term}'</strong>
+        other: que contenen <strong>'%{search_term}'</strong>
       select_order: Ordenar per
       select_order_long: Estàs veient les propostes
       start_proposal: Crea una proposta
@@ -409,8 +412,13 @@ ca:
         one: 1 Comentari
         other: "%{count} Comentaris"
         zero: Sense comentaris
-      proposal: Proposta
+      created: Has creat una nova proposta!
+      improve_info: També pots %{improve_info_link} de com millorar la teva campanya
+      improve_info_link: veure més informació
       reason_for_supports_necessary: 1% del Cens
+      share:
+        guide: Ara pots compartir-la a Twitter, Facebook, Google+, Telegram o WhatsApp (si utilitzes un dispositiu mòbil) perquè la gent comenci a recolzar-la. Qual Abans que es publiqui el text en les xarxes socials podràs modificar al teu gust
+        view_proposal: Ara no, veure la meva proposta
       successful: Esta propuesta ha alcanzado los apoyos necesarios y pasará a la %{voting}.
       support: Avalar
       support_title: Avalar aquesta proposta
@@ -488,6 +496,7 @@ ca:
     delete: Borrar
     edit: Editar
     flag: Denunciar com a inadequat
+    go_to_page: Anar a la pàgina de
     hide: Ocultar
     'no': 'No'
     outline:
@@ -499,6 +508,7 @@ ca:
       print_button: Imprimir aquesta informació
     save: Guardar
     search: Cercar
+    search_results: Resultats de cerca
     show: Mostrar
     suggest:
       debate:

@@ -1,8 +1,6 @@
 ---
 es:
   moderation:
-    header:
-      title: Moderación
     comments:
       index:
         block_authors: Bloquear autores
@@ -44,6 +42,8 @@ es:
           created_at: Más nuevos
           flags: Más denunciados
         title: Debates
+    header:
+      title: Moderación
     menu:
       flagged_comments: Comentarios
       flagged_debates: Debates

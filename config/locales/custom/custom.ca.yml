@@ -2,7 +2,6 @@
 ca:
   layouts:
     footer:
-      more_info: Més informació
       offered_by: Ofert per la
       open_source_url: https://github.com/GO-DIVAL/consul-dival
     header:

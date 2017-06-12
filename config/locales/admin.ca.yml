@@ -30,6 +30,17 @@ ca:
           on_users: Usuaris
         title: Activitat dels Moderadors
         type: tipus
+    administrators:
+      administrator:
+        add: Afegir com a Administrador
+        delete: esborrar
+        restricted_removal: Ho sentim, no pots eliminar-te a tu mateix de la llista
+      index:
+        title: Administradors
+      search:
+        email_placeholder: Cercar usuari per email
+        search: Cercar
+        user_not_found: Usuari no trobat
     banners:
       banner:
         description: Descripció
@@ -40,7 +51,6 @@ ca:
         target_url: enllaç
         title: Títol
       edit:
-        back: Tornar
         editing: Edita el banner
         form:
           submit_button: Desar Canvis
@@ -60,7 +70,6 @@ ca:
         preview: vista prèvia
         title: Banners
       new:
-        back: Tornar
         creating: crear banner
     booths:
       edit:
@@ -227,6 +236,155 @@ ca:
         creating: crear districte
     header:
       title: Administración
+    hidden_users:
+      index:
+        filter: filtre
+        filters:
+          all: tots
+          with_confirmed_hide: confirmats
+          without_confirmed_hide: pendents
+        title: usuaris bloquejats
+      show:
+        email: 'E-mail:'
+        hidden_at: 'Bloquejat:'
+        registered_at: 'Data d''alta:'
+        title: Activitat de l'usuari (%{user})
+    legislation:
+      draft_versions:
+        create:
+          error: No s'ha pogut crear l'esborrany
+          notice: Esborrany creat correctament. <a href="%{link}"> Fes click per veure-ho </a>
+        destroy:
+          notice: Esborrany eliminat correctament
+        edit:
+          back: tornar
+          submit_button: Desa els canvis
+          warning: Ull, has editat el text. Per conservar de manera permanent els canvis, no t'oblidis de fer clic a Desa.
+        errors:
+          form:
+            error: error
+        form:
+          body_placeholder: Escriu el text de l'esborrany
+          changelog_placeholder: Descriu qualsevol canvi rellevant amb la versió anterior
+          close_text_editor: Tancar editor de text
+          hints:
+            final_version: Serà la versió que es publiqui Publicació de resultats. Aquesta versió no es podrà comentar
+            status:
+              draft: Podràs previsualitzar-com loguejat, ningú més ho podrà veure
+              published: Serà visible per a tothom
+          launch_text_editor: Llançar editor de text
+          title_html: S'està editant <span class="strong">%{draft_version_title}</span> del procés <span class="strong">%{process_title}</span>
+          title_placeholder: Escriu el títol d'aquesta versió de l'esborrany
+          use_markdown: Fes servir Markdown per formatar el text
+        index:
+          create: crear versió
+          delete: esborrar
+          preview: Previsualitzar
+          title: Versions de l'esborrany
+        new:
+          back: tornar
+          submit_button: crear versió
+          title: Crear nova versió
+        statuses:
+          draft: Esborrany
+          published: publicat
+        table:
+          comments: comentaris
+          created_at: creat
+          final_version: versió final
+          status: estat
+          title: Títol
+        update:
+          error: No s'ha pogut actualitzar l'esborrany
+          notice: Esborrany actualitzat correctament. <a href="%{link}"> Fes click per veure-ho </a>
+      processes:
+        create:
+          error: No s'ha pogut crear el procés
+          notice: Procés creat correctament. <a href="%{link}"> Fes click per veure-ho </a>
+        destroy:
+          notice: Procés eliminat correctament
+        edit:
+          back: tornar
+          submit_button: Desa els canvis
+        errors:
+          form:
+            error: error
+        form:
+          active: activa
+          additional_info_placeholder: Afegeix qualsevol informació addicional que pugui ser d'interès
+          allegations_phase: Fase d'al·legacions
+          debate_phase: fase prèvia
+          description_placeholder: Afegeix una descripció del procés
+          end: fi
+          process: procés
+          start: Inici
+          summary_placeholder: Resum curt de la descripció
+          title_placeholder: Escriu el títol del procés
+          use_markdown: Fes servir Markdown per formatar el text
+        index:
+          create: nou procés
+          delete: esborrar
+          filters:
+            all: tots
+            next: Properament
+            open: oberts
+            past: passats
+          title: Processos de legislació col·laborativa
+        new:
+          back: tornar
+          submit_button: crear procés
+          title: Crear nou procés de legislació col·laborativa
+        process:
+          comments: comentaris
+          creation_date: data creació
+          status: estat
+          status_closed: tancat
+          status_open: obert
+          status_planned: Properament
+          title: procés
+        subnav:
+          draft_texts: text
+          info: informació
+          questions: debat
+        update:
+          error: No s'ha pogut actualitzar el procés
+          notice: Procés actualitzat correctament. <a href="%{link}"> Fes click per veure-ho </a>
+      questions:
+        create:
+          error: No s'ha pogut crear la pregunta
+          notice: Pregunta creada correctament. <a href="%{link}"> Fes click per a veure </a>
+        destroy:
+          notice: Pregunta eliminada correctament
+        edit:
+          back: tornar
+          submit_button: Desa els canvis
+          title: Edita "%{question_title}"
+        errors:
+          form:
+            error: error
+        form:
+          add_option: "+ Afegir resposta tancada"
+          title_placeholder: Escriu un títol a la pregunta
+          value_placeholder: Escriu una resposta tancada
+        index:
+          back: tornar
+          create: crear pregunta
+          delete: esborrar
+          title: Preguntes associades a aquest procés
+        new:
+          back: tornar
+          submit_button: crear pregunta
+          title: Crear nova pregunta
+        question_option_fields:
+          remove_option: eliminar
+        table:
+          answers_count: Nombre de respostes
+          comments_count: Nombre de comentaris
+          question_options: Opcions de resposta
+          title: Títol
+        update:
+          error: No s'ha pogut actualitzar la pregunta
+          notice: Pregunta actualitzada correctament. <a href="%{link}"> Fes click per a veure </a>
     managers:
       index:
         title: Gestors
@@ -240,6 +398,7 @@ ca:
     menu:
       activity: Activitat de moderadors
       admin: Menú d'administració
+      administrators: Administradors
       banner: Gestionar banners
       budgets: Pressupostos participatius
       geozones: Gestionar districtes
@@ -247,6 +406,7 @@ ca:
       hidden_debates: Debats ocults
       hidden_proposals: Propostes ocultes
       hidden_users: Usuaris bloquejats
+      legislation: legislació col·laborativa
       managers: Gestors
       moderators: Moderadors
       newsletter: Enviament de Newsletters
@@ -272,6 +432,7 @@ ca:
       title_polls: Votacions
       title_profiles: Perfils
       title_site_customization: Personalitzar lloc
+      users: usuaris
       valuators: Valuadors
     moderators:
       index:
@@ -544,7 +705,6 @@ ca:
         destroy:
           notice: Bloc esborrat correctament
         edit:
-          back: tornar
           title: Edita bloc
         errors:
           form:
@@ -559,7 +719,6 @@ ca:
           delete: Esborrar
           title: Blocs
         new:
-          back: Tornar
           title: Crear nou bloc
         update:
           error: No s'ha pogut actualitzar el bloc
@@ -583,7 +742,6 @@ ca:
         destroy:
           notice: Pàgina eliminada correctament
         edit:
-          back: tornar
           title: Edita %{page_title}
         errors:
           form:
@@ -596,7 +754,6 @@ ca:
           see_page: Veure pàgina
           title: Pàgines
         new:
-          back: back
           title: Nova pàgina
         page:
           created_at: Creada
@@ -710,18 +867,17 @@ ca:
         placeholder: Escriu el nom del tema
       update: actualitzar Tema
     users:
+      columns:
+        document_number: DNI / Passaport / Targeta de residència
+        email: correu electrònic
+        name: nom
+        roles: rols
+        verification_level: Nivell de verficación
       index:
-        filter: filtre
-        filters:
-          all: Tots
-          with_confirmed_hide: Confirmats
-          without_confirmed_hide: Pendents
         title: usuaris bloquejats
-      show:
-        email: 'E-mail:'
-        hidden_at: 'Bloquejat:'
-        registered_at: 'Data d''alta:'
-        title: Activitat de l'usuari (%{user})
+      search:
+        placeholder: Cercar usuari per email, nom o DNI
+        search: Cercar
     valuators:
       index:
         title: Avaluadors

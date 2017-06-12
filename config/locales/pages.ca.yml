@@ -26,6 +26,11 @@ ca:
       faq:
         button: Ver preguntas frecuentes
         description: Lee las preguntas frecuentes y resuelve tus dudas.
+        page:
+          description: Utilitza aquesta pàgina per resoldre les preguntes més frencuentes als usuaris del lloc.
+          faq_1_description: Aquest és un exemple per a la descripció de la pregunta un.
+          faq_1_title: pregunta 1
+          title: Preguntes més freqüents
         title: "¿Problemas técnicos?"
       guide: Esta guía explica cada una de las secciones de %{org_name}. Puedes ampliar la información en los enlaces de "Información detallada".
       how_to_use:
@@ -41,9 +46,8 @@ ca:
         other: Otra información de interés
         proposals: Propuestas
       other:
-        facts: Hechos sobre participación ciudadana y democracia directa
         how_to_use: Utiliza %{org_name} en tu municipio
-        world: Participación ciudadana directa en el mundo
+        title: Altra informació d'interès
       polls:
         description: Las propuestas ciudadanas que alcancen el 1% de apoyos pasarán a votación.
         feature_1: Para participar en la próxima votación tienes que %{link} y verificar tu cuenta.
