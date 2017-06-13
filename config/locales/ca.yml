@@ -511,6 +511,12 @@ ca:
     search_results: Resultats de cerca
     show: Mostrar
     suggest:
+      budget_investment:
+        found:
+          one: Hi ha una proposta d'inversió amb el terme '%{query}', pots participar-hi en comptes d'obrir una nova.
+          other: Hi propostes d'inversió amb el terme '%{query}', pots participar-hi en comptes d'obrir una nova.
+        message: Estàs veient %{limit} de %{count} propostes d'inversió que contenen el terme '%{query}'
+        see_all: veure totes
       debate:
         found:
           one: Existeix un debat amb el terme '%{query}', pots participar en ell en comptes d'obrir un de nou.

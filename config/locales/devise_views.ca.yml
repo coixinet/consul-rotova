@@ -68,9 +68,9 @@ ca:
         title: "¿Ha oblidat la seva contrasenya?"
     sessions:
       new:
-        email_label: E-mail
+        login_label: E-mail o nom d'usuari
         password_label: clau
-        remember_me: "Recordar-me"
+        remember_me: Recordar-me
         submit: Entrada
         title: Entrada
     shared:

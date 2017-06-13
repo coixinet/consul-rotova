@@ -105,6 +105,7 @@ ca:
       user:
         current_password: Contrasenya actual
         email: Correu electrònic
+        login: E-mail o nom d'usuari
         official_level: Nivell del càrrec
         official_position: Càrrec públic
         password: Contrasenya

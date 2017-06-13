@@ -123,7 +123,6 @@ ca:
         title: "Has oblidat la teua contrasenya?"
     sessions:
       new:
-        email_label: Email
         password_label: Contrasenya
         remember_em: "Recordar-me"
         submit: Entrar
