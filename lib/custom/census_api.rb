@@ -61,7 +61,16 @@ class CensusApi
         }
       )
       r = conn.get
-      JSON.parse(r.body)
+      body = r.body
+      response_body = case body
+                      when "\"True\""
+                        "True"
+                      when "\"False\""
+                        "False"
+                      else
+                        JSON.parse(r.body)
+                      end
+      response_body
     end
 
     def is_dni?(document_type)
