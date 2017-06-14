@@ -1,84 +1,84 @@
 ---
 ca:
   pages:
-    census_terms: Para verificar la cuenta hay que tener 16 años o más y estar empadronado aportando los datos indicados anteriormente, los cuales serán contrastados. Aceptando el proceso de verificación acepta dar su consentimiento para contrastar dicha información, así como medios de contacto que figuren en dichos ficheros. Los datos aportados serán incorporados y tratados en un fichero indicado anteriormente en las condiciones de uso del portal.
-    conditions: Condiciones de uso
-    general_terms: Términos y Condiciones
+    census_terms: Per verificar el compte cal tenir 16 anys o més i estar empadronat aportant les dades indicades anteriorment, els quals seran contrastats. Acceptant el procés de verificació accepta donar el seu consentiment per contrastar aquesta informació, així com mitjans de contacte que figuren en aquests fitxers. Les dades aportades seran incorporades i tractades en un fitxer indicat anteriorment en les condicions d'ús del portal.
+    conditions: Condicions d'ús
+    general_terms: Termes i Condicions
     more_info:
       budgets:
-        description: Los primeros seis meses de cada año puedes decidir cómo gastar parte del presupuesto.
-        feature_1: Para crear un proyecto de gasto tienes que %{link} y verificar tu cuenta.
-        feature_1_link: registrarte en %{org_name}
-        feature_2_html: En primer lugar empieza la <strong>fase de aceptación</strong> de proyectos de gasto.
-        feature_3_html: Después hay una <strong>fase de apoyos</strong> para priorizar lo más interesante, las más apoyadas son evaluadas por el Ayuntamiento para ver si son viables y cuánto valen.
-        feature_4_html: Al final hay una <strong>fase de votación</strong> donde se decide en cuáles se gasta esa parte del presupuesto.
-        figcaption_html: Fase de "Apoyos" y fase de "Votación" de los presupuestos participativos.
-        image_alt: Diferentes fases de un presupuesto participativo
-        title: Presupuestos participativos
+        description: Els primers sis mesos de cada any pots decidir com gastar part del pressupost.
+        feature_1: Per crear un projecte de despesa has de %{link} i verificar el teu compte.
+        feature_1_link: registrar-te a %{org_name}
+        feature_2_html: En primer lloc comença la <strong>fase d'acceptació</strong> de projectes de despesa.
+        feature_3_html: Després hi ha una <strong>fase de suports</strong> per prioritzar el més interessant, les més recolzades són avaluades per l'Ajuntament per veure si són viables i quant valen.
+        feature_4_html: Al final hi ha una <strong>fase de votació</strong> on es decideix en quins es gasta aquesta part del pressupost.
+        figcaption_html: Fase de "Suports" i fase de "Votació" dels pressupostos participatius.
+        image_alt: Diferents fases d'un pressupost participatiu
+        title: Pressupostos participatius
       debates:
-        description: Crea un hilo en el que debatir sobre cualquier tema que quieras compartir con el resto de gente de tu ciudad.
-        feature_1: Para crear un debate tienes que %{link}
-        feature_1_link: registrarte en %{org_name}
-        feature_2_html: Los debates pueden ser valorados utilizando los botones de <strong>Estoy de acuerdo</strong> o <strong>No estoy de acuerdo</strong> que encontrarás en cada uno de ellos.
-        figcaption: Botones "Estoy de acuerdo" y "No estoy de acuerdo" para valorar los debates.
-        image_alt: Botones para valorar los debates
-        title: Debates
+        description: Crea un fil en el qual debatre sobre qualsevol tema que vulguis compartir amb la resta de gent de la teva ciutat.
+        feature_1: Per crear un debat has de %{link}
+        feature_1_link: registrar-te a %{org_name}
+        feature_2_html: Els debats poden ser valorats utilitzant els botons de <strong>Estic d'acord</strong> o <strong>No estic d'acord</strong> que trobaràs en cada un d'ells.
+        figcaption: Botons "Estic d'acord" i "No estic d'acord" per valorar els debats.
+        image_alt: Botons per valorar els debats
+        title: Debats
       faq:
-        button: Ver preguntas frecuentes
-        description: Lee las preguntas frecuentes y resuelve tus dudas.
+        button: Veure preguntes freqüents
+        description: Llegeix les preguntes freqüents i resol els teus dubtes.
         page:
           description: Utilitza aquesta pàgina per resoldre les preguntes més frencuentes als usuaris del lloc.
           faq_1_description: Aquest és un exemple per a la descripció de la pregunta un.
           faq_1_title: pregunta 1
           title: Preguntes més freqüents
-        title: "¿Problemas técnicos?"
-      guide: Esta guía explica cada una de las secciones de %{org_name}. Puedes ampliar la información en los enlaces de "Información detallada".
+        title: "¿Problemes tècnics?"
+      guide: Aquesta guia explica cadascuna de les seccions de %{org_name}. Pots ampliar la informació en els enllaços de "Informació detallada".
       how_to_use:
         text: |-
-          Utilízalo en tu municipio libremente o ayúdanos a mejorarlo, es software libre.
+          Utilitza-ho al teu municipi lliurement o ajudeu-nos a millorar-lo, és programari lliure.
 
-          Este Portal de Gobierno Abierto usa la [aplicación Consul](https://github.com/ayuntamientomadrid 'github consul') que es software libre, con [licencia AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html 'AGPLv3 gnu' ), esto significa en palabras sencillas, que cualquiera puede libremente usar el código, copiarlo, verlo en detalle, modificarlo, y redistribuirlo al mundo con las modificaciones que quiera (manteniendo el que otros puedan a su vez hacer lo mismo). Porque creemos que la cultura es mejor y más rica cuando se libera.
+          Aquest Portal de Govern Obert fa servir la [aplicació Consul] (https://github.com/ayuntamientomadrid 'github consul') que és programari lliure, amb [llicència AGPLv3] (http://www.gnu.org/licenses/agpl -3.0.html 'AGPLv3 gnu'), això vol dir en paraules senzilles, que qualsevol pot lliurement usar el codi, copiar-lo, veure-ho en detall, modificar-lo, i redistribuir-se al món amb les modificacions que vulgui (mantenint el que altres puguin al seu torn fer el mateix). Perquè creiem que la cultura és millor i més rica quan s'allibera.
 
-          Si eres programador, puedes ver el código y ayudarnos a mejorarlo en [aplicación Consul](https://github.com/ayuntamientomadrid 'github consul').
+          Si ets programador, pots veure el codi i ajudar-nos a millorar-lo en [aplicació Consul] (https://github.com/ayuntamientomadrid 'github consultes').
       menu:
-        budgets: Presupuestos participativos
-        debates: Debates
-        other: Otra información de interés
-        proposals: Propuestas
+        budgets: Pressupostos participatius
+        debates: Debats
+        other: Altra informació d'interès
+        proposals: propostes
       other:
-        how_to_use: Utiliza %{org_name} en tu municipio
+        how_to_use: Utilitza %{org_name} al teu municipi
         title: Altra informació d'interès
       polls:
-        description: Las propuestas ciudadanas que alcancen el 1% de apoyos pasarán a votación.
-        feature_1: Para participar en la próxima votación tienes que %{link} y verificar tu cuenta.
-        feature_1_link: registrarte en %{org_name}
-        feature_2: Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años.
-        feature_3: Los resultados de todas las votaciones serán vinculantes para el gobierno.
+        description: Les propostes ciutadanes que arribin al 1% de suports passaran a votació.
+        feature_1: Per participar en la propera votació has de %{link} i verificar el teu compte.
+        feature_1_link: registrar-te a %{org_name}
+        feature_2: Poden votar totes les persones empadronades a la ciutat majors de 16 anys.
+        feature_3: Els resultats de totes les votacions seran vinculants per al govern.
         title: Votacions
       proposals:
-        description: Propón lo que quieres que el Ayuntamiento lleve a cabo y apoya propuestas de otras personas.
-        feature_1: Para crear una propuesta tienes que %{link}, además para apoyarlas debes verificar tu cuenta.
-        feature_1_link: registrarte en %{org_name}
-        feature_2_html: Las propuestas que consigan <strong>el apoyo del 1% de la gente</strong> (mayor de 16 años empadronada en Madrid; 27.064 apoyos) pasan a votación.
-        feature_3_html: Si hay más gente a favor que en contra en la votación, <strong>el Ayuntamiento asume la propuesta y se hace</strong>.
-        figcaption_html: Botón para "Apoyar" una propuesta.<br>Cuando alcance el número de apoyos pasará a votación.
-        image_alt: Botón para apoyar una propuesta
-        title: Propuestas
-      subtitle: Aprende todo lo que puedes hacer en esta web.
-      title: Descubre %{org_name}
+        description: Proposa el que vols que l'Ajuntament porti a terme i dóna suport a propostes d'altres persones.
+        feature_1: Per crear una proposta has de %{link}, a més per recolzar-les has de verificar el teu compte.
+        feature_1_link: registrar-te a %{org_name}
+        feature_2_html: Les propostes que aconsegueixin <strong>el suport de l'1% de la gent</strong> (major de 16 anys empadronada a Madrid; 27.064 suports) passen a votació.
+        feature_3_html: Si hi ha més gent a favor que en contra en la votació, <strong>l'Ajuntament assumeix la proposta i es fa.</strong>
+        figcaption_html: Botó per "Donar suport" una proposta. <br> Quan arribi al nombre de suports passarà a votació.
+        image_alt: Botó per donar suport a una proposta
+        title: Propostes
+      subtitle: Aprèn tot el que pots fer en aquest web.
+      title: Descobreix %{org_name}
       titles:
-        how_to_use: Utilízalo en tu municipio
-    privacy: Política de Privacidad
+        how_to_use: Utilitza-ho al teu municipi
+    privacy: Política de Privacitat
     titles:
-      accessibility: Accesibilidad
-      conditions: Condiciones de uso
-      more_info: Más información sobre %{org_name}
-      privacy: Política de Privacidad
+      accessibility: Accessibilitat
+      conditions: Condicions d'ús
+      more_info: Més informació sobre %{org_name}
+      privacy: Política de Privacitat
     verify:
-      code: Código que has recibido en tu carta
-      email: Email
-      info: 'Para verificar tu cuenta introduce los datos con los que te registraste:'
-      info_code: 'Ahora introduce el código que has recibido en tu carta:'
-      password: Contraseña
-      submit: Verificar mi cuenta
-      title: Verifica tu cuenta
+      code: Codi que has rebut a la teva carta
+      email: E-mail
+      info: 'Per verificar el teu compte introdueix les dades amb què et vas registrar:'
+      info_code: 'Ara introdueix el codi que has rebut a la teva carta:'
+      password: Clau
+      submit: Verificar el meu compte
+      title: Verifica el teu compte

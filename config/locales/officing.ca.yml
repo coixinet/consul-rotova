@@ -3,101 +3,101 @@ ca:
   officing:
     dashboard:
       index:
-        info: Aquí puedes validar documentos de ciudadanos y guardar los resultados de las urnas
-        title: Presidir mesa de votaciones
+        info: Aquí pots validar documents de ciutadans i guardar els resultats de les urnes
+        title: Presidir taula de votacions
     final_recounts:
       flash:
-        create: Datos añadidos
-        error_create: Recuento final NO añadido. Error en los datos
+        create: dades afegits
+        error_create: Recompte final NO afegit. Error en les dades
       new:
-        add_results: Añadir resultados
-        booth: Urna
-        count: Recuento final
-        count_placeholder: Número final de votos
-        date: Día
-        final_recount_list: Tus recuentos finales
-        not_allowed: No tienes permiso para introducir recountos finales
-        select_booth: Elige urna
-        select_date: Elige día
-        submit: Guardar
-        system_count: Recuento del sistema
-        title: "%{poll} - Añadir recuento final"
+        add_results: Afegir resultats
+        booth: urna
+        count: recompte final
+        count_placeholder: Nombre final de vots
+        date: dia
+        final_recount_list: Els teus recomptes finals
+        not_allowed: No tens permís per introduir recountos finals
+        select_booth: Tria urna
+        select_date: Tria dia
+        submit: Desar
+        system_count: Recompte del sistema
+        title: "%{poll} - Afegir recompte final"
     header:
-      title: Votaciones
+      title: votacions
     menu:
-      final_recounts: Recuento final y escrutinio
-      recounts: Recuento diario
-      voters: Validar documento y votar
+      final_recounts: Recompte final i escrutini
+      recounts: recompte diari
+      voters: Validar document i votar
     polls:
       final:
-        add_recount: Añadir recuentos finales
-        add_results: Añadir resultados
-        no_polls: No tienes permiso para recuento final en ninguna votación reciente
-        select_poll: Selecciona votación
-        title: Listado de votaciones finalizadas
+        add_recount: Afegir recomptes finals
+        add_results: Afegir resultats
+        no_polls: No tens permís per recompte final a cap votació recent
+        select_poll: Selecciona votació
+        title: Llistat de votacions finalitzades
       index:
-        add_recount: Añadir recuento
-        no_polls: No eres presidente de mesa en ninguna votación activa
-        select_poll: Selecciona votación
-        title: Listado de votaciones
+        add_recount: Afegir recompte
+        no_polls: No ets president de taula en cap votació activa
+        select_poll: Selecciona votació
+        title: Llistat de votacions
     recounts:
       flash:
-        create: Datos añadidos
-        error_create: Recuento NO añadido. Error en los datos
+        create: dades afegits
+        error_create: Recompte NO afegit. Error en les dades
       new:
-        booth: Urna
-        booth_date: Fecha y urna
-        count: Número de votos
-        count_placeholder: Número de votos
-        date: Fecha
-        not_allowed: No eres presidente de mesa en esta votación
-        recount_list: Tus recuentos
-        select_booth_date: Elige fecha y urna
-        submit: Guardar
-        title: "%{poll} - Añadir recuento diario"
+        booth: urna
+        booth_date: Data i urna
+        count: Nombre de vots
+        count_placeholder: Nombre de vots
+        date: data
+        not_allowed: No ets president de taula en aquesta votació
+        recount_list: Els teus recomptes
+        select_booth_date: Tria data i urna
+        submit: Desar
+        title: "%{poll} - Afegir recompte diari"
     residence:
       flash:
-        create: Documento verificado con el Padrón
-        not_allowed: Hoy no tienes turno de presidente de mesa
+        create: Document verificat amb el Padró
+        not_allowed: Avui no tens torn de president de taula
       new:
-        document_number: Número de documento (incluida letra)
-        error_verifying_census: El Padrón no pudo verificar este documento.
-        form_errors: evitaron verificar este documento
-        no_assignments: Hoy no tienes turno de presidente de mesa
-        submit: Validar documento
-        title: Validar documento
+        document_number: Nombre de document (inclosa lletra)
+        error_verifying_census: El Padró no va poder verificar aquest document.
+        form_errors: van evitar verificar aquest document
+        no_assignments: Avui no tens torn de president de taula
+        submit: validar document
+        title: validar document
     results:
       flash:
-        create: Datos guardados
-        error_create: Resultados NO añadidos. Error en los datos
-        error_wrong_booth: Urna incorrecta. Resultados NO guardados.
-        error_wrong_date: Fecha incorrecta. Resultados NO guardados.
+        create: dades guardats
+        error_create: Resultats NO afegits. Error en les dades
+        error_wrong_booth: Urna incorrecta. Resultats NO guardats.
+        error_wrong_date: Data incorrecta. Resultats NO guardats.
       index:
-        no_results: No hay resultados
-        results: Resultados
-        table_answer: Respuesta
-        table_nulls: Papeletas nulas
-        table_votes: Votos
-        table_whites: Papeletas en blanco
+        no_results: No hi ha resultats
+        results: resultats
+        table_answer: Resposta
+        table_nulls: paperetes nul·les
+        table_votes: vots
+        table_whites: Paperetes en blanc
       new:
-        ballots_null: Papeletas nulas
-        ballots_white: Papeletas en blanco
-        booth: Urna
-        date: Día
-        not_allowed: No tienes permiso para introducir resultados
-        results_list: Tus resultados
-        see_results: Ver resultados
-        select_booth: Elige urna
-        select_date: Elige día
-        submit: Guardar
-        title: "%{poll} - Añadir resultados"
+        ballots_null: paperetes nul·les
+        ballots_white: Paperetes en blanc
+        booth: urna
+        date: dia
+        not_allowed: No tens permís per introduir resultats
+        results_list: Els teus resultats
+        see_results: veure resultats
+        select_booth: Tria urna
+        select_date: Tria dia
+        submit: Desar
+        title: "%{poll} - Afegir resultats"
     voters:
       new:
-        table_actions: Estado de las votaciones
-        table_poll: Votación
-        title: Votaciones
+        table_actions: Estat de les votacions
+        table_poll: votació
+        title: votacions
       show:
-        can_vote: Puede votar
-        error_already_voted: Ya ha participado en esta votación.
-        submit: Confirmar voto
-        success: "¡Voto introducido!"
+        can_vote: pot votar
+        error_already_voted: Ja ha participat en aquesta votació.
+        submit: Confirma vot
+        success: "¡Vot introduït!"
