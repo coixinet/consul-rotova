@@ -10,7 +10,7 @@ es:
         button: Propón
         text: Las propuestas son iniciativas para mejorar la ciudad. Cuando consiguen apoyos son estudiadas por el ayuntamiento.
         title: Crea tu propuesta
-      title: Decide %{place_name}
+      title: "%{place_name}"
   welcome:
     debates:
       button: Comenta

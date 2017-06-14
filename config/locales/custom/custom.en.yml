@@ -10,7 +10,7 @@ en:
         button: Propose
         text: Proposals are created to improve the city. Get
         title: Create your proposal
-      title: Decide %{place_name}
+      title: "%{place_name}"
   welcome:
     debates:
       button: Comenta

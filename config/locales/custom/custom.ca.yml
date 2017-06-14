@@ -10,7 +10,7 @@ ca:
         button: proposa
         text: Les propostes són iniciatives per millorar la ciutat. Quan aconsegueixen suports són estudiades per l'ajuntament.
         title: Crea proposta
-      title: Decideix %{place_name}
+      title: "%{place_name}"
   welcome:
     debates:
       button: comenta
