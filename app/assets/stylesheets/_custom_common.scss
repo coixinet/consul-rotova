@@ -82,11 +82,12 @@ h2.sidebar-title::after,
   border-radius: 4px;
   background: $white;
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
-}
-.featured-proposals .supports .button-support {
-  background: $brand;
-  color: $white;
-  font-weight: 600;
+
+  .supports .button-support {
+    background: $brand;
+    color: $white;
+    font-weight: 600;
+  }
 }
 .proposal .supports .button-support {
   color: $white;
@@ -100,4 +101,16 @@ h2.sidebar-title::after,
 .expanded.budget .info {
   border-top-color: $budget;
   background: lighten($budget, 10%);
+}
+
+/* Buttons */
+.proposal .participation-not-allowed:not(.featured-proposals) {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.participation-not-allowed {
+  padding: 0.5rem 0 0 0;
 }

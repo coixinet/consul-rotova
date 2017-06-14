@@ -7,13 +7,13 @@ ca:
     header:
       more_info: Més informació
       proposals_banner:
-        button: proposa
-        text: Les propostes són iniciatives per millorar la ciutat. Quan aconsegueixen suports són estudiades per l'ajuntament.
-        title: Crea proposta
+        button: Proposa
+        text: Les propostes són iniciatives per millorar la ciutat. Quan aconsegueixen suport són estudiades per l'ajuntament.
+        title: Crea una proposta
       title: "%{place_name}"
   welcome:
     debates:
-      button: comenta
+      button: Comenta
       see_all: veure tots
       title: Últims debats
     more_info_banner_headline: En què consisteix %{place_name}?
