@@ -54,7 +54,7 @@ ca:
         feature_1_link: registrarte en %{org_name}
         feature_2: Pueden votar todas las personas empadronadas en la ciudad mayores de 16 años.
         feature_3: Los resultados de todas las votaciones serán vinculantes para el gobierno.
-        title: Votaciones
+        title: Votacions
       proposals:
         description: Propón lo que quieres que el Ayuntamiento lleve a cabo y apoya propuestas de otras personas.
         feature_1: Para crear una propuesta tienes que %{link}, además para apoyarlas debes verificar tu cuenta.

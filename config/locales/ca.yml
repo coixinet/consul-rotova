@@ -219,7 +219,7 @@ ca:
       open_city_slogan_html: Existeixen ciutats governades directament pels seus habitants, que <strong>debaten</strong> sobre temes que els preocupen, <strong>proposen</strong> idees per a millorar les seues vides i <strong>decideixen </strong> entre totes i tots les que es duen a terme.
       open_city_title: Participa i decideix sobre la teua ciutat!
       open_gov: Govern %{open}
-      poll_questions: Votaciones
+      poll_questions: Votacions
       proposals: Propostes
       see_all: Veure propostes
       spending_proposals: Propostes d'inversió
@@ -271,56 +271,56 @@ ca:
       sign_in: Entra amb Twitter
       sign_up: Registra't amb Twitter
   poll_questions:
-    create_question: Crear pregunta para votación
-    default_valid_answers: Sí, No
+    create_question: Crear pregunta per a votació
+    default_valid_answers: Si, No
     show:
-      answer_this_question: Responder a esta pregunta
-      author: Creado por
-      cant_answer_expired: Esta votación ha terminado.
-      cant_answer_incoming: Esta votación todavía no ha comenzado.
-      cant_answer_verify_html: Por favor %{verify_link} para poder responder.
-      cant_answer_wrong_geozone: Esta votación no está disponible en tu zona.
-      dates_title: Fechas de participación
-      more_info: Más información
-      not_logged_in: Necesitas %{signin} o %{signup} para participar.
-      original_proposal: Propuesta original
-      poll: Votación
-      signin: iniciar sesión
-      signup: registrarte
-      verify_link: verifica tu cuenta
+      answer_this_question: Respondre a aquesta pregunta
+      author: Creat per
+      cant_answer_expired: Esta votació ha terminat.
+      cant_answer_incoming: Esta votació todavía no ha començat
+      cant_answer_verify_html: Per favor %{verify_link} per a poder respondre.
+      cant_answer_wrong_geozone: Esta votació no està disponible al teu area.
+      dates_title: Dades de participació
+      more_info: Más informació
+      not_logged_in: Necessites %{signin} o %{signup} per participar.
+      original_proposal: Proposta original
+      poll: Votació
+      signin: iniciar sessió
+      signup: registrar-te
+      verify_link: verifica el teu compte
       vote_answer: Votar %{answer}
-      voted: Has votado %{answer}
+      voted: Has votat %{answer}
   polls:
-    all: Todas
-    dates: Desde el %{open_at} hasta el %{closed_at}
-    final_date: Recuento final/Resultados
+    all: Totes
+    dates: Des de el %{open_at} fins al %{closed_at}
+    final_date: Recompte final/Resultats
     index:
-      already_answer: Ya has participado en esta votación
-      can_answer: "¡Puedes participar en esta votación!"
-      cant_answer: Esta votación no está disponible en tu zona
-      cant_answer_not_logged_in: Necesitas iniciar sesión o registrarte para participar
-      cant_answer_verify: Por favor verifica tu cuenta para poder responder
+      already_answer: Ja has participat en aquesta votació
+      can_answer: "Pots participar en aquesta votació!"
+      cant_answer: Esta votació no està disponible al teu area
+      cant_answer_not_logged_in: Necessites iniciar sessió o registrar-te per a participar
+      cant_answer_verify: Per favor verifica el teu compte per a respondre
       filters:
-        current: Abiertas
-        expired: Terminadas
-        incoming: Próximamente
-      geozone_info: 'Pueden participar las personas empadronadas en: '
-      geozone_restricted: Distritos
-      no_geozone_restricted: Toda la ciudad
-      participate_button: Participar en esta votación
-      participate_button_expired: Votación terminada
-      participate_button_incoming: Más información
-      title: Votaciones
-    no_dates: sin fecha asignada
+        current: Obertes
+        expired: Terminades
+        incoming: Próximament
+      geozone_info: 'Poden participar las personas empadronades en: '
+      geozone_restricted: Districtes
+      no_geozone_restricted: Tota la ciutat
+      participate_button: Participar en aquesta votació
+      participate_button_expired: Votació terminada
+      participate_button_incoming: Més informació
+      title: Votacions
+    no_dates: sense data asignada
     show:
-      cant_answer_expired: Esta votación ha terminado.
-      cant_answer_incoming: Esta votación todavía no ha comenzado.
-      cant_answer_not_logged_in: Necesitas %{signin} o %{signup} para participar.
-      cant_answer_verify_html: Por favor %{verify_link} para poder responder.
-      dates_title: Fechas de participación
-      signin: iniciar sesión
-      signup: registrarte
-      verify_link: verifica tu cuenta
+      cant_answer_expired: Esta votació ha terminat.
+      cant_answer_incoming: Esta votació encara no ha començat.
+      cant_answer_not_logged_in: Necessites %{signin} o %{signup} per a participar.
+      cant_answer_verify_html: Per favor %{verify_link} per a poder respondre.
+      dates_title: Dades de participació
+      signin: iniciar sessió
+      signup: registrar-te
+      verify_link: verifica el teu compte
   proposal_ballots:
     button: Vull decidir
     title: Votacions
