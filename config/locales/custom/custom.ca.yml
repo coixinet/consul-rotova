@@ -16,9 +16,9 @@ ca:
       button: comenta
       see_all: veure tots
       title: Últims debats
-    more_info_banner_headline: En què consisteix Decideix %{place_name}?
+    more_info_banner_headline: En què consisteix %{place_name}?
     more_info_banner_link: Més informació
-    more_info_banner_text: Decideix %{place_name} és una plataforma oberta als ciutadans on es debaten i es prenen decisions importants per al municipi.
+    more_info_banner_text: "%{place_name} és una plataforma oberta als ciutadans on es debaten i es prenen decisions importants per al municipi."
     proposal_ballots:
       button: Vota
       see_all: veure totes

@@ -16,9 +16,9 @@ es:
       button: Comenta
       see_all: ver todos
       title: Últimos debates
-    more_info_banner_headline: "¿En qué consiste Decide %{place_name}?"
+    more_info_banner_headline: "¿En qué consiste %{place_name}?"
     more_info_banner_link: Más información
-    more_info_banner_text: Decide %{place_name} es una plataforma abierta a los ciudadanos donde se debaten y se toman decisiones importantes para el municipio.
+    more_info_banner_text: "%{place_name} es una plataforma abierta a los ciudadanos donde se debaten y se toman decisiones importantes para el municipio."
     proposal_ballots:
       button: Vota
       see_all: ver todas
