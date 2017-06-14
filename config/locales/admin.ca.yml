@@ -841,11 +841,11 @@ ca:
           budget_investments: Propostes d'inversió
           budgets: Pressupostos oberts
           comment_votes: Vots en comentaris
-          comments: comentaris
+          comments: Comentaris
           debate_votes: Vots en debats
-          debates: debats
+          debates: Debats
           proposal_votes: Vots en propostes
-          proposals: propostes
+          proposals: Propostes
           spending_proposals: Propostes d'inversió
           unverified_users: Usuaris sense verificar
           user_level_three: Usuaris de nivell tres
@@ -858,14 +858,14 @@ ca:
         visits_title: visites
     tags:
       create: Crea un tema
-      destroy: eliminar Tema
+      destroy: Eliminar Tema
       index:
         add_tag: Afegeix un nou tema de debat
         title: Temes de debat
       mark_as_featured: Proposar tema en crear debat
       name:
         placeholder: Escriu el nom del tema
-      update: actualitzar Tema
+      update: Actualitzar Tema
     users:
       columns:
         document_number: DNI / Passaport / Targeta de residència
