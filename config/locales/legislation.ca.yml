@@ -75,7 +75,7 @@ ca:
         allegations_dates: al·legacions
         debate_dates: debat previ
         draft_publication_date: publicació esborrany
-        final_publication_date: publicació resultats
+        result_publication_date: publicació resultats
         key_dates: dates clau
     questions:
       comments:
