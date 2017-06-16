@@ -58,10 +58,10 @@ Para ejecutar los tests:
 bin/rspec
 ```
 
-Si añades código SCSS puedes revisarlo con:
+Usa el linter coffeescript [coffeelint](http://www.coffeelint.org/) (puedes instalaro con `npm install -g coffeelint`) :
 
 ```
-scss-lint
+coffeelint .
 ```
 
 Puedes usar el usuario administrador por defecto del fichero seeds:

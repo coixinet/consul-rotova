@@ -58,10 +58,10 @@ Run the tests with:
 bin/rspec
 ```
 
-If you add SCSS code you can check it with:
+Run the [coffeelint](http://www.coffeelint.org/) linter for coffeescript (install with `npm install -g coffeelint`) :
 
 ```
-scss-lint
+coffeelint .
 ```
 
 You can use the default admin user from the seeds file:
