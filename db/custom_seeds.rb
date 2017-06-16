@@ -191,3 +191,31 @@ if page.nil?
   HTML
   page.save!
 end
+
+# FAQ page
+page = SiteCustomization::Page.find_by(slug: 'more-information/faq')
+if page.nil?
+  page = SiteCustomization::Page.new(slug: 'more-information/faq')
+  page.title = 'Preguntas frecuentes'
+  page.status = SiteCustomization::Page::VALID_STATUSES[1]
+  page.content = <<-HTML
+    <h2>Preguntas frecuentes</h2>
+    <p>Página con preguntas frecuentes.</p>
+  HTML
+  page.save!
+end
+
+# How to use page
+page = SiteCustomization::Page.find_by(slug: 'more-information/how-to-use')
+if page.nil?
+  page = SiteCustomization::Page.new(slug: 'more-information/how-to-use')
+  page.title = 'Utilízalo en tu municipio'
+  page.status = SiteCustomization::Page::VALID_STATUSES[1]
+  page.content = <<-HTML
+    <h2>Utilízalo en tu municipio</h2>
+    <p>Utilízalo en tu municipio libremente o ayúdanos a mejorarlo, es software libre.</p>
+    <p>Este Portal de Gobierno Abierto usa la <a href="https://github.com/consul">aplicación Consul</a> que es software libre, con <a href="http://www.gnu.org/licenses/agpl-3.0.html">licencia AGPLv3</a>, esto significa en palabras sencillas, que cualquiera puede libremente usar el código, copiarlo, verlo en detalle, modificarlo, y redistribuirlo al mundo con las modificaciones que quiera (manteniendo el que otros puedan a su vez hacer lo mismo). Porque creemos que la cultura es mejor y más rica cuando se libera.</p>
+    <p>Si eres programador, puedes ver el código y ayudarnos a mejorarlo en <a href="https://github.com/consul">aplicación Consul</a>.</p>
+  HTML
+  page.save!
+end
