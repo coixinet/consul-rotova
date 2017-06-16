@@ -48,7 +48,6 @@ Run the app locally:
 
 ```
 bin/rails s
-
 ```
 
 Prerequisites for testing: install PhantomJS >= 1.9.8
@@ -57,6 +56,12 @@ Run the tests with:
 
 ```
 bin/rspec
+```
+
+If you add SCSS code you can check it with:
+
+```
+scss-lint
 ```
 
 You can use the default admin user from the seeds file:
