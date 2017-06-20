@@ -116,21 +116,22 @@ en:
         heading_filter_all: All headings
         no_admin_assigned: No admin assigned
         no_valuators_assigned: No valuators assigned
-        select: Select
-        selected: Selected
-        table_admin: Administrator
-        table_feasibility: Feasibility
-        table_geozone: Scope of operation
-        table_id: ID
-        table_selection: Selection
-        table_supports: Supports
-        table_title: Title
-        table_valuation_finished: Val. Fin.
-        table_valuator: Valuator
-        tags_filter_all: All tags
-        title: Investment projects
-        valuator_filter_all: All valuators
-      search_unfeasible: Search unfeasible
+        feasibility:
+          feasible: "Feasible (%{price})"
+          unfeasible: "Unfeasible"
+          undecided: "Undecided"
+        selected: "Selected"
+        select: "Select"
+        table_id: "ID"
+        table_title: "Title"
+        table_supports: "Supports"
+        table_admin: "Administrator"
+        table_valuator: "Valuator"
+        table_geozone: "Scope of operation"
+        table_feasibility: "Feasibility"
+        table_valuation_finished: "Val. Fin."
+        table_selection: "Selection"
+        table_winner: "Winner"
       show:
         assigned_admin: Assigned administrator
         assigned_valuators: Assigned valuators
