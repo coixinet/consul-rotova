@@ -114,6 +114,14 @@ ActiveRecord::Schema.define(version: 20170623141655) do
 
   add_index "budget_headings", ["group_id"], name: "index_budget_headings_on_group_id", using: :btree
 
+  create_table "budget_investment_checkpoints", force: :cascade do |t|
+    t.integer  "investment_id"
+    t.string   "title",         limit: 80
+    t.text     "description"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "budget_investments", force: :cascade do |t|
     t.integer  "author_id"
     t.integer  "administrator_id"
@@ -413,8 +421,8 @@ ActiveRecord::Schema.define(version: 20170623141655) do
     t.date     "allegations_end_date"
     t.date     "result_publication_date"
     t.datetime "hidden_at"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
     t.text     "summary"
     t.boolean  "debate_phase_enabled",       default: false
     t.boolean  "allegations_phase_enabled",  default: false
@@ -923,7 +931,7 @@ ActiveRecord::Schema.define(version: 20170623141655) do
     t.boolean  "email_digest",                              default: true
     t.boolean  "email_on_direct_message",                   default: true
     t.boolean  "official_position_badge",                   default: false
-    t.datetime "password_changed_at",                       default: '2016-12-21 17:55:08', null: false
+    t.datetime "password_changed_at",                       default: '2017-06-20 13:30:34', null: false
     t.boolean  "created_from_signature",                    default: false
     t.integer  "failed_email_digests_count",                default: 0
     t.text     "former_users_data_log",                     default: ""
