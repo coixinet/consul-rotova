@@ -87,7 +87,24 @@ en:
         submit_button: Create booth
         title: New booth
       show:
-        location: Location
+        groups:
+          one: 1 Group of budget headings
+          other: "%{count} Groups of budget headings"
+      form:
+        group: Group name
+        no_groups: No groups created yet. Each user will be able to vote in only one heading per group.
+        add_group: Add new group
+        create_group: Create group
+        heading: Heading name
+        add_heading: Add heading
+        amount: Amount
+        save_heading: Save heading
+        no_heading: This group has no assigned heading.
+        table_heading: Heading
+        table_amount: Amount
+      winners:
+        calculate: Calculate Winner Investments
+        calculated: Winners being calculated, it may take a minute.
     budget_investments:
       edit:
         assigned_valuators: Valuators
