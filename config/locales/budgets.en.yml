@@ -75,10 +75,35 @@ en:
           voted_info: You can %{link} at any time until the close of this phase. No need to spend all the money available.
           voted_info_link: change your vote
           zero: You have not voted any investment project in this group.
-        title: Participatory budgeting
-        unfeasible: Unfeasible investment projects
-        unfeasible_text: The proposals must meet a number of criteria (legality, concreteness, be the responsibility of the city, not exceed the limit of the budget; %{definitions}) to be declared viable and reach the stage of final vote. All proposals don't meet these criteria are marked as unfeasible and published in the following list, along with its report of infeasibility.
-        unfeasible_text_definitions: see definitions here
+          verified_only: "To create a new budget investment %{verify}."
+          verify_account: "verify your account"
+          create: "Create budget investment"
+          not_logged_in: "To create a new budget investment you must %{sign_in} or %{sign_up}."
+          sign_in: "sign in"
+          sign_up: "sign up"
+          by_feasibility: By feasibility
+          feasible: Feasible projects
+          unfeasible: Unfeasible projects
+        orders:
+          random: random
+          confidence_score: highest rated
+          price: by price
+      show:
+        author_deleted: User deleted
+        price_explanation: Price explanation
+        unfeasibility_explanation: Unfeasibility explanation
+        code_html: 'Investment project code: <strong>%{code}</strong>'
+        location_html: 'Location: <strong>%{location}</strong>'
+        organization_name_html: 'Organization: <strong>%{name}</strong>'
+        share: Share
+        title: Investment project
+        supports: Supports
+        votes: Votes
+        price: Price
+        comments_tab: Comments
+        milestones_tab: Milestones
+        no_milestones: Don't have defined milestones
+      wrong_price_format: Only integer numbers
       investment:
         add: Vote
         already_added: You have already added this investment project
@@ -132,4 +157,16 @@ en:
       unfeasible: See unfeasible investments
       unfeasible_title: Unfeasible investments
       unselected: See investments not selected for balloting phase
-      unselected_title: Investments not selected for balloting phase
+      see_results: See results
+    results:
+      page_title: "%{budget} - Results"
+      heading: "Participatory budget results"
+      geozone_selection_title: "By district"
+      spending_proposal: Proposal title
+      ballot_lines_count: Times selected
+      hide_discarded_link: Hide discarded
+      show_all_link: Show all
+      price: Cost
+      amount_available: Available budget
+      accepted: "Accepted spending proposal: "
+      discarded: "Discarded spending proposal: "
