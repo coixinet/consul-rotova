@@ -1,6 +1,82 @@
 ---
 es:
   activerecord:
+    models:
+      activity:
+        one: "actividad"
+        other: "actividades"
+      budget:
+        one: "Presupuesto participativo"
+        other: "Presupuestos participativos"
+      budget/investment:
+        one: "Proyecto de inversión"
+        other: "Proyectos de inversión"
+      budget/investment/milestone:
+        one: "seguimiento"
+        other: "seguimientos"
+      comment:
+        one: "Comentario"
+        other: "Comentarios"
+      debate:
+        one: "Debate"
+        other: "Debates"
+      tag:
+        one: "Tema"
+        other: "Temas"
+      user:
+        one: "Usuario"
+        other: "Usuarios"
+      moderator:
+        one: "Moderador"
+        other: "Moderadores"
+      administrator:
+        one: "Administrador"
+        other: "Administradores"
+      vote:
+        one: "Voto"
+        other: "Votos"
+      organization:
+        one: "Organización"
+        other: "Organizaciones"
+      proposal:
+        one: "Propuesta ciudadana"
+        other: "Propuestas ciudadanas"
+      poll/booth:
+        one: "urna"
+        other: "urnas"
+      poll/officer:
+        one: "presidente de mesa"
+        other: "presidentes de mesa"
+      spending_proposal:
+        one: "Propuesta de inversión"
+        other: "Propuestas de inversión"
+      site_customization/page:
+        one: Página
+        other: Páginas
+      site_customization/image:
+        one: Imagen
+        other: Imágenes
+      site_customization/content_block:
+        one: Bloque
+        other: Bloques
+      legislation/process:
+          one: "Proceso"
+          other: "Procesos"
+      legislation/draft_versions:
+          one: "Versión borrador"
+          other: "Versiones borrador"
+      legislation/draft_texts:
+        one: "Borrador"
+        other: "Borradores"
+      legislation/questions:
+        one: "Pregunta"
+        other: "Preguntas"
+      legislation/question_options:
+        one: "Opción de respuesta cerrada"
+        other: "Opciones de respuesta cerrada"
+      legislation/answers:
+        one: "Respuesta"
+        other: "Respuestas"
     attributes:
       budget:
         currency_symbol: Divisa
@@ -22,8 +98,11 @@ es:
         organization_name: Si estás proponiendo en nombre de una organización o colectivo, escribe su nombre
         title: Título
       comment:
-        body: Comentario
-        user: Usuario
+        body: "Comentario"
+        user: "Usuario"
+      budget/investment/milestone:
+        title: "Título"
+        description: "Descripción"
       debate:
         author: Autor
         description: Opinión

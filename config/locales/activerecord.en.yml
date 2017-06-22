@@ -1,6 +1,82 @@
 ---
 en:
   activerecord:
+    models:
+      activity:
+        one: "activity"
+        other: "activities"
+      budget:
+        one: "Participatory budget"
+        other: "Participatory budgets"
+      budget/investment:
+        one: "Investment"
+        other: "Investments"
+      budget/investment/milestone:
+        one: "milestone"
+        other: "milestones"
+      comment:
+        one: "Comment"
+        other: "Comments"
+      debate:
+        one: "Debate"
+        other: "Debates"
+      tag:
+        one: "Tag"
+        other: "Tags"
+      user:
+        one: "User"
+        other: "Users"
+      moderator:
+        one: "Moderator"
+        other: "Moderators"
+      administrator:
+        one: "Administrator"
+        other: "Administrators"
+      vote:
+        one: "Vote"
+        other: "Votes"
+      organization:
+        one: "Organisation"
+        other: "Organisations"
+      poll/booth:
+        one: "booth"
+        other: "booths"
+      poll/officer:
+        one: "officer"
+        other: "officers"
+      proposal:
+        one: "Citizen proposal"
+        other: "Citizen proposals"
+      spending_proposal:
+        one: "Spending proposal"
+        other: "Spending proposals"
+      site_customization/page:
+        one: Custom page
+        other: Custom pages
+      site_customization/image:
+        one: Custom image
+        other: Custom images
+      site_customization/content_block:
+        one: Custom content block
+        other: Custom content blocks
+      legislation/process:
+        one: "Process"
+        other: "Processes"
+      legislation/draft_versions:
+        one: "Draft version"
+        other: "Draft versions"
+      legislation/draft_texts:
+          one: "Draft"
+          other: "Drafts"
+      legislation/questions:
+        one: "Question"
+        other: "Questions"
+      legislation/question_options:
+        one: "Question option"
+        other: "Question options"
+      legislation/answers:
+        one: "Answer"
+        other: "Answers"
     attributes:
       budget:
         currency_symbol: Currency
@@ -14,13 +90,21 @@ en:
         name: Name
         phase: Phase
       budget/investment:
-        administrator_id: Administrator
-        description: Description
-        external_url: Link to additional documentation
-        heading_id: Heading
-        location: Location
-        organization_name: If you are proposing in the name of a collective/organization, write its name
-        title: Title
+        heading_id: "Sección de presupuesto"
+        title: "Title"
+        description: "Description"
+        external_url: "External url"
+        location: "Location"
+        administrator_id: "Administrator"
+        description: "Description"
+        external_url: "Link to additional documentation"
+        heading_id: "Heading"
+        title: "Title"
+        location: "Location"
+        organization_name: "If you are proposing in the name of a collective/organization, write its name"
+      budget/investment/milestone:
+        title: "Title"
+        description: "Description"
       comment:
         body: Comment
         user: User

@@ -147,45 +147,34 @@ en:
         sent: Sent
         tags: Tags
         undefined: Undefined
-    budgets:
-      create:
-        notice: New participatory budget created successfully!
+        milestone: Milestone
+        new_milestone: Create new milestone
       edit:
-        title: Edit Participatory budget
-      form:
-        add_group: Add new group
-        add_heading: Add heading
-        amount: Amount
-        create_group: Create group
-        group: Group name
-        heading: Heading name
-        no_groups: No groups created yet. Each user will be able to vote in only one heading per group.
-        no_heading: This group has no assigned heading.
-        save_heading: Save heading
-        table_amount: Amount
-        table_heading: Heading
+        classification: Clasification
+        assigned_valuators: Valuators
+        select_heading: Select heading
+        submit_button: Update
+        tags: Tags
+        tags_placeholder: "Write the tags you want separated by commas (,)"
+        undefined: Undefined
+      search_unfeasible: Search unfeasible
+    milestones:
       index:
-        budget_investments: See budget investments
-        edit_budget: Edit budget
-        edit_groups: Edit headings groups
-        filters:
-          current: Open
-          finished: Finished
-        new_link: Create new budget
-        table_edit_budget: Edit
-        table_edit_groups: Headings groups
-        table_investments: Investments
-        table_name: Name
-        table_phase: Phase
-        title: Participatory budgets
+        table_id: "ID"
+        table_title: "Title"
+        table_description: "Description"
+        table_actions: "Actions"
+        delete: "Delete milestone"
       new:
-        title: New participatory budget
-      show:
-        groups:
-          one: 1 Group of budget headings
-          other: "%{count} Groups of budget headings"
+        creating: Create milestone
+      edit:
+        title: Edit milestone
+      create:
+        notice: New milestone created successfully!
       update:
-        notice: Participatory budget updated successfully
+        notice: Milestone updated successfully
+      delete:
+        notice: Milestone successfully deleted
     comments:
       index:
         filter: Filter

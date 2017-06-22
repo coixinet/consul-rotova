@@ -147,45 +147,34 @@ es:
         sent: Fecha
         tags: Etiquetas
         undefined: Sin definir
-    budgets:
-      create:
-        notice: "¡Nueva campaña de presupuestos participativos creada con éxito!"
+        milestone: Seguimiento
+        new_milestone: Crear nuevo seguimiento
       edit:
-        title: Editar campaña de presupuestos participativos
-      form:
-        add_group: Añadir nuevo grupo
-        add_heading: Añadir partida
-        amount: Cantidad
-        create_group: Crear grupo
-        group: Nombre del grupo
-        heading: Nombre de la partida
-        no_groups: No hay grupos creados todavía. Cada usuario podrá votar en una sola partida de cada grupo.
-        no_heading: Este grupo no tiene ninguna partida asignada.
-        save_heading: Guardar partida
-        table_amount: Cantidad
-        table_heading: Partida
+        classification: Clasificación
+        assigned_valuators: Evaluadores
+        select_heading: Seleccionar partida
+        submit_button: Actualizar
+        tags: Etiquetas
+        tags_placeholder: "Escribe las etiquetas que desees separadas por comas (,)"
+        undefined: Sin definir
+      search_unfeasible: Buscar inviables
+    milestones:
       index:
-        budget_investments: Ver propuestas de inversión
-        edit_budget: Editar presupuesto
-        edit_groups: Editar grupos de partidas
-        filters:
-          current: Abiertos
-          finished: Terminados
-        new_link: Crear nuevo presupuesto
-        table_edit_budget: Editar
-        table_edit_groups: Grupos de partidas
-        table_investments: Propuestas de inversión
-        table_name: Nombre
-        table_phase: Fase
-        title: Presupuestos participativos
+        table_id: "ID"
+        table_title: "Título"
+        table_description: "Descripción"
+        table_actions: "Acciones"
+        delete: "Eliminar seguimiento"
       new:
-        title: Nuevo presupuesto ciudadano
-      show:
-        groups:
-          one: 1 Grupo de partidas presupuestarias
-          other: "%{count} Grupos de partidas presupuestarias"
+        creating: Crear seguimiento
+      edit:
+        title: Editar seguimiento
+      create:
+        notice: Nuevo seguimiento creado con éxito!
       update:
-        notice: Campaña de presupuestos participativos actualizada
+        notice: Seguimiento actualizado
+      delete:
+        notice: Seguimiento borrado correctamente
     comments:
       index:
         filter: Filtro
