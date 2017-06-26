@@ -59,7 +59,15 @@ Run the tests with:
 bin/rspec
 ```
 
-Run the [coffeelint](http://www.coffeelint.org/) linter for coffeescript (install with `npm install -g coffeelint`) :
+If you add SCSS code you can check it with:
+
+```
+scss-lint
+```
+
+To maintain accesibility level, if you add new colors use a [Color contrast checker](http://webaim.org/resources/contrastchecker/) (WCAG AA is mandatory, WCAG AAA is recommended)
+
+If you work on Coffeescript code you can check it with [coffeelint](http://www.coffeelint.org/) (install with `npm install -g coffeelint`) :
 
 ```
 coffeelint .
