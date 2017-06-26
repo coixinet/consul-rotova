@@ -503,7 +503,8 @@ en:
     delete: Delete
     edit: Edit
     flag: Flag as inappropriate
-    go_to_page: 'Go to page of '
+    follow: "Follow"
+    follow_entity: "Follow %{entity}"
     hide: Hide
     'no': 'No'
     outline:
@@ -549,8 +550,19 @@ en:
       tags: Trending
     target_blank_html: " (link opens in new window)"
     unflag: Unflag
+<<<<<<< HEAD
     'yes': 'Yes'
     you_are_in: You are in
+=======
+    unfollow: "Unfollow"
+    unfollow_entity: "Unfollow %{entity}"
+    outline:
+      debates: Debates
+      proposals: Proposals
+      budget: Participatory budget
+      searcher: Searcher
+    go_to_page: "Go to page of "
+>>>>>>> Create followable concern, follow  model. Add followable to proposal model.
   social:
     blog: "%{org} Blog"
     facebook: "%{org} Facebook"
@@ -721,3 +733,9 @@ en:
       user_permission_verify_info: "* Only for users on Census."
       user_permission_verify_my_account: Verify my account
       user_permission_votes: Participate on final voting
+<<<<<<< HEAD
+=======
+  invisible_captcha:
+    sentence_for_humans: "If you are human, ignore this field"
+    timestamp_error_message: "Sorry, that was too quick! Please resubmit."
+>>>>>>> Create followable concern, follow  model. Add followable to proposal model.

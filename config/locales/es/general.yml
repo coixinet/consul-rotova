@@ -503,7 +503,8 @@ es:
     delete: Borrar
     edit: Editar
     flag: Denunciar como inapropiado
-    go_to_page: 'Ir a la página de '
+    follow: "Seguir"
+    follow_entity: "Seguir %{entity}"
     hide: Ocultar
     'no': 'No'
     outline:
@@ -543,8 +544,19 @@ es:
       tags: Tendencias
     target_blank_html: " (se abre en ventana nueva)"
     unflag: Deshacer denuncia
+<<<<<<< HEAD
     'yes': Sí
     you_are_in: Estás en
+=======
+    unfollow: Dejar de seguir
+    unfollow_entity: "Dejar de seguir %{entity}"
+    outline:
+      debates: Debates
+      proposals: Propuestas
+      budget: Presupuestos participativos
+      searcher: Buscador
+    go_to_page: "Ir a la página de "
+>>>>>>> Create followable concern, follow  model. Add followable to proposal model.
   social:
     blog: Blog de %{org}
     facebook: Facebook de %{org}
@@ -715,3 +727,9 @@ es:
       user_permission_verify_info: "* Sólo usuarios empadronados."
       user_permission_verify_my_account: Verificar mi cuenta
       user_permission_votes: Participar en las votaciones finales*
+<<<<<<< HEAD
+=======
+  invisible_captcha:
+    sentence_for_humans: "Si eres humano, por favor ignora este campo"
+    timestamp_error_message: "Eso ha sido demasiado rápido. Por favor, reenvía el formulario."
+>>>>>>> Create followable concern, follow  model. Add followable to proposal model.
