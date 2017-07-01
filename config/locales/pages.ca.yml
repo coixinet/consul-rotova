@@ -29,7 +29,7 @@ ca:
         page:
           description: Utilitza aquesta pàgina per resoldre les preguntes més frencuentes als usuaris del lloc.
           faq_1_description: Aquest és un exemple per a la descripció de la pregunta un.
-          faq_1_title: pregunta 1
+          faq_1_title: Pregunta 1
           title: Preguntes més freqüents
         title: "¿Problemes tècnics?"
       guide: Aquesta guia explica cadascuna de les seccions de %{org_name}. Pots ampliar la informació en els enllaços de "Informació detallada".

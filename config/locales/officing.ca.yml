@@ -7,14 +7,14 @@ ca:
         title: Presidir taula de votacions
     final_recounts:
       flash:
-        create: dades afegits
+        create: Dades afegits
         error_create: Recompte final NO afegit. Error en les dades
       new:
         add_results: Afegir resultats
-        booth: urna
-        count: recompte final
+        booth: Urna
+        count: Recompte final
         count_placeholder: Nombre final de vots
-        date: dia
+        date: Dia
         final_recount_list: Els teus recomptes finals
         not_allowed: No tens permís per introduir recountos finals
         select_booth: Tria urna
@@ -23,10 +23,10 @@ ca:
         system_count: Recompte del sistema
         title: "%{poll} - Afegir recompte final"
     header:
-      title: votacions
+      title: Votacions
     menu:
       final_recounts: Recompte final i escrutini
-      recounts: recompte diari
+      recounts: Recompte diari
       voters: Validar document i votar
     polls:
       final:
@@ -42,14 +42,14 @@ ca:
         title: Llistat de votacions
     recounts:
       flash:
-        create: dades afegits
+        create: Dades afegits
         error_create: Recompte NO afegit. Error en les dades
       new:
-        booth: urna
+        booth: Urna
         booth_date: Data i urna
         count: Nombre de vots
         count_placeholder: Nombre de vots
-        date: data
+        date: Data
         not_allowed: No ets president de taula en aquesta votació
         recount_list: Els teus recomptes
         select_booth_date: Tria data i urna
@@ -64,29 +64,29 @@ ca:
         error_verifying_census: El Padró no va poder verificar aquest document.
         form_errors: van evitar verificar aquest document
         no_assignments: Avui no tens torn de president de taula
-        submit: validar document
-        title: validar document
+        submit: Validar document
+        title: Validar document
     results:
       flash:
-        create: dades guardats
+        create: Dades guardats
         error_create: Resultats NO afegits. Error en les dades
         error_wrong_booth: Urna incorrecta. Resultats NO guardats.
         error_wrong_date: Data incorrecta. Resultats NO guardats.
       index:
         no_results: No hi ha resultats
-        results: resultats
+        results: Resultats
         table_answer: Resposta
-        table_nulls: paperetes nul·les
-        table_votes: vots
+        table_nulls: Paperetes nul·les
+        table_votes: Vots
         table_whites: Paperetes en blanc
       new:
-        ballots_null: paperetes nul·les
+        ballots_null: Paperetes nul·les
         ballots_white: Paperetes en blanc
-        booth: urna
-        date: dia
+        booth: Urna
+        date: Dia
         not_allowed: No tens permís per introduir resultats
         results_list: Els teus resultats
-        see_results: veure resultats
+        see_results: Veure resultats
         select_booth: Tria urna
         select_date: Tria dia
         submit: Desar
@@ -94,10 +94,10 @@ ca:
     voters:
       new:
         table_actions: Estat de les votacions
-        table_poll: votació
-        title: votacions
+        table_poll: Votació
+        title: Votacions
       show:
-        can_vote: pot votar
+        can_vote: Pot votar
         error_already_voted: Ja ha participat en aquesta votació.
         submit: Confirma vot
         success: "¡Vot introduït!"

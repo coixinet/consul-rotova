@@ -95,7 +95,7 @@ ca:
         code_html: 'Codi proposta d''inversió: <strong>%{code}</strong>'
         location_html: 'Ubicació: <strong>%{location}</strong>'
         organization_name_html: 'Associació: <strong>%{name}</strong>'
-        price: cost
+        price: Cost
         price_explanation: Informe de cost
         share: Compartir
         supports: Avals
@@ -115,20 +115,20 @@ ca:
       available: 'Disponible: '
     results:
       accepted: 'Proposta d''inversió acceptada:'
-      amount_available: pressupost disponible
-      ballot_lines_count: vots
+      amount_available: Pressupost disponible
+      ballot_lines_count: Vots
       discarded: 'Proposta d''inversió descartada:'
       geozone_selection_title: Àmbit d'actuació
       heading: Resultats pressupostos participatius
       hide_discarded_link: Amaga descartades
       page_title: "%{budget} - Resultats"
-      price: cost
+      price: Cost
       show_all_link: Mostra totes
       spending_proposal: Títol
     show:
       group: Grup
       phase: Fase actual
-      see_results: veure resultats
+      see_results: Veure resultats
       unfeasible: Veure les propostes inviables
       unfeasible_title: Propostes inviables
       unselected: Veure les propostes no seleccionades per a la votació final

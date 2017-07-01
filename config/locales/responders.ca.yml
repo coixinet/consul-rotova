@@ -18,7 +18,7 @@ ca:
         error: No s'ha pogut esborrar
         spending_proposal: Proposta d'inversió eliminada.
       save_changes:
-        notice: canvis guardats
+        notice: Canvis guardats
       update:
         budget_investment: Proposta d'inversió actualitzada correctament
         debate: Debat actualitzat correctament.

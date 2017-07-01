@@ -94,7 +94,7 @@ ca:
         edit: Editar
         filters:
           valuating: En avaluació
-          valuation_finished: avaluació finalitzada
+          valuation_finished: Avaluació finalitzada
           valuation_open: Obertes
         geozone_filter_all: Tots els ambits d'actuació
         title: Propostes d'inversió per a pressupostos participatius

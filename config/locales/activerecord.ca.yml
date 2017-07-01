@@ -30,15 +30,15 @@ ca:
         terms_of_service: Termes de servei
         title: Títol
       legislation/annotation:
-        text: comentari
+        text: Comentari
       legislation/draft_version:
-        body: text
-        changelog: canvis
-        final_version: versió final
-        status: estat
+        body: Text
+        changelog: Canvis
+        final_version: Versió final
+        status: Estat
         title: Títol de la versió
       legislation/process:
-        additional_info: informació addicional
+        additional_info: Informació addicional
         allegations_end_date: Data de fi d'al·legacions
         allegations_start_date: Data d'inici d'al·legacions
         debate_end_date: Data de fi del debat
@@ -50,10 +50,10 @@ ca:
         start_date: Data d'inici del procés
         title: Títol del procés
       legislation/question:
-        question_options: respostes
+        question_options: Respostes
         title: Títol
       legislation/question_option:
-        value: valor
+        value: Valor
       organization:
         name: Nom de l'associació
         responsible_name: Persona responsable de l'associació
@@ -79,12 +79,12 @@ ca:
         signable_id: ID Proposta ciutadana/Proposada inversió
         signable_type: Tipus de fulla de signatures
       site_customization/content_block:
-        body: contingut
-        locale: idioma
-        name: nom
+        body: Contingut
+        locale: Idioma
+        name: Nom
       site_customization/image:
-        image: imatge
-        name: nom
+        image: Imatge
+        name: Nom
       site_customization/page:
         content: Contingut
         created_at: Creada
@@ -187,21 +187,21 @@ ca:
         other: Debats
       legislation/answers:
         one: Resposta
-        other: respostes
+        other: Respostes
       legislation/draft_texts:
         one: Esborrany
-        other: esborranys
+        other: Esborranys
       legislation/draft_versions:
-        one: versió esborrany
-        other: versions esborrany
+        one: Versió esborrany
+        other: Versions esborrany
       legislation/process:
-        one: procés
-        other: processos
+        one: Procés
+        other: Processos
       legislation/question_options:
         one: Opció de resposta tancada
         other: Opcions de resposta tancada
       legislation/questions:
-        one: pregunta
+        one: Pregunta
         other: Preguntes
       moderator:
         one: Moderador
@@ -219,14 +219,14 @@ ca:
         one: Proposta ciutadana
         other: Propostes ciutadanes
       site_customization/content_block:
-        one: bloc
-        other: blocs
+        one: Bloc
+        other: Blocs
       site_customization/image:
-        one: imatge
-        other: imatges
+        one: Imatge
+        other: Imatges
       site_customization/page:
-        one: pàgina
-        other: pàgines
+        one: Pàgina
+        other: Pàgines
       spending_proposal:
         one: Proposta d'inversió
         other: Propostes d'inversió

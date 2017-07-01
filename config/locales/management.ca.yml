@@ -7,7 +7,7 @@ ca:
       show:
         title: Compte d'usuari
     account_info:
-      change_user: canviar usuari
+      change_user: Canviar usuari
       document_number_label: 'Nombre de document:'
       document_type_label: 'Tipus de document:'
       email_label: 'E-mail:'
@@ -18,7 +18,7 @@ ca:
         unverified_user: Usuari no verificat
       create: Crear nou projecte
       filters:
-        heading: concepte
+        heading: Concepte
         unfeasible: Projectes no factibles
       print:
         print_button: Imprimir
@@ -29,11 +29,11 @@ ca:
       create_new_investment: Crear nou projecte
       print_investments: Imprimir projectes
       support_investments: Donar suport a projectes
-    check: comprovar
+    check: Comprovar
     dashboard:
       index:
         info: Des d'aquí pots gestionar usuaris a través de les accions llistades al menú de l'esquerra.
-        title: gestió
+        title: Gestió
     date_of_birth: Data de naixement
     document_number: Nombre de document
     document_type_label: Tipus de document
@@ -47,7 +47,7 @@ ca:
       please_check_account_data: Comproveu que les dades anteriors són correctes per procedir a verificar el compte completament.
       title: Gestió d'usuaris
       under_age: No tens edat suficient per verificar el teu compte.
-      verify: verificar usuari
+      verify: Verificar usuari
     email_label: E-mail
     email_verifications:
       already_verified: Aquest compte d'usuari ja està verificada.
@@ -62,7 +62,7 @@ ca:
       send_email: Enviar correu electrònic de verificació
     menu:
       create_budget_investment: Crear projectes d'inversió
-      create_proposal: crear proposta
+      create_proposal: Crear proposta
       create_spending_proposal: Crear proposta d'inversió
       edit_user_accounts: Edita compte d'usuari
       print_budget_investments: Imprimir projectes d'inversió
@@ -72,7 +72,7 @@ ca:
       support_proposals: Donar suport propostes
       support_spending_proposals: Donar suport propts. d'inversió
       user_invites: Invitacions per a usuaris
-      users: usuaris
+      users: Usuaris
     permissions:
       create_proposals: Crear noves propostes
       debates: Participar en debats
@@ -83,14 +83,14 @@ ca:
       budget_investments_note: Els pressupostos participatius s'invertiran en les propostes d'inversió més recolzades.
       proposals_info: 'Fes la teva proposta a http: //url.consul'
       proposals_note: Les propostes més recolzades seran portades a votació. I si les accepta una majoria, l'Ajuntament les durà a terme.
-      proposals_title: 'propostes:'
+      proposals_title: 'Propostes:'
       spending_proposals_info: 'Participa a http: //url.consul'
       spending_proposals_note: Els pressupostos participatius s'invertiran en les propostes d'inversió més recolzades.
     print_info: Imprimir aquesta informació
     proposals:
       alert:
         unverified_user: Aquest usuari no està verificat
-      create_proposal: crear proposta
+      create_proposal: Crear proposta
       print:
         print_button: Imprimir
     sessions:
@@ -114,18 +114,18 @@ ca:
         title: Invitacions per a usuaris
       new:
         info: Introdueix els emails separats per ','
-        label: emails
+        label: Emails
         submit: Enviar invitacions
         title: Invitacions per a usuaris
     username_label: Nom d'usuari
     users:
       create_user: Crea un compte d'usuari
       create_user_info: 'Procedim a crear un usuari amb la següent informació:'
-      create_user_submit: crear usuari
+      create_user_submit: Crear usuari
       create_user_success_html: Hem enviat un correu electrònic a <b>%{email}</b> per verificar que és seva. El correu enviat conté un link que l'usuari haurà de prémer. Llavors podrà seleccionar una clau d'accés, i entrar a la web de participació.
       erase_account_confirm: "¿Segur que vols eliminar a aquest usuari? Aquesta acció no es pot desfer"
-      erase_account_link: esborrar compte
-      erase_submit: esborrar compte
+      erase_account_link: Esborrar compte
+      erase_submit: Esborrar compte
       erase_warning: Aquesta acció no es pot desfer. Si us plau assegureu-vos que vol eliminar aquest compte.
       erased_by_manager: 'S''ha eliminat pel manager: %{manager}'
       erased_notice: Compte d'usuari esborrada.

@@ -7,26 +7,26 @@ ca:
         comments_count:
           one: "%{count} comentari"
           other: "%{count} comentaris"
-        publish_comment: publicar Comentari
+        publish_comment: Publicar comentari
         replies_count:
           one: "%{count} resposta"
           other: "%{count} respostes"
-        see_all: veure tots
-        see_complete: veure complet
+        see_all: Veure tots
+        see_complete: Veure complet
       form:
         login_to_comment: Necessites %{signin} o %{signup} per fer comentaris.
         phase_not_open: Aquesta fase del procés no està oberta
         signin: iniciar sessió
         signup: registrar-
       index:
-        comments_about: comentaris sobre
+        comments_about: Comentaris sobre
         comments_count:
           one: "%{count} comentari"
           other: "%{count} comentaris"
         see_in_context: Veure en context
-        title: comentaris
+        title: Comentaris
       show:
-        title: comentari
+        title: Comentari
       version_chooser:
         see_text: Veure esborrany del text
         seeing_version: Comentaris per a la versió
@@ -34,16 +34,16 @@ ca:
       changes:
         see_text: Veure esborrany del text
         seeing_changelog_version: Resum de canvis de la revisió
-        title: canvis
+        title: Canvis
       show:
-        loading_comments: carregant comentaris
+        loading_comments: Carregant comentaris
         see_changes: veure resum de canvis
         see_comments: Veure tots els comentaris
         seeing_version: Estàs veient la revisió
-        select_draft_version: seleccionar esborrany
+        select_draft_version: Seleccionar esborrany
         select_version_submit: veure
-        text_body: text
-        text_comments: comentaris
+        text_body: Text
+        text_comments: Comentaris
         text_toc: índex
         updated_at: actualitzada el %{date}
     processes:
@@ -59,8 +59,8 @@ ca:
       index:
         filters:
           next: Properament
-          open: processos actius
-          past: acabats
+          open: Processos actius
+          past: Acabats
         no_next_processes: No hi ha processos planejats
         no_open_processes: No hi ha processos actius
         no_past_processes: No hi ha processos acabats
@@ -72,16 +72,16 @@ ca:
         see_latest_comments: Veure últimes aportacions
         see_latest_comments_title: Aportar a aquest procés
       shared:
-        allegations_dates: al·legacions
-        debate_dates: debat previ
-        draft_publication_date: publicació esborrany
-        result_publication_date: publicació resultats
-        key_dates: dates clau
+        allegations_dates: Al·legacions
+        debate_dates: Debat previ
+        draft_publication_date: Publicació esborrany
+        key_dates: Dates clau
+        result_publication_date: Publicació resultats
     questions:
       comments:
         comment_button: Publica resposta
-        comments_closed: fase tancada
-        comments_title: respostes obertes
+        comments_closed: Fase tancada
+        comments_title: Respostes obertes
         form:
           leave_comment: Deixa la teva resposta
       participation:
@@ -97,14 +97,14 @@ ca:
         comments:
           one: "%{count} comentari"
           other: "%{count} comentaris"
-          zero: sense comentaris
-        debate: debat
+          zero: Sense comentaris
+        debate: Debat
       show:
         answer_question: Enviar resposta
-        first_question: primera pregunta
-        next_question: següent pregunta
-        share: compartir
+        first_question: Primera pregunta
+        next_question: Següent pregunta
+        share: Compartir
         title: Procés de legislació col·laborativa
     shared:
-      share: compartir
+      share: Compartir
       share_comment: Comentari sobre la %{version_name} de l'esborrany del procés %{process_name}
