@@ -174,12 +174,35 @@ es:
         subtitle: Subtítulo
         title: Título
         updated_at: última actualización
-      spending_proposal:
-        administrator_id: Administrador
-        association_name: Nombre de la asociación
-        description: Descripción
-        external_url: Enlace a documentación adicional
-        geozone_id: Ámbito de actuación
+        more_info_flag: Mostrar en la página de más información
+        print_content_flag: Botón de imprimir contenido
+        locale: Idioma
+      site_customization/image:
+        name: Nombre
+        image: Imagen
+      site_customization/content_block:
+        name: Nombre
+        locale: Idioma
+        body: Contenido
+      legislation/process:
+        title: Título del proceso
+        description: En qué consiste
+        additional_info: Información adicional
+        start_date: Fecha de inicio del proceso
+        end_date: Fecha de fin del proceso
+        debate_start_date: Fecha de inicio del debate
+        debate_end_date: Fecha de fin del debate
+        draft_publication_date: Fecha de publicación del borrador
+        allegations_start_date: Fecha de inicio de alegaciones
+        allegations_end_date: Fecha de fin de alegaciones
+        result_publication_date: Fecha de publicación del resultado final
+      legislation/draft_version:
+        title: Título de la version
+        body: Texto
+        changelog: Cambios
+        status: Estado
+        final_version: Versión final
+      legislation/question:
         title: Título
       user:
         current_password: Contraseña actual
