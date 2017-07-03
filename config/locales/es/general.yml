@@ -17,6 +17,7 @@ es:
       phone_number_label: Teléfono
       public_activity_label: Mostrar públicamente mi lista de actividades
       public_interests_label: Mostrar públicamente mis intereses
+      public_interests_title_list: Lista de intereses
       save_changes_submit: Guardar cambios
       subscription_to_website_newsletter_label: Recibir emails con información interesante sobre la web
       title: Mi cuenta
@@ -545,10 +546,6 @@ es:
       tags: Tendencias
     target_blank_html: " (se abre en ventana nueva)"
     unflag: Deshacer denuncia
-<<<<<<< HEAD
-    'yes': Sí
-    you_are_in: Estás en
-=======
     unfollow: Dejar de seguir
     unfollow_entity: "Dejar de seguir %{entity}"
     outline:
@@ -557,7 +554,6 @@ es:
       budget: Presupuestos participativos
       searcher: Buscador
     go_to_page: "Ir a la página de "
->>>>>>> Create followable concern, follow  model. Add followable to proposal model.
   social:
     blog: Blog de %{org}
     facebook: Facebook de %{org}
@@ -667,9 +663,12 @@ es:
         proposals:
           one: 1 Propuesta
           other: "%{count} Propuestas"
-        votes:
-          one: 1 Aval
-          other: "%{count} Avales"
+        budget_investments:
+          one: 1 Proyecto de presupuestos participativos
+          other: "%{count} Proyectos de presupuestos participativos"
+        follows:
+          one: 1 Siguiendo
+          other: "%{count} Siguiendo"
       no_activity: Usuario sin actividad pública
       no_private_messages: Este usuario no acepta mensajes privados.
       private_activity: Este usuario ha decidido mantener en privado su lista de actividades
@@ -728,9 +727,6 @@ es:
       user_permission_verify_info: "* Sólo usuarios empadronados."
       user_permission_verify_my_account: Verificar mi cuenta
       user_permission_votes: Participar en las votaciones finales*
-<<<<<<< HEAD
-=======
   invisible_captcha:
     sentence_for_humans: "Si eres humano, por favor ignora este campo"
     timestamp_error_message: "Eso ha sido demasiado rápido. Por favor, reenvía el formulario."
->>>>>>> Create followable concern, follow  model. Add followable to proposal model.

@@ -17,6 +17,7 @@ en:
       phone_number_label: Phone number
       public_activity_label: Keep my list of activities public
       public_interests_label: Keep my interests public
+      public_interests_title_list: List of interests
       save_changes_submit: Save changes
       subscription_to_website_newsletter_label: Receive by email website relevant information
       title: My account
@@ -551,10 +552,6 @@ en:
       tags: Trending
     target_blank_html: " (link opens in new window)"
     unflag: Unflag
-<<<<<<< HEAD
-    'yes': 'Yes'
-    you_are_in: You are in
-=======
     unfollow: "Unfollow"
     unfollow_entity: "Unfollow %{entity}"
     outline:
@@ -563,7 +560,6 @@ en:
       budget: Participatory budget
       searcher: Searcher
     go_to_page: "Go to page of "
->>>>>>> Create followable concern, follow  model. Add followable to proposal model.
   social:
     blog: "%{org} Blog"
     facebook: "%{org} Facebook"
@@ -673,9 +669,12 @@ en:
         proposals:
           one: 1 Proposal
           other: "%{count} Proposals"
-        votes:
-          one: 1 Vote
-          other: "%{count} Votes"
+        budget_investments:
+          one: 1 Investment
+          other: "%{count} Investments"
+        follows:
+          one: 1 Following
+          other: "%{count} Following"
       no_activity: User has no public activity
       no_private_messages: This user doesn't accept private messages.
       private_activity: This user decided to keep the activity list private
@@ -734,9 +733,6 @@ en:
       user_permission_verify_info: "* Only for users on Census."
       user_permission_verify_my_account: Verify my account
       user_permission_votes: Participate on final voting
-<<<<<<< HEAD
-=======
   invisible_captcha:
     sentence_for_humans: "If you are human, ignore this field"
     timestamp_error_message: "Sorry, that was too quick! Please resubmit."
->>>>>>> Create followable concern, follow  model. Add followable to proposal model.
