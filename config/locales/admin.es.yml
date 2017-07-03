@@ -127,9 +127,11 @@ es:
           valuating: En evaluación
           valuation_finished: Evaluación finalizada
           valuation_finished_feasible: Viables
-          valuation_open: Abiertas
-          without_admin: Sin administrador
-        heading_filter_all: Todas las partidas
+          selected: Seleccionadas
+          winners: Ganadoras
+          all: Todas
+        title: Propuestas de inversión
+        assigned_admin: Administrador asignado
         no_admin_assigned: Sin admin asignado
         no_valuators_assigned: Sin evaluador
         feasibility:
