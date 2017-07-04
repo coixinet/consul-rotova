@@ -24,9 +24,9 @@ feature 'Managed User' do
 
       within(".account-info") do
         expect(page).to have_content "Identified as"
-        expect(page).to have_content "#{user.username}"
-        expect(page).to have_content "#{user.email}"
-        expect(page).to have_content "#{user.document_number}"
+        expect(page).to have_content (user.username).to_s
+        expect(page).to have_content (user.email).to_s
+        expect(page).to have_content (user.document_number).to_s
       end
     end
 
@@ -45,9 +45,9 @@ feature 'Managed User' do
 
       within(".account-info") do
         expect(page).to have_content "Identified as"
-        expect(page).to have_content "#{user.username}"
-        expect(page).to have_content "#{user.email}"
-        expect(page).to have_content "#{user.document_number}"
+        expect(page).to have_content (user.username).to_s
+        expect(page).to have_content (user.email).to_s
+        expect(page).to have_content (user.document_number).to_s
       end
     end
 
@@ -79,9 +79,9 @@ feature 'Managed User' do
 
       within(".account-info") do
         expect(page).to have_content "Identified as"
-        expect(page).to have_content "#{user.username}"
-        expect(page).to have_content "#{user.email}"
-        expect(page).to have_content "#{user.document_number}"
+        expect(page).to have_content (user.username).to_s
+        expect(page).to have_content (user.email).to_s
+        expect(page).to have_content (user.document_number).to_s
       end
     end
 
@@ -108,9 +108,9 @@ feature 'Managed User' do
       user = User.last
       within(".account-info") do
         expect(page).to have_content "Identified as"
-        expect(page).to have_content "#{user.username}"
-        expect(page).to have_content "#{user.email}"
-        expect(page).to have_content "#{user.document_number}"
+        expect(page).to have_content (user.username).to_s
+        expect(page).to have_content (user.email).to_s
+        expect(page).to have_content (user.document_number).to_s
       end
     end
 
@@ -136,8 +136,8 @@ feature 'Managed User' do
       user = User.last
       within(".account-info") do
         expect(page).to have_content "Identified as"
-        expect(page).to have_content "#{user.username}"
-        expect(page).to have_content "#{user.document_number}"
+        expect(page).to have_content (user.username).to_s
+        expect(page).to have_content (user.document_number).to_s
       end
     end
   end
@@ -153,14 +153,14 @@ feature 'Managed User' do
 
     within(".account-info") do
       expect(page).to have_content "Identified as"
-      expect(page).to have_content "#{user.username}"
+      expect(page).to have_content (user.username).to_s
 
       click_link "Change user"
     end
 
     expect(page).to have_content "User session signed out successfully."
     expect(page).to_not have_content "Identified as"
-    expect(page).to_not have_content "#{user.username}"
+    expect(page).to_not have_content (user.username).to_s
     expect(current_path).to eq(management_root_path)
   end
 
