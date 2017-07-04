@@ -506,7 +506,7 @@ es:
     edit: Editar
     flag: Denunciar como inapropiado
     follow: "Seguir"
-    follow_entity: "Seguir %{entity}"
+    follow_entity: "Seguir %{entity}: Podrás participar y recibir notificaciones de cualquier suceso relacionado."
     hide: Ocultar
     'no': 'No'
     outline:
