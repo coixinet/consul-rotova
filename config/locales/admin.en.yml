@@ -160,9 +160,9 @@ en:
         edit_classification: Edit classification
         edit_dossier: Edit dossier
         group: Grupo
-        heading: Partida
-        info: "%{budget_name} - Group: %{group_name} - Investment project %{id}"
-        sent: Sent
+        heading: Heading
+        dossier: Dossier
+        edit_dossier: Edit dossier
         tags: Tags
         undefined: Undefined
         milestone: Milestone
