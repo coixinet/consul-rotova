@@ -507,6 +507,7 @@ en:
     flag: Flag as inappropriate
     follow: "Follow"
     follow_entity: "Follow %{entity}"
+    follow_entity_title: "Follow %{entity}: You can participate and receive notifications of any related events."
     hide: Hide
     'no': 'No'
     outline:
