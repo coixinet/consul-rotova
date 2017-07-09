@@ -101,10 +101,10 @@ en:
       notice:
         valuate: Dossier updated
       show:
-        assigned_admin: Assigned admin
-        assigned_valuators: Assigned valuators
-        association_name: Asociación
         back: Back
+        heading: Investment project
+        info: Author info
+        association_name: Association
         by: Sent by
         currency: "€"
         dossier: Dossier
