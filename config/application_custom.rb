@@ -6,5 +6,6 @@ module Consul
 
     require Rails.root.join('lib/document_parser')
     require Rails.root.join('lib/custom/census_api')
+    require Rails.root.join('lib/custom/sms_api')
   end
 end
