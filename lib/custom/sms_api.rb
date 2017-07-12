@@ -26,7 +26,7 @@ class SMSApi
       messages: [
         {
           from: "Gob.Abierto",
-          to: to,
+          to: to =~ /\A\+34/ ? to : "+34#{to}"
           text: "Clave para verificarte: #{code}. Gobierno Abierto"
         }
       ]
