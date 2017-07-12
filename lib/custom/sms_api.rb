@@ -14,7 +14,6 @@ class SMSApi
 
     response = http_client.request(request)
     response.read_body
-    debugger
     return true
   end
 
