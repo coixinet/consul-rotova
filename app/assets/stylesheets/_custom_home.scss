@@ -5,7 +5,7 @@
   text-align: center;
   background-size: cover;
   overflow: hidden;
-  
+
   @include breakpoint(medium) {
     height: 95vh;
   }
@@ -17,7 +17,7 @@
 }
 .cover h1 {
   font-size: 1.75rem;
-  
+
   @include breakpoint(medium) {
     font-size: 4rem;
   }
@@ -25,7 +25,7 @@
 .cover p {
   font-size: 1.25rem;
   line-height: 1.1;
-  
+
   @include breakpoint(medium) {
     font-size: 1.5rem;
   }
@@ -52,10 +52,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
+
+  @include breakpoint(medium) {
+    margin-top: -1.5rem;
+  }
 }
 .cover.one .teaser {
   max-width: 95%;
-  
+
   @include breakpoint(medium) {
     max-width: 75%;
   }
@@ -67,7 +72,7 @@
 }
 .underline-stroke {
   display: none;
-  
+
   @include breakpoint(large) {
     display: block;
     position: absolute;
@@ -81,13 +86,14 @@
   background-image: url(image-path('custom/cover_2.jpg'));
 }
 .cover.second {
-  padding: 10vh;
-  
   @include breakpoint(medium) {
     padding: 20vh;
   }
   @include breakpoint(xxlarge) {
     padding: 30vh;
+  }
+  @media (max-height: 650px) {
+    padding-top: 20vh !important;
   }
 }
 .cover.second .teaser-headline svg {
@@ -95,7 +101,7 @@
   position: absolute;
   right: -13rem;
   top: 3rem;
-  
+
   @include breakpoint(large) {
     display: block;
   }
@@ -114,9 +120,13 @@
 .cover.third {
   padding: 10vh;
   margin-bottom: 3rem;
-  
+
   @include breakpoint(xxlarge) {
     padding: 30vh 30vh 5vh 30vh;
+  }
+
+  @media (max-height: 650px) {
+    padding-top: 10vh !important;
   }
 }
 .cover.third .teaser-headline {
@@ -131,16 +141,20 @@
 .cover.third .teaser-headline svg {
   display: none;
   position: absolute;
-  right: 10rem;
+  right: 6rem;
   top: 3rem;
-  
+
   @include breakpoint(large) {
     display: block;
-    height: 250px;
+    height: 23vh;
   }
-  
+
   @include breakpoint(xxlarge) {
-    height: 298px;
+    height: 18vh;
+  }
+
+  @media (max-height: 650px) {
+    display: none !important;
   }
 }
 .cover.third .teaser-desc {
@@ -151,10 +165,7 @@
 }
 .cover.third .cards {
   @include breakpoint(large) {
-    margin-top: 10rem;
-  }
-  @include breakpoint(xxlarge) {
-    margin-top: 15rem;
+    margin-top: 12vh;
   }
 }
 .cover .card {
@@ -224,7 +235,7 @@
   background: $brand;
   padding: 3rem;
   height: 18rem;
-  
+
   @include breakpoint(medium) {
     position: relative;
     height: 17rem;
@@ -250,9 +261,9 @@
   box-shadow: 0 0 4px 0 rgba(0,0,0,0.05);
   border-radius: 2px;
   margin-bottom: 1.75rem;
-  
+
   @include breakpoint(medium) {
-    margin-bottom: 0.75rem;    
+    margin-bottom: 0.75rem;
   }
 }
 .link-card .deadline {
@@ -274,7 +285,7 @@
   border-bottom: 1px solid #E6E6E6;
 }
 .link-card p {
-  text-align: left; 
+  text-align: left;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }

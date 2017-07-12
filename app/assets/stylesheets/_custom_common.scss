@@ -1,11 +1,3 @@
-/* Login */
-.auth-image {
-  background: none;
-}
-.auth-image h1 a {
-  color: $text;
-}
-
 /* Debate, proposals, etc */
 .debate, .proposal, .investment-project, .budget-investment {
   margin: 2rem 0;
@@ -113,4 +105,9 @@ h2.sidebar-title::after,
 }
 .participation-not-allowed {
   padding: 0.5rem 0 0 0;
+}
+
+/* Datepicker */
+.admin .ui-datepicker .ui-icon {
+  text-indent: 0 !important;
 }
