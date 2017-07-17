@@ -93,7 +93,11 @@ ca:
       show:
         author_deleted: Usuari eliminat
         code_html: 'Codi proposta d''inversió: <strong>%{code}</strong>'
+        comments_tab: comentaris
         location_html: 'Ubicació: <strong>%{location}</strong>'
+        milestone_publish_date: Publicat el %{publish_date}
+        milestones_tab: seguiment
+        no_milestones: No hi ha fites definides
         organization_name_html: 'Associació: <strong>%{name}</strong>'
         price: Cost
         price_explanation: Informe de cost
@@ -121,6 +125,7 @@ ca:
       geozone_selection_title: Àmbit d'actuació
       heading: Resultats pressupostos participatius
       hide_discarded_link: Amaga descartades
+      incompatibles: incompatibles
       page_title: "%{budget} - Resultats"
       price: Cost
       show_all_link: Mostra totes

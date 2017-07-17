@@ -21,6 +21,9 @@ ca:
         location: Ubicació
         organization_name: Si estàs proposant en nom d'una associació, escriu el seu nom
         title: Títol
+      budget/investment/milestone:
+        description: Descripció
+        title: Títol
       comment:
         body: Comentari
         user: Usuari
@@ -88,6 +91,7 @@ ca:
       site_customization/page:
         content: Contingut
         created_at: Creada
+        locale: idioma
         more_info_flag: Mostra a la pàgina de més informació
         print_content_flag: Botó d'imprimir contingut
         slug: URL

@@ -16,6 +16,8 @@ ca:
       personal: Dades personals
       phone_number_label: Telèfon
       public_activity_label: Mostrar públicament la meua llista d'activitats
+      public_interests_label: Mostra públicament els meus interessos
+      public_interests_title_list: Llista d'interessos
       save_changes_submit: Guardar canvis
       subscription_to_website_newsletter_label: Rebre emails amb informació interessant sobre la web
       title: El meu compte
@@ -496,6 +498,9 @@ ca:
     delete: Borrar
     edit: Editar
     flag: Denunciar com a inadequat
+    follow: seguir
+    follow_entity: seguir %{entity}
+    follow_entity_title: 'Seguir %{entity}: Podràs participar i rebre notificacions de qualsevol succés relacionat.'
     go_to_page: Anar a la pàgina de
     hide: Ocultar
     'no': 'No'
@@ -536,6 +541,8 @@ ca:
       tags: Tendències
     target_blank_html: " (s'obri en finestra nova) "
     unflag: Desfer denúncia
+    unfollow: Deixar de seguir
+    unfollow_entity: Deixar de seguir %{entity}
     'yes': Sí
     you_are_in: Estàs en
   social:
@@ -644,6 +651,9 @@ ca:
         debates:
           one: 1 Debat
           other: "%{count} Debats"
+        follows:
+          one: 1 Seguint
+          other: "%{count} Seguint"
         proposals:
           one: 1 Proposta
           other: "%{count} Propostas"

@@ -75,6 +75,20 @@ ca:
       edit:
         submit_button: Actualitzar urna
         title: Edita urna
+      form:
+        add_group: Afegeix nou grup
+        add_heading: Afegir partida
+        amount: quantitat
+        create_group: Crea un grup
+        group: Nom del grup
+        heading: Nom de la partida
+        no_groups: No hi ha grups creats encara. Cada usuari podrà votar en una sola partida de cada grup.
+        no_heading: Aquest grup no té cap partida assignada.
+        population: població
+        save_heading: Desar partida
+        table_amount: quantitat
+        table_heading: partida
+        table_population: població
       index:
         add_booth: Afegir urna
         location: Ubicació
@@ -87,12 +101,19 @@ ca:
         submit_button: Crear urna
         title: Nova urna
       show:
+        groups:
+          one: 1 Grup de partides pressupostàries
+          other: "%{count} Grups de partides pressupostàries"
         location: Ubicació
     budget_investments:
       edit:
         assigned_valuators: Avaluadors
         classification: Classificació
+        compatibility: compatibilitat
+        mark_as_incompatible: Marcar com incompatible
+        mark_as_selected: Marca com seleccionat
         select_heading: Seleccionar partida
+        selection: selecció
         submit_button: Actualitzar
         tags: Etiquetes
         tags_placeholder: Escriu les etiquetes que vulguis separades per comes (,)
@@ -112,6 +133,7 @@ ca:
           valuation_finished: Avaluació finalitzada
           valuation_finished_feasible: Viables
           valuation_open: Obertes
+          winners: guanyadores
           without_admin: Sense administrador
         heading_filter_all: Totes les partides
         no_admin_assigned: Sense admin assignat
@@ -122,6 +144,7 @@ ca:
         table_feasibility: Viabilitat
         table_geozone: Àmbit d'actuació
         table_id: ID
+        table_incompatible: incompatible
         table_selection: Selecció
         table_supports: Suports
         table_title: Títol
@@ -136,6 +159,10 @@ ca:
         assigned_valuators: Avaluadors assignats
         by: Autor
         classification: Classificació
+        compatibility:
+          'false': compatible
+          title: compatibilitat
+          'true': incompatible
         dossier: Informe
         edit: Edita
         edit_classification: Edita classificació
@@ -143,9 +170,19 @@ ca:
         group: Grup
         heading: Partida
         info: "%{budget_name} - Grup: %{group_name} - Proposta d'inversió %{id}"
+        milestone: seguiment
+        new_milestone: Crear nova fita
+        selection:
+          'false': no seleccionat
+          title: selecció
+          'true': seleccionat
         sent: Data
         tags: Etiquetes
         undefined: Sense definir
+        winner:
+          'false': 'no'
+          title: guanyador
+          'true': si
     budgets:
       create:
         notice: "'Nova campanya de pressupostos participatius creada amb èxit!"
@@ -434,6 +471,24 @@ ca:
       title_site_customization: Personalitzar lloc
       users: Usuaris
       valuators: Avaluadors
+    milestones:
+      create:
+        notice: Nova fita creat amb èxit!
+      delete:
+        notice: Fita esborrat correctament
+      edit:
+        title: Edita fita
+      index:
+        delete: eliminar fita
+        no_milestones: No hi ha fites definides
+        table_actions: accions
+        table_description: Descripció
+        table_id: ID
+        table_title: Títol
+      new:
+        creating: crear fita
+      update:
+        notice: fita actualitzat
     moderators:
       index:
         title: Moderadors
@@ -757,6 +812,7 @@ ca:
           title: Pàgina nova
         page:
           created_at: Creada
+          locale: idioma
           status: Estat
           status_draft: Esborrany
           status_published: Publicada
