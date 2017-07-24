@@ -3,9 +3,10 @@ Setting['feature.twitter_login'] = false
 Setting['feature.facebook_login'] = false
 Setting['feature.google_login'] = false
 
-
 Setting['feature.auto_login'] = false
 Setting['feature.auto_verify_users'] = false
+
+Setting['feature.proposals_not_verified'] = true
 
 # Privacy page
 page = SiteCustomization::Page.find_by(slug: 'privacy')

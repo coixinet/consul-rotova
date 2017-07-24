@@ -115,7 +115,11 @@ class Proposal < ActiveRecord::Base
   end
 
   def votable_by?(user)
-    user && user.level_two_or_three_verified?
+    if Setting['feature.proposals_not_verified']
+      user
+    else
+      user && user.level_two_or_three_verified?
+    end
   end
 
   def retired?
