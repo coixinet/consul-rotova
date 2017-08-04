@@ -21,7 +21,7 @@ es:
       save_changes_submit: Guardar cambios
       subscription_to_website_newsletter_label: Recibir emails con información interesante sobre la web
       title: Mi cuenta
-      user_permission_debates: Participar en debates
+      user_permission_debates: Participar en ideas
       user_permission_info: Con tu cuenta ya puedes...
       user_permission_proposal: Crear nuevas propuestas
       user_permission_support_proposal: Apoyar propuestas*
@@ -73,7 +73,7 @@ es:
   debates:
     create:
       form:
-        submit_button: Empieza un debate
+        submit_button: Empieza una idea
     debate:
       comments:
         one: 1 Comentario
@@ -84,14 +84,14 @@ es:
         other: "%{count} votos"
         zero: Sin votos
     edit:
-      editing: Editar debate
+      editing: Editar idea
       form:
         submit_button: Guardar cambios
-      show_link: Ver debate
+      show_link: Ver idea
     form:
-      debate_text: Texto inicial del debate
-      debate_title: Título del debate
-      tags_instructions: Etiqueta este debate.
+      debate_text: Texto inicial de la idea
+      debate_title: Título de la idea
+      tags_instructions: Etiqueta esta idea.
       tags_label: Temas
       tags_placeholder: Escribe las etiquetas que desees separadas por coma (',')
     index:
@@ -107,26 +107,26 @@ es:
         relevance: Más relevantes
       search_form:
         button: Buscar
-        placeholder: Buscar debates...
+        placeholder: Buscar ideas...
         title: Buscar
       search_results_html:
         one: " que contiene <strong>'%{search_term}'</strong>"
         other: " que contienen <strong>'%{search_term}'</strong>"
       select_order: Ordenar por
-      start_debate: Empieza un debate
-      title: Debates
+      start_debate: Empieza una idea
+      title: Ideas
     new:
       form:
-        submit_button: Empieza un debate
+        submit_button: Empieza una idea
       info: Si lo que quieres es hacer una propuesta, esta es la sección incorrecta, entra en %{info_link}.
       info_link: crear nueva propuesta
       more_info: Más información
       recommendation_four: Disfruta de este espacio, de las voces que lo llenan, también es tuyo.
-      recommendation_one: No escribas el título del debate o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
+      recommendation_one: No escribas el título de la idea o frases enteras en mayúsculas. En internet eso se considera gritar. Y a nadie le gusta que le griten.
       recommendation_three: Las críticas despiadadas son muy bienvenidas. Este es un espacio de pensamiento. Pero te recomendamos conservar la elegancia y la inteligencia. El mundo es mejor con ellas presentes.
-      recommendation_two: Cualquier debate o comentario que implique una acción ilegal será eliminado, también los que tengan la intención de sabotear los espacios de debate, todo lo demás está permitido.
-      recommendations_title: Recomendaciones para crear un debate
-      start_new: Empezar un debate
+      recommendation_two: Cualquier idea o comentario que implique una acción ilegal será eliminado, también los que tengan la intención de sabotear los espacios de idea, todo lo demás está permitido.
+      recommendations_title: Recomendaciones para crear un idea
+      start_new: Empezar una idea
     show:
       author_deleted: Usuario eliminado
       comments:
@@ -134,8 +134,8 @@ es:
         other: "%{count} Comentarios"
         zero: Sin comentarios
       comments_title: Comentarios
-      edit_debate_link: Editar debate
-      flag: Este debate ha sido marcado como inapropiado por varios usuarios.
+      edit_debate_link: Editar idea
+      flag: Esta idea ha sido marcado como inapropiado por varios usuarios.
       login_to_comment: Necesitas %{signin} o %{signup} para comentar.
       share: Compartir
     update:
@@ -150,7 +150,7 @@ es:
     accept_terms_title: Acepto la Política de privacidad y las Condiciones de uso
     budget/investment: la propuesta de inversión
     conditions: Condiciones de uso
-    debate: el debate
+    debate: la idea
     direct_message: el mensaje privado
     error: error
     errors: errores
@@ -198,8 +198,8 @@ es:
       administration: Administrar
       available_locales: Idiomas disponibles
       budgets: Presupuestos participativos
-      collaborative_legislation: Procesos legislativos
-      debates: Debates
+      collaborative_legislation: Normas abiertas
+      debates: Ideas
       external_link_blog: Blog
       external_link_opendata: Datos abiertos
       external_link_opendata_url: https://opendata.consul
@@ -512,7 +512,7 @@ es:
     'no': 'No'
     outline:
       budget: Presupuestos participativos
-      debates: Debates
+      debates: Ideas
       proposals: Propuestas
       searcher: Buscador
     print:
@@ -530,9 +530,9 @@ es:
         see_all: Ver todas
       debate:
         found:
-          one: Existe un debate con el término '%{query}', puedes participar en él en vez de abrir uno nuevo.
-          other: Existen debates con el término '%{query}', puedes participar en ellos en vez de abrir uno nuevo.
-        message: Estás viendo %{limit} de %{count} debates que contienen el término '%{query}'
+          one: Existe una idea con el término '%{query}', puedes participar en él en vez de abrir uno nuevo.
+          other: Existen ideas con el término '%{query}', puedes participar en ellos en vez de abrir uno nuevo.
+        message: Estás viendo %{limit} de %{count} ideas que contienen el término '%{query}'
         see_all: Ver todos
       proposal:
         found:
@@ -550,7 +550,7 @@ es:
     unfollow: Dejar de seguir
     unfollow_entity: "Dejar de seguir %{entity}"
     outline:
-      debates: Debates
+      debates: Ideas
       proposals: Propuestas
       budget: Presupuestos participativos
       searcher: Buscador
@@ -615,8 +615,8 @@ es:
     index:
       comment_votes: Votos en comentarios
       comments: Comentarios
-      debate_votes: Votos en debates
-      debates: Debates
+      debate_votes: Votos en ideas
+      debates: Ideas
       proposal_votes: Votos en propuestas
       proposals: Propuestas ciudadanas
       unverified_users: Usuarios sin verificar
@@ -649,7 +649,7 @@ es:
     show:
       deleted: Eliminado
       deleted_budget_investment: Este propuesta de inversión ha sido eliminada
-      deleted_debate: Este debate ha sido eliminado
+      deleted_debate: Esta idea ha sido eliminado
       deleted_proposal: Este propuesta ha sido eliminada
       filters:
         budget_investments:
@@ -659,8 +659,8 @@ es:
           one: 1 Comentario
           other: "%{count} Comentarios"
         debates:
-          one: 1 Debate
-          other: "%{count} Debates"
+          one: 1 Idea
+          other: "%{count} Ideas"
         proposals:
           one: 1 Propuesta
           other: "%{count} Propuestas"
@@ -720,7 +720,7 @@ es:
     welcome:
       go_to_index: Ahora no, ver propuestas
       title: Empieza a participar
-      user_permission_debates: Participar en debates
+      user_permission_debates: Participar en ideas
       user_permission_info: Con tu cuenta ya puedes...
       user_permission_proposal: Crear nuevas propuestas
       user_permission_support_proposal: Apoyar propuestas*

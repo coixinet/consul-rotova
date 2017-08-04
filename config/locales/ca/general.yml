@@ -4,7 +4,7 @@ ca:
     show:
       change_credentials_link: Canviar les meues dades d'accés
       email_digest_label: Rebre resum de notificacions sobre propostes
-      email_on_comment_label: Rebre un email quan algú comenta en les meues propostes o debats
+      email_on_comment_label: Rebre un email quan algú comenta en les meues propostes o idees
       email_on_comment_reply_label: Rebre un email quan algú contesta als meus comentaris
       email_on_direct_message_label: Rebre emails amb missatges privats
       erase_account_link: Donar-me de baixa
@@ -21,7 +21,7 @@ ca:
       save_changes_submit: Guardar canvis
       subscription_to_website_newsletter_label: Rebre emails amb informació interessant sobre la web
       title: El meu compte
-      user_permission_debates: Participar en debats
+      user_permission_debates: Participar en idees
       user_permission_info: Amb el teu compte ja pots...
       user_permission_proposal: Crear noves propostes
       user_permission_support_proposal: Avalar propostes*
@@ -73,7 +73,7 @@ ca:
   debates:
     create:
       form:
-        submit_button: Comença un debat
+        submit_button: Comença una idea
     debate:
       comments:
         one: 1 Comentari
@@ -84,14 +84,14 @@ ca:
         other: "%{count} vots"
         zero: Sense vots
     edit:
-      editing: Editar debat
+      editing: Editar idea
       form:
         submit_button: Guardar canvis
-      show_link: Veure debat
+      show_link: Veure idea
     form:
-      debate_text: Text inicial del debat
-      debate_title: Títol del debat
-      tags_instructions: Etiqueta aquest debat.
+      debate_text: Text inicial del idea
+      debate_title: Títol del idea
+      tags_instructions: Etiqueta aquest idea.
       tags_label: Temes
       tags_placeholder: Escriu les etiquetes que desitges separades per coma (',')
     index:
@@ -107,26 +107,26 @@ ca:
         relevance: Més rellevants
       search_form:
         button: Cercar
-        placeholder: Cercar debats...
+        placeholder: Cercar idees...
         title: Cercar
       search_results_html:
         one: que conté <strong>'%{search_term}'</strong>
         other: que contenen <strong>'%{search_term}'</strong>
       select_order: Ordenar per
-      start_debate: Comença un debat
-      title: Debats
+      start_debate: Comença una idea
+      title: Idees
     new:
       form:
-        submit_button: Comença un debat
+        submit_button: Comença una idea
       info: Si el que vols és fer una proposta, aquesta és la secció incorrecta, entra en %{info_link}.
       info_link: crear nova proposta
       more_info: Més informació
       recommendation_four: Gaudeix d'aquest espai, de les veus que ho omplen, també és teu.
-      recommendation_one: No escrigues el títol del debat o frases senceres en majúscules. En internet açò es considera cridar. I a ningú li agrada que li criden.
+      recommendation_one: No escrigues el títol de la idea o frases senceres en majúscules. En internet açò es considera cridar. I a ningú li agrada que li criden.
       recommendation_three: Les crítiques despietades són molt benvingudes. Aquest és un espai de pensament. Però et recomanem conservar l'elegància i la intel·ligència.
       recommendation_two: Qualsevol proposta o comentari que implique una acció il·legal serà eliminada, també les que tinguen la intenció de sabotejar els espais de proposta, tota la resta està permès.
-      recommendations_title: Recomendacions per a crear un debat
-      start_new: Comença un nou debat
+      recommendations_title: Recomendacions per a crear una idea
+      start_new: Comença un nova idea
     show:
       author_deleted: Usuari eliminat
       comments:
@@ -134,8 +134,8 @@ ca:
         other: "%{count} Comentaris"
         zero: Sense comentaris
       comments_title: Comentaris
-      edit_debate_link: Editar debat
-      flag: Aquest debat ha sigut marcat com a inadequat per diversos usuaris.
+      edit_debate_link: Editar idea
+      flag: Aquesta idea ha sigut marcat com a inadequat per diversos usuaris.
       login_to_comment: Necessites %{signin} o %{signup} per a comentar.
       share: Compartir
     update:
@@ -150,7 +150,7 @@ ca:
     accept_terms_title: Accepte la Política de privacitat i les Condicions d'ús
     budget/investment: la proposta d'inversió
     conditions: Condicions d'ús
-    debate: el debat
+    debate: la idea
     direct_message: el missatge privat
     error: error
     errors: errors
@@ -198,8 +198,8 @@ ca:
       administration: Administrar
       available_locales: Idiomes disponibles
       budgets: Pressupostos ciutadans
-      collaborative_legislation: Processos legislatius
-      debates: Debats
+      collaborative_legislation: Normes Obertes
+      debates: Idees
       external_link_blog: Blog
       external_link_opendata: Dades obertes
       external_link_opendata_url: ''
@@ -506,7 +506,7 @@ ca:
     'no': 'No'
     outline:
       budget: Pressupostos participatius
-      debates: Debats
+      debates: Idees
       proposals: Propostes
       searcher: Cercador
     print:
@@ -524,9 +524,9 @@ ca:
         see_all: Veure totes
       debate:
         found:
-          one: Existeix un debat amb el terme '%{query}', pots participar en ell en comptes d'obrir un de nou.
-          other: Existeixen debats amb el terme '%{query}', pots participar en ells en comptes d'obrir un de nou.
-        message: Estàs veient %{limit} de %{count} debats que contenen el terme '%{query}'
+          one: Existeix una idea amb el terme '%{query}', pots participar en ell en comptes d'obrir un de nou.
+          other: Existeixen idees amb el terme '%{query}', pots participar en ells en comptes d'obrir un de nou.
+        message: Estàs veient %{limit} de %{count} idees que contenen el terme '%{query}'
         see_all: Veure tots
       proposal:
         found:
@@ -605,8 +605,8 @@ ca:
     index:
       comment_votes: Vots en comentario
       comments: Comentaris
-      debate_votes: Vots en debats
-      debates: Debats
+      debate_votes: Vots en idees
+      debates: Idees
       proposal_votes: Vots en propostes
       proposals: Propostes ciutadanes
       unverified_users: Usuaris sense verificar
@@ -639,7 +639,7 @@ ca:
     show:
       deleted: Eliminat
       deleted_budget_investment: Aquesta proposta d'inversió ha sigut eliminada
-      deleted_debate: Aquest debat ha sigut eliminat
+      deleted_debate: Aquesta idea ha sigut eliminada
       deleted_proposal: Aquesta proposta ha sigut eliminada
       filters:
         budget_investments:
@@ -649,8 +649,8 @@ ca:
           one: 1 Comentari
           other: "%{count} Comentaris"
         debates:
-          one: 1 Debat
-          other: "%{count} Debats"
+          one: 1 Idea
+          other: "%{count} Idees"
         follows:
           one: 1 Seguint
           other: "%{count} Seguint"
