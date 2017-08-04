@@ -132,7 +132,7 @@
               <%= t("account.show.user_permission_support_proposal") %>
             </li>
             <li>
-              <% if current_user.level_three_verified? %>
+              <% if Setting['feature.proposals_not_verified'] || current_user.level_three_verified? %>
                 <span class="icon-check"></span>
               <% else %>
                 <span class="icon-x"></span>
