@@ -7,6 +7,8 @@ Setting['feature.auto_login'] = false
 Setting['feature.auto_verify_users'] = false
 
 Setting['feature.proposals_not_verified'] = true
+Setting['feature.signature_sheets'] = false
+Setting['feature.polls'] = false
 
 # Privacy page
 page = SiteCustomization::Page.find_by(slug: 'privacy')
