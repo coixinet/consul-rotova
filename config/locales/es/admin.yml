@@ -129,7 +129,10 @@ es:
           valuation_finished_feasible: Viables
           selected: Seleccionadas
           winners: Ganadoras
+          valuation_open: Abiertas
+          without_admin: Sin administrador
           all: Todas
+        heading_filter_all: Todas las partidas
         title: Propuestas de inversión
         assigned_admin: Administrador asignado
         no_admin_assigned: Sin admin asignado
@@ -150,6 +153,8 @@ es:
         table_valuation_finished: "Ev. Fin."
         table_selection: "Selección"
         table_incompatible: "Incompatible"
+        tags_filter_all: Todas las etiquetas
+        valuator_filter_all: Todos los evaluadores
       show:
         assigned_admin: Administrador asignado
         assigned_valuators: Evaluadores asignados
