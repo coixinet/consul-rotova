@@ -546,13 +546,13 @@ ca:
     'yes': Sí
     you_are_in: Estàs en
   social:
-    blog: Blog
-    facebook: Facebook
-    instagram: Instagram
-    telegram: Telegram
-    twitter: Twitter
-    whatsapp: Whatsapp
-    youtube: YouTube
+    blog: Blog de %{org}
+    facebook: Facebook de %{org}
+    instagram: Instagram de %{org}
+    telegram: Telegram de %{org}
+    twitter: Twitter de %{org}
+    whatsapp: WhatsApp
+    youtube: YouTube de %{org}
   spending_proposals:
     form:
       association_name: Nom de l'associació
