@@ -192,6 +192,45 @@ es:
         tags_placeholder: "Escribe las etiquetas que desees separadas por comas (,)"
         undefined: Sin definir
       search_unfeasible: Buscar inviables
+    budgets:
+      create:
+        notice: "Nueva campaña de presupuestos participativos creada con éxito"
+      edit:
+        title: Edita campaña presupuestos participativos
+      form:
+        add_group: Añade grupo
+        add_heading: Añade partida
+        amount: Cantidad
+        create_group: Crea un grupo
+        group: Nombre del grupo
+        heading: Nombre de la partida
+        no_groups: No hay grupos creados todavía. Cada usuario podrá votar en una sola partida de cada grupo.
+        no_heading: Este grupo no tiene partida asignada.
+        save_heading: Guardar partida
+        table_amount: Cantidad
+        table_heading: Partida
+      index:
+        budget_investments: Ver presupuesto de inversión
+        edit_budget: Edita presupuesto
+        edit_groups: Edita grupos de partidas
+        filters:
+          current: Abiertos
+          finished: Acabados
+        new_link: Crear nuevo presupuesto
+        table_edit_budget: Edita
+        table_edit_groups: Grupos de partidas
+        table_investments: Propuestas de inversión
+        table_name: Nombre
+        table_phase: Fase
+        title: Presupuestos participativos
+      new:
+        title: Nuevo presupuesto ciudadano
+      show:
+        groups:
+          one: 1 grupo de partidas presupuestarias
+          other: "%{count} grupos de partidas presupuestarias"
+      update:
+        notice: Campaña de presupuesstos participativos actualizada
     milestones:
       index:
         table_id: "ID"
