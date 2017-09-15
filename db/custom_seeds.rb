@@ -14,6 +14,7 @@ Setting['feature.polls'] = false
 page = SiteCustomization::Page.find_by(slug: 'privacy')
 if page.nil?
   page = SiteCustomization::Page.new(slug: 'privacy')
+  page.locale = 'es'
   page.title = 'Privacidad'
   page.status = SiteCustomization::Page::VALID_STATUSES[1]
   page.content = <<-HTML
@@ -39,6 +40,7 @@ end
 page = SiteCustomization::Page.find_by(slug: 'accesibility')
 if page.nil?
   page = SiteCustomization::Page.new(slug: 'accesibility')
+  page.locale = 'es'
   page.title = 'Accesibilidad'
   page.status = SiteCustomization::Page::VALID_STATUSES[1]
 
@@ -186,6 +188,7 @@ end
 page = SiteCustomization::Page.find_by(slug: 'conditions')
 if page.nil?
   page = SiteCustomization::Page.new(slug: 'conditions')
+  page.locale = 'es'
   page.title = 'Condiciones de uso'
   page.status = SiteCustomization::Page::VALID_STATUSES[1]
   page.content = <<-HTML
@@ -199,6 +202,7 @@ end
 page = SiteCustomization::Page.find_by(slug: 'more-information/faq')
 if page.nil?
   page = SiteCustomization::Page.new(slug: 'more-information/faq')
+  page.locale = 'es'
   page.title = 'Preguntas frecuentes'
   page.status = SiteCustomization::Page::VALID_STATUSES[1]
   page.content = <<-HTML
@@ -212,6 +216,7 @@ end
 page = SiteCustomization::Page.find_by(slug: 'more-information/how-to-use')
 if page.nil?
   page = SiteCustomization::Page.new(slug: 'more-information/how-to-use')
+  page.locale = 'es'
   page.title = 'Utilízalo en tu municipio'
   page.status = SiteCustomization::Page::VALID_STATUSES[1]
   page.content = <<-HTML
