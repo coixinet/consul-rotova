@@ -227,3 +227,193 @@ if page.nil?
   HTML
   page.save!
 end
+
+# More info
+#
+
+page = SiteCustomization::Page.find_by(slug: 'more_info/index')
+if page.nil?
+  page = SiteCustomization::Page.new(slug: 'more_info/index')
+  page.locale = 'ca'
+  page.title = 'Més informació'
+  page.more_info_flag = true
+  page.status = SiteCustomization::Page::VALID_STATUSES[1]
+end
+page.content = <<-HTML
+<div class="jumbo light">
+  <div class="row">
+    <div class="small-12 column">
+      <h2>Descobreix Consul</h2>
+      <p class="lead">Aprèn tot el que pots fer en aquest web.</p>
+      <p>Aquesta guia explica cadascuna de les seccions de Consul. Pots ampliar la informació en els enllaços de &quot;Informació detallada&quot;.</p>
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="small-12 column">
+    <ul class="menu-pages" data-magellan>
+      <li>
+        <a class="button hollow expanded" href="#debates">Debats</a>
+      </li>
+      <li>
+        <a class="button hollow expanded" href="#proposals">Propostes</a>
+      </li>
+      <li>
+        <a class="button hollow expanded" href="#budgets">Pressupostos participatius</a>
+      </li>
+      <li>
+        <a class="button hollow expanded" href="#other">Altra informació d&#39;interès</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<div id="more-info" class="more-info-content">
+  <div class="row">
+    <div class="small-12 medium-7 large-8 column">
+        <div class="row section-content">
+  <div class="small-12 column">
+    <h3 id="debates" data-magellan-target="debates">
+      Debats
+    </h3>
+    <p>Crea un fil en el qual debatre sobre qualsevol tema que vulguis compartir amb la resta de gent de la teva ciutat.</p>
+    <ul class="features">
+      <li>
+        Per crear un debat has de <a href="/users/sign_up">registrar-te a Consul</a>
+      </li>
+      <li>Els debats poden ser valorats utilitzant els botons de <strong>Estic d'acord</strong> o <strong>No estic d'acord</strong> que trobaràs en cada un d'ells.</li>
+    </ul>
+
+    <figure>
+      <img alt="Botons per valorar els debats" src="/assets/more_info/debates-cc3f95ad118d28df353eb32b7911b6f70bd649a93ed6ec956c8b8fff03d4513d.png" />
+      <figcaption>Botons &quot;Estic d&#39;acord&quot; i &quot;No estic d&#39;acord&quot; per valorar els debats.</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+      <div class="row section-content">
+  <div class="small-12 column">
+    <h3 id="proposals" data-magellan-target="proposals">
+      Propostes
+    </h3>
+    <p>Proposa el que vols que l&#39;Ajuntament porti a terme i dóna suport a propostes d&#39;altres persones.</p>
+    <ul class="features">
+      <li>
+        Per crear una proposta has de <a href="/users/sign_up">registrar-te a Consul</a>, a més per recolzar-les has de verificar el teu compte.
+      </li>
+      <li>Les propostes que aconsegueixin <strong>el suport de l'1% de la gent</strong> (major de 16 anys empadronada a Madrid; 27.064 suports) passen a votació.</li>
+      <li>Si hi ha més gent a favor que en contra en la votació, <strong>l'Ajuntament assumeix la proposta i es fa.</strong></li>
+    </ul>
+
+    <figure>
+      <img alt="Botó per donar suport a una proposta" src="/assets/more_info/proposals_ca-6b0d12ff53ad9c2d41ce18e1ed1c05fccd7acbc9fa74136118de9881f5433a53.png" />
+      <figcaption>Botó per "Donar suport" una proposta. <br> Quan arribi al nombre de suports passarà a votació.</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+        <div class="row section-content">
+  <div class="small-12 column">
+    <h3 id="budgets" data-magellan-target="budgets">
+      Pressupostos participatius
+    </h3>
+    <p>Els primers sis mesos de cada any pots decidir com gastar part del pressupost.</p>
+    <ul class="features">
+      <li>
+        Per crear un projecte de despesa has de <a href="/users/sign_up">registrar-te a Consul</a> i verificar el teu compte.
+      </li>
+      <li>En primer lloc comença la <strong>fase d'acceptació</strong> de projectes de despesa.</li>
+      <li>Després hi ha una <strong>fase de suports</strong> per prioritzar el més interessant, les més recolzades són avaluades per l'Ajuntament per veure si són viables i quant valen.</li>
+      <li>Al final hi ha una <strong>fase de votació</strong> on es decideix en quins es gasta aquesta part del pressupost.</li>
+    </ul>
+
+    <figure>
+      <img alt="Diferents fases d&#39;un pressupost participatiu" src="/assets/more_info/budgets_ca-796cc22ee3ec16e5bf09abb5401100c7d917f2f41055847c1af5a9e07f295f0f.png" />
+      <figcaption>Fase de "Suports" i fase de "Votació" dels pressupostos participatius.</figcaption>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+    <div class="small-12 medium-4 large-3 column more-info-sidebar">
+      <div class="sidebar-card">
+  <h3>¿Problemes tècnics?</h3>
+  <p>Llegeix les preguntes freqüents i resol els teus dubtes.</p>
+  <a class="button expanded" href="/more-information/faq">Veure preguntes freqüents</a>
+</div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <hr>
+    <div class="small-12 column">
+      <h3 id="other" data-magellan-target="other">Altra informació d&#39;interès</h3>
+
+<ul class="features">
+  <li><a href="/more-information/how-to-use">Utilitza Consul al teu municipi</a></li>
+
+</ul>
+
+    </div>
+  </div>
+</div>
+
+      <div class="push"></div>
+    </div>
+    <div class="footer">
+      <footer>
+  <div class="row">
+    <div class="footer-sections small-12 large-8 column">
+      <div class="small-12 medium-2 column">
+        <img class="hide-for-small-only" alt="Consul" src="/assets/go_dival-39bf67dc911264df7fdca67475ee9c12b5146eb8f27d2f9115ffec7f8989fe35.jpg" width="100" height="100" />
+      </div>
+
+      <div class="small-12 medium-4 column end">
+        <a href="http://dival.es"><img class="shide-for-small-only" src="/assets/logo_dival-3eaed114e212551e900a861dd0ae03e077a5faacfcf7ce22f6c04334b0aefb4b.png" alt="Logo dival" width="100" height="50" /></a>
+        <p>Ofert per la <a href="http://dival.es">Diputació de València</a>.</p>
+      </div>
+    </div>
+
+    <div class="small-12 large-4 column">
+      <h1 class="logo">
+        <a href="/more-information">Govern obert</a>
+      </h1>
+
+      <p class="info">
+        Aquest portal és una adaptació de la plataforma de <a target="blank" rel="nofollow" href="https://github.com/GO-DIVAL/consul-dival">programari lliure</a> <a target="blank" rel="nofollow" href="https://github.com/consul/consul">Aplicació consul</a> desenvolupada per l'Ajuntament de Madrid i adaptada per la Diputació de València.
+        Pots consultar les preguntes més freqüents sobre l&#39;ús d&#39;aquest portal
+        <a href="/more-information/faq">Açí</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="subfooter row">
+    <div class="small-12 medium-8 column">
+      Diputació de València, 2017&nbsp;|
+      <ul class="no-bullet inline-block">
+        <li class="inline-block"><a href="/privacy">Política de privacitat</a>&nbsp;|</li>
+        <li class="inline-block"><a href="/conditions">Condicions d&#39;ús</a>&nbsp;|</li>
+        <li class="inline-block"><a href="/accessibility">Accessibilitat</a></li>
+      </ul>
+    </div>
+
+    <div class="small-12 medium-4 column social">
+      <div class="text-right">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+  </div>
+HTML
+page.save!
+
+
