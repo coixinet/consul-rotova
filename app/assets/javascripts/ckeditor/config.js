@@ -111,5 +111,12 @@ CKEDITOR.editorConfig = function( config )
     { name: 'paragraph', groups: [ 'list' ], items: [ 'NumberedList', 'BulletedList' ] },
     { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike' ] }
   ];
+
+  config.toolbar_mini_source_code = [
+    { name: 'paragraph', groups: [ 'list' ], items: [ 'NumberedList', 'BulletedList' ] },
+    { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike' ] },
+    { name: 'document', groups: [ 'mode' ], items: [ 'Source'] },
+  ];
+
   config.toolbar = "mini";
 };
