@@ -29,7 +29,7 @@ ca:
       button: Decideix
       see_all: veure totes
       title: últimes propostes
-    teaser_description: Benvingut / da a la plataforma de participació ciutadana del %{org_name}
+    teaser_description: Benvingut / da a la plataforma de participació ciutadana %{org_name}
     teaser_headline: Proposa, debat, decideix.
     vote_teaser_headline: Vota
     vote_teaser_line_1: Involucra't i debat
