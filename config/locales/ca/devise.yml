@@ -39,7 +39,7 @@ ca:
       updated_not_active: "La teua contrasenya s'ha canviat correctament."
     registrations:
       destroyed:
-        Adéu! El teu compte ha sigut cancel·lat. Esperem tornar a veure't prompte. Li informem que de conformitat amb la seua petició, les seues dades personals registrades com a usuari de la Web i que formen part del fitxer 'DADES PERSONALS WEB' el responsable de la qual és l'Ajuntament de Castelló de la Plana, han sigut cancel·lats en els termes del previst en l'article 16 de la Llei Orgànica 15/1999 de Protecció de Dades de Caràcter Personal i de l'article 31 del seu Reglament de desenvolupament (RD 1720/2007).
+        Adéu! El teu compte ha sigut cancel·lat. Esperem tornar a veure't prompte. Li informem que de conformitat amb la seua petició, les seues dades personals registrades com a usuari de la Web i que formen part del fitxer 'DADES PERSONALS WEB' el responsable de la qual és l'Ajuntament, han sigut cancel·lats en els termes del previst en l'article 16 de la Llei Orgànica 15/1999 de Protecció de Dades de Caràcter Personal i de l'article 31 del seu Reglament de desenvolupament (RD 1720/2007).
       signed_up: "Benvingut! Has sigut identificat."
       signed_up_but_inactive: "Te has registrado correctamente, pero no has podido iniciar sesión porque tu cuenta no ha sido activada."
       signed_up_but_locked: "T'has registrat correctament, però no has pogut iniciar sessió perquè el teu compte està bloquejat."
@@ -103,7 +103,7 @@ ca:
           responsible_name_note: Serà la persona representant de l'associació en el nom de la qual es presenten les propostes
           submit: Registrar-se
           title: Registrar-se com associació
-          permission_warning: En el procés de pressupostos participatius podran participar totes aquelles associacions que tinguen el seu domicili social i el seu àmbit d'actuació territorial en la ciutat de Castelló de la Plana, i que és troben inscrites en el Registre d'Associacions.
+          permission_warning: En el procés de pressupostos participatius podran participar totes aquelles associacions que tinguen el seu domicili social i el seu àmbit d'actuació territorial en aquesta ciutat, i que és troben inscrites en el Registre d'Associacions.
         success:
           back_to_index: Entès, tornar a la pàgina principal
           instructions_1_html: En breu <b>ens posarem en contacte amb tu</b> per a verificar que realment representes a aquesta associació.
@@ -171,7 +171,7 @@ ca:
           terms: En registrar-te acceptes les %{terms}.
           terms_link: condicions d'ús
           terms_title: En registrar-te acceptes les condicions d'ús
-          terms_censed: Per a participar en el procés de pressupostos participatius ha de ser major de 16 anys i ha d'estar empadronat en la ciutat de Castelló de la Plana
+          terms_censed: Per a participar en el procés de pressupostos participatius ha de ser major de 16 anys i ha d'estar empadronat en la ciutat
           title: Registrar-se
           username_is_available: "Nom d'usuari disponible"
           username_is_not_available: "Nom d'usuari ja existent"

@@ -57,7 +57,7 @@ ca:
     email_verification:
       click_here_to_verify: en aquest enllaç
       instructions_2_html: Aquest email és per a verificar el teu compte amb <b>%{document_type} %{document_number}</b>. Si aquestes no són les teues dades, per favor no premes l'enllaç anterior i ignora aquest email.
-      instructions_html: Per a acabar de verificar el teu compte d'usuari en el Portal Decidim Castelló, necessitem que premes %{verification_link}.
+      instructions_html: Per a acabar de verificar el teu compte d'usuari en el Portal Decidim, necessitem que premes %{verification_link}.
       subject: Verifica el teu email
       thanks: Moltes gràcies.
       title: Verifica el teu compte amb el següent enllaç
