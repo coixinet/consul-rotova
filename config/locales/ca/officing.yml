@@ -58,12 +58,12 @@ ca:
     residence:
       flash:
         create: Document verificat amb el Padró
-        not_allowed: Avui no tens torn de president de taula
+        not_allowed: Hui no tens torn de president de taula
       new:
         document_number: Nombre de document (inclosa lletra)
         error_verifying_census: El Padró no va poder verificar aquest document.
         form_errors: van evitar verificar aquest document
-        no_assignments: Avui no tens torn de president de taula
+        no_assignments: Hui no tens torn de president de taula
         submit: Validar document
         title: Validar document
     results:

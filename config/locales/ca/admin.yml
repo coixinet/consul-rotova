@@ -765,7 +765,7 @@ ca:
           form:
             error: Error
         form:
-          content_block_about: Pots crear blocs d'HTML que s'incrustaran a la capçalera o el peu de la teva Cònsol.
+          content_block_about: Pots crear blocs d'HTML que s'incrustaran a la capçalera o el peu del teu web.
           content_block_footer_html: Els <strong>blocs del peu (footer)</strong> poden tenir qualsevol format i es poden utilitzar per guardar empremtes Javascript, contingut CSS o contingut HTML personalitzat.
           content_block_top_links_html: 'Els <strong>blocs de la capçalera (top_links)</strong> són blocs d''enllaços que s''han de crear amb aquest format:'
           content_blocks_information: Informació sobre els blocs de text

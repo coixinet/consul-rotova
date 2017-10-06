@@ -81,7 +81,7 @@ ca:
     print:
       budget_investments_info: 'Participa a http: //url.consul'
       budget_investments_note: Els pressupostos participatius s'invertiran en les propostes d'inversió més recolzades.
-      proposals_info: 'Fes la teva proposta a http: //url.consul'
+      proposals_info: 'Fes la teua proposta a http: //url.consul'
       proposals_note: Les propostes més recolzades seran portades a votació. I si les accepta una majoria, l'Ajuntament les durà a terme.
       proposals_title: 'Propostes:'
       spending_proposals_info: 'Participa a http: //url.consul'
@@ -128,6 +128,6 @@ ca:
       erase_account_confirm: "¿Segur que vols eliminar a aquest usuari? Aquesta acció no es pot desfer"
       erase_account_link: Esborrar compte
       erase_submit: Esborrar compte
-      erase_warning: Aquesta acció no es pot desfer. Si us plau assegureu-vos que vol eliminar aquest compte.
+      erase_warning: Aquesta acció no es pot desfer. Per favor assegureu-vos que vol eliminar aquest compte.
       erased_by_manager: 'S''ha eliminat pel manager: %{manager}'
       erased_notice: Compte d'usuari esborrada.

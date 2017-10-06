@@ -16,7 +16,7 @@ ca:
         image_alt: Diferents fases d'un pressupost participatiu
         title: Pressupostos participatius
       debates:
-        description: Crea un fil en el qual debatre sobre qualsevol tema que vulguis compartir amb la resta de gent de la teva ciutat.
+        description: Crea un fil en el qual debatre sobre qualsevol tema que vulguis compartir amb la resta de gent de la teua ciutat.
         feature_1: Per crear un debat has de %{link}
         feature_1_link: registrar-te a %{org_name}
         feature_2_html: Els debats poden ser valorats utilitzant els botons de <strong>Estic d'acord</strong> o <strong>No estic d'acord</strong> que trobaràs en cada un d'ells.
@@ -75,10 +75,10 @@ ca:
       more_info: Més informació sobre %{org_name}
       privacy: Política de Privacitat
     verify:
-      code: Codi que has rebut a la teva carta
+      code: Codi que has rebut a la teua carta
       email: E-mail
       info: 'Per verificar el teu compte introdueix les dades amb què et vas registrar:'
-      info_code: 'Ara introdueix el codi que has rebut a la teva carta:'
+      info_code: 'Ara introdueix el codi que has rebut a la teua carta:'
       password: Clau
       submit: Verificar el meu compte
       title: Verifica el teu compte

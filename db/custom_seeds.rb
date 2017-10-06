@@ -277,7 +277,7 @@ page.content = <<-HTML
           <h3 id="debates" data-magellan-target="debates">
             Debats
           </h3>
-          <p>Crea un fil en el qual debatre sobre qualsevol tema que vulguis compartir amb la resta de gent de la teva ciutat.</p>
+          <p>Crea un fil en el qual debatre sobre qualsevol tema que vulguis compartir amb la resta de gent de la teua ciutat.</p>
           <ul class="features">
             <li>
               Per crear un debat has de <a href="/users/sign_up">registrar-te a Consul</a>

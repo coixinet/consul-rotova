@@ -102,7 +102,7 @@ ca:
       orders:
         confidence_score: Millor valorats
         created_at: Nous
-        hot_score: Més actius avui
+        hot_score: Més actius hui
         most_commented: Més comentats
         relevance: Més rellevants
       search_form:
@@ -371,7 +371,7 @@ ca:
         archival_date: Arxivades
         confidence_score: Més avalades
         created_at: Noves
-        hot_score: Més actives avui
+        hot_score: Més actives hui
         most_commented: Més comentades
         relevance: Més rellevants
       retired_links:
@@ -415,11 +415,11 @@ ca:
         other: "%{count} Comentaris"
         zero: Sense comentaris
       created: Has creat una nova proposta!
-      improve_info: També pots %{improve_info_link} de com millorar la teva campanya
+      improve_info: També pots %{improve_info_link} de com millorar la teua campanya
       improve_info_link: veure més informació
       reason_for_supports_necessary: 1% del Cens
       share:
-        guide: Ara pots compartir-la a Twitter, Facebook, Google+, Telegram o WhatsApp (si utilitzes un dispositiu mòbil) perquè la gent comenci a recolzar-la. Qual Abans que es publiqui el text en les xarxes socials podràs modificar al teu gust
+        guide: Ara pots compartir-la a Twitter, Facebook, Google+, Telegram o WhatsApp (si utilitzes un dispositiu mòbil) perquè la gent comence a recolzar-la. Només es publique el text en les xarxes socials el podràs modificar al teu gust
         view_proposal: Ara no, veure la meva proposta
       successful: Esta propuesta ha alcanzado los apoyos necesarios y pasará a la %{voting}.
       support: Avalar

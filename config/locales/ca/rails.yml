@@ -139,7 +139,7 @@ ca:
         other: No s'ha pogut desar aquest/a %{model} perquè hi ha hagut %{count} errors
   helpers:
     select:
-      prompt: Si us plau tria
+      prompt: Per favor tria
     submit:
       create: Crear %{model}
       submit: Guardar %{model}

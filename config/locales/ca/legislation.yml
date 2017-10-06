@@ -83,7 +83,7 @@ ca:
         comments_closed: Fase tancada
         comments_title: Respostes obertes
         form:
-          leave_comment: Deixa la teva resposta
+          leave_comment: Deixa la teua resposta
       participation:
         debate_phase_not_open: La fase de debat previ ja ha finalitzat i en aquest moment no s'accepten respostes
         organizations: Les organitzacions no poden participar en el debat
