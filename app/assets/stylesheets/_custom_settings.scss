@@ -5,8 +5,9 @@
 //
 
 /* Colors */
-$brand: #BC3E43;
+$brand: #A5532F;
 $dark: darken($brand, 10%);
+
 $link: $brand;
 $link-hover: darken($link, 20%);
 $button-background-hover: scale-color($brand, $lightness: -15%);
@@ -16,15 +17,13 @@ $proposals: $brand;
 $budget: #4a4a4a;
 
 /* Utils */
-$highlight: rgb(251,251,251);
+$highlight: rgb(251, 251, 251);
 $light-gray: #f0f0f0;
 
 /* Grid */
-$breakpoints: (
-  small: 0,
+$breakpoints: (small: 0,
   medium: 640px,
   large: 1024px,
-  xxlarge: 1440px
-);
+  xxlarge: 1440px);
 
 $breakpoint-classes: (small medium large xxlarge);
