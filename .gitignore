@@ -17,9 +17,10 @@
 /tmp
 
 /spec/examples.txt
-/config/database.yml
-/config/secrets.yml
-/config/deploy-secrets.yml
+# Commented config files due to use of env variables
+# /config/database.yml
+# /config/secrets.yml
+# /config/deploy-secrets.yml
 /config/sms_wsdl.xml
 
 /coverage

@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: srv-captain--consul-db
+  port: 5432
+  username: postgres
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
+
+development: &development
+  <<: *default
+  database: postgres
+
+# The staging, preproduction and production dbs are only needed
+# for running rake assets:precompile locally before deploying
+staging:
+  <<: *development
+
+preproduction:
+  <<: *development
+
+production:
+  <<: *development
+
+test:
+  <<: *default
+  database: postgres
