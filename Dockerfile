@@ -8,7 +8,9 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev postgresq
 # Define where our application will live inside the image
 ENV RAILS_ROOT /var/www/consul
 
-ENV RAILS_ENV production
+ARG RAILS_ENV=development
+
+ENV RAILS_ENV=$RAILS_ENV
 
 # Create application home. App server will need the pids dir so just create everything in one shot
 RUN mkdir -p $RAILS_ROOT/tmp/pids
