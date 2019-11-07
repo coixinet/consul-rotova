@@ -8,6 +8,10 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev postgresq
 # Define where our application will live inside the image
 ENV RAILS_ROOT /var/www/consul
 
+
+# Force not using cache of files
+ADD https://www.google.com /time.now
+
 ARG RAILS_ENV=development
 
 ENV RAILS_ENV=$RAILS_ENV
@@ -34,10 +38,6 @@ RUN gem install bundler
 
 # Finish establishing our Ruby enviornment
 RUN bundle install --full-index
-
-
-# Force not using cache of files
-# ADD https://www.google.com /time.now
 
 # Copy the Rails application into place
 COPY . .
