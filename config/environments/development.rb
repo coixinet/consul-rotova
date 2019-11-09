@@ -49,11 +49,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
-      :address              => 'smtp.serviciodecorreo.es',
-      :port                 => '465',
-      :domain               => 'rotova.es',
-      :user_name            => 'participacio@rotova.es',
-      :password             => 'FBLx3dBnngD5',
+      :address              => ENV["MAIL_HOST"],
+      :port                 => ENV["MAIL_PORT"],
+      :domain               => ENV["MAIL_USER"],
+      :user_name            => ENV["MAIL_USER"],
+      :password             => ENV["MAIL_PASSWORD"],
       :authentication => :plain,
       :enable_starttls_auto => true,
       :ssl => true
