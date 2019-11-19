@@ -1,7 +1,5 @@
-
 # service configuration for our database
 srv-captain--consul-db:
-
   # use the preferred version of the official Postgres image
   # see https://hub.docker.com/_/postgres/
   image: postgres:9.4.5
@@ -12,6 +10,8 @@ srv-captain--consul-db:
 
 # service configuration for our dockerized Rails app
 app:
+  env_file:
+    - .env
 
   # use the Dockerfile next to this file
   build: .

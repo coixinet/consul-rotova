@@ -34,3 +34,5 @@
 
 public/sitemap.xml
 public/system/
+
+.env
