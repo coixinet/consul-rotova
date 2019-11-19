@@ -74,9 +74,9 @@ Rails.application.configure do
       :domain               => ENV["MAIL_DOMAIN"],
       :user_name            => ENV["MAIL_USER"],
       :password             => ENV["MAIL_PASSWORD"],
-      :authentication => :plain,
+      # :authentication => :plain,
       :enable_starttls_auto => true,
-      :ssl => true
+      # :ssl => true
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
