@@ -42,7 +42,7 @@ Rails.application.configure do
   config.cache_store = :dalli_store
   
   class Application < Rails::Application
-    config.web_console.whitelisted_ips = '47.61.87.94, 10.0.0.1, 10.0.0.2, 10.0.0.3, 10.0.0.4, 10.0.0.5, 10.0.0.6'
+    config.web_console.whitelisted_ips = '10.0.0.0/16'
   end
   
 
