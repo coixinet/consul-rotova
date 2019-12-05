@@ -68,3 +68,7 @@ Rails.application.configure do
     end
   end
 end
+
+Mail.defaults do
+  delivery_method Rails.configuration.action_mailer.delivery_method, Rails.configuration.action_mailer.smtp_settings
+end
