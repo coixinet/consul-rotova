@@ -41,6 +41,10 @@ Rails.application.configure do
 
   config.cache_store = :dalli_store
   
+  class Application < Rails::Application
+    config.web_console.whitelisted_ips = '47.61.87.94'
+  end
+  
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: ENV["MAIN_URL"] }
