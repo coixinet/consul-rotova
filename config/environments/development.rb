@@ -46,12 +46,12 @@ Rails.application.configure do
   end
   
 
-  config.action_mailer.raise_delivery_errors = true
+  ActionMailer::Base.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: ENV["MAIN_URL"] }
   config.action_mailer.asset_host = ENV["MAIN_URL"]
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.perform_deliveries = true
 
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV["MAIL_USER"],
