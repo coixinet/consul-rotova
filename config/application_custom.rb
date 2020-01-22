@@ -11,9 +11,6 @@ module Consul
     config.action_mailer.default_url_options = { host: ENV["MAIN_URL"] }
     config.action_mailer.asset_host = ENV["MAIN_URL"]
     
-    class Application < Rails::Application
-      config.web_console.whitelisted_ips = %w(127.0.0.0 47.61.87.94 10.0.0.0/16)
-    end
 
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.perform_deliveries = true
