@@ -24,7 +24,7 @@ module Consul
       :domain => ENV["MAIL_DOMAIN"],
       :address => ENV["MAIL_HOST"],
       :port => ENV["MAIL_PORT"],
-      :authentication => false,
+      :authentication => :plain,
       :enable_starttls_auto => true,
       :ssl => true
     }
