@@ -15,16 +15,6 @@ module Consul
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.perform_deliveries = true
 
-    # ActionMailer::Base.smtp_settings = {
-    #   :user_name => ENV["MAIL_USER"],
-    #   :password => ENV["MAIL_PASSWORD"],
-    #   :domain => ENV["MAIL_DOMAIN"],
-    #   :address => ENV["MAIL_HOST"],
-    #   :port => ENV["MAIL_PORT"],
-    #   :authentication => :plain,
-    #   :enable_starttls_auto => true,
-    #   :ssl => true
-    # }
     config.action_mailer.smtp_settings = {
       :address              => ENV["MAIL_HOST"],
       :port                 => ENV["MAIL_PORT"],
