@@ -50,7 +50,7 @@
 //= require banners
 //= require social_share
 //= require checkbox_toggle
-//= require markdown-it
+
 //= require markdown_editor
 //= require cocoon
 //= require legislation_admin
