@@ -92,7 +92,7 @@ Rails.application.configure do
     :address => ENV["MAIL_HOST"],
     :port => ENV["MAIL_PORT"],
     :authentication => :plain,
-    :enable_starttls_auto => true,
+    :enable_starttls_auto => false,
     :ssl => true,
     :tls => false,
   }
