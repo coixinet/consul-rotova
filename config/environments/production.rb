@@ -92,9 +92,8 @@ Rails.application.configure do
     :address => ENV["MAIL_HOST"],
     :port => ENV["MAIL_PORT"],
     :authentication => :plain,
-    :enable_starttls_auto => false,
+    :enable_starttls_auto => true,
     :ssl => true,
-    :tls => false,
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
