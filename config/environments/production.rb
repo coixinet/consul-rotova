@@ -78,7 +78,6 @@ Rails.application.configure do
   #     :enable_starttls_auto => true,
   #     :ssl => true
   # }
-  config.assets.raise_runtime_errors = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: ENV["MAIN_URL"] }
   config.action_mailer.asset_host = ENV["MAIN_URL"]
