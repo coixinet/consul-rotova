@@ -17,7 +17,7 @@
               #   <%= image_tag(image_path_for('logo_email.png'), style: 'border: 0;display: block;width: 100%;max-width: 400px', size: '100x100', alt: setting["org_name"]) %>
               # </a>
               <a href="<%= setting['url'] %>" target="_blank">
-                <img src="https://participacio.rotova.es/assets/logo_email.png" style="border: 0; display: block; width: 80px; height: 80px;" alt="Participació Ròtova">
+                <img src="<%= setting['url'] %>/assets/logo_email.png" style="border: 0; display: block; width: 80px; height: 80px;" alt="<%= setting['org_name'] %>">
               </a>
             </td>
           </tr>
