@@ -62,9 +62,26 @@ Rails.application.configure do
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { host: Rails.application.secrets.server_name }
-  config.action_mailer.asset_host = "https://#{Rails.application.secrets.server_name}"
+  # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.default_url_options = { host: Rails.application.secrets.server_name }
+  # config.action_mailer.asset_host = "https://#{Rails.application.secrets.server_name}"
+  ActionMailer::Base.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { host: ENV["MAIN_URL"] }
+  config.action_mailer.asset_host = ENV["MAIN_URL"]
+
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.perform_deliveries = true
+
+  ActionMailer::Base.smtp_settings = {
+    :user_name => ENV["MAIL_USER"],
+    :password => ENV["MAIL_PASSWORD"],
+    :domain => ENV["MAIL_DOMAIN"],
+    :address => ENV["MAIL_HOST"],
+    :port => ENV["MAIL_PORT"],
+    :authentication => :plain,
+    :enable_starttls_auto => true,
+    :ssl => true,
+  }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
