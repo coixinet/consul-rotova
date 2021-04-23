@@ -352,7 +352,7 @@ GEM
     rainbow (2.2.2)
       rake
     raindrops (0.18.0)
-    rake (12.0.0)
+    rake (12.3.3)
     redcarpet (3.5.1)
     referer-parser (0.3.0)
     request_store (1.3.2)
